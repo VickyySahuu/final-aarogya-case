@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Share Current Location — AAROGYA CASE</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "aarogya-green": "#166534",
+            "aarogya-green-hover": "#14532d",
+            "aarogya-green-light": "#f0fdf4",
+            "aarogya-green-border": "#bbf7d0",
+            "gov-navy": "#0A2540",
+            "gov-navy-dark": "#071a2e",
+            "gov-navy-light": "#13385e",
+            "primary": "#166534",
+            "surface": "#f8f9fc",
+            "surface-container": "#eceef0",
+            "surface-container-low": "#f2f4f6",
+            "surface-container-high": "#e6e8ea",
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#475569",
+            "error-subtle": "#fee2e2",
+            "error-text": "#991b1b"
+          },
+          fontFamily: {
+            "headline": ["Lexend", "sans-serif"],
+            "body": ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { font-family: 'Atkinson Hyperlegible Next', sans-serif; }
+      h1, h2, h3, h4, h5, h6, nav, button { font-family: 'Lexend', sans-serif; }
+    }
+  </style>
+</head>
+<body class="bg-[#f8f9fc] text-on-surface flex flex-col min-h-screen">
+<!-- TOP UTILITY BAR -->
+<aside aria-label="Official Government Strip" class="w-full bg-gov-navy text-slate-200 text-xs border-b border-gov-navy-light/40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between">
+<div class="flex items-center gap-2"><span class="font-semibold text-white tracking-wide">AAROGYA CASE</span><span class="text-slate-400">|</span><span class="text-slate-300 hidden sm:inline">Healthcare Digital Platform</span></div>
+<div class="flex items-center gap-4 text-xs font-medium">
+<a class="text-slate-300 hover:text-white transition-colors flex items-center gap-1" href="#accessibility">
+<span class="material-symbols-outlined text-[15px]">accessibility_new</span>
+<span class="">Accessibility</span>
+</a>
+<span class="text-slate-500">|</span>
+<a class="text-slate-300 hover:text-white transition-colors flex items-center gap-1" href="#help">
+<span class="material-symbols-outlined text-[15px]">help_center</span>
+<span class="">Help</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- INSTITUTIONAL MAIN HEADER -->
+<header class="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo & Branding -->
+<a class="flex items-center gap-3.5 group" href="#home"><img alt="Aarogya Case Official Emblem" class="w-14 h-14 object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVMCgtJH04vWOJUp7psAtWhv6wgY2_NXbnvGMod8D6FPUj0lvpPqtFksBKHPQdUsfww2Era-Dvng0f27SN6qljOSRwewvIO0xcmcDC-Q5-Ui7m0H_A3HlHLgeu2KgaeiQI63QuAh6VWQAar8BF5umJ34QmT2xKnHgl4NJ7kyavOk6N61_irMA2aOyuIudwKX8rZT7IpBvh8T6XZHHghQEJYjXPbx1fyhJ1J6khoLfVrc6p4hJBbL8pH4DgqSAI0JWzZo"><div class="flex flex-col"><span class="font-headline font-bold text-xl text-[#0A2540] leading-tight tracking-tight group-hover:text-primary transition-colors">AAROGYA CASE</span><span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Government Healthcare Digital Platform</span><span class="text-xs font-semibold text-[#166534]">Patient Portal</span></div></a>
+<!-- Navigation -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1 lg:gap-2">
+<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-[#166534] hover:bg-slate-50 rounded-md transition-colors" href="#home">HOME</a>
+<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-[#166534] hover:bg-slate-50 rounded-md transition-colors" href="#patient-services">PATIENT SERVICES</a>
+<a class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-[#166534] hover:bg-slate-50 rounded-md transition-colors" href="#help">HELP</a>
+<a class="ml-2 px-5 py-2 text-sm font-bold text-white bg-red-600 hover:bg-red-700 rounded-full flex items-center gap-1.5 shadow-sm transition-colors" href="#emergency"><span class="material-symbols-outlined text-[18px]">emergency</span><span class="">EMERGENCY</span></a>
+</nav>
+</div>
+</div>
+</header>
+<!-- CONTEXT & BREADCRUMB STRIP -->
+<section class="w-full bg-[#f1f5f9] border-b border-slate-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs sm:text-sm text-slate-600">
+<a class="hover:text-[#166534] transition-colors" href="#home">Home</a>
+<span class="text-slate-400">/</span>
+<a class="hover:text-[#166534] transition-colors" href="#emergency">Emergency</a>
+<span class="text-slate-400">/</span>
+<span aria-current="page" class="font-semibold text-slate-900">Share Current Location</span>
+</nav>
+<a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 hover:text-[#166534] bg-white border border-slate-300 px-5 py-2 rounded-full hover:border-[#166534] transition-colors shadow-2xs" href="#emergency"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span class="">Back</span></a>
+</div>
+</section>
+<!-- MAIN PAGE CONTENT -->
+<main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 flex flex-col gap-6">
+<!-- 4-STEP PATIENT PROGRESS TRACKER -->
+<section aria-label="Progress Stepper" class="w-full bg-white rounded-xl border border-slate-200 p-4 shadow-sm"><div class="grid grid-cols-2 md:grid-cols-4 gap-3"><div class="flex items-center gap-3 p-3 rounded-full bg-emerald-50 border border-emerald-200"><div class="w-8 h-8 rounded-full bg-[#166534] text-white flex items-center justify-center font-headline font-bold text-sm flex-shrink-0" id="step-1-num">1</div><div class="flex flex-col min-w-0 pr-2"><span class="text-[11px] font-bold text-[#166534] uppercase tracking-wider">Step 1</span><span class="text-xs sm:text-sm font-bold text-slate-900 truncate">Share Location</span></div></div><div class="flex items-center gap-3 p-3 rounded-full bg-slate-50 border border-slate-100 opacity-65"><div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-headline font-semibold text-sm flex-shrink-0">2</div><div class="flex flex-col min-w-0 pr-2"><span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Step 2</span><span class="text-xs sm:text-sm font-medium text-slate-700 truncate">Confirm Request</span></div></div><div class="flex items-center gap-3 p-3 rounded-full bg-slate-50 border border-slate-100 opacity-65"><div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-headline font-semibold text-sm flex-shrink-0">3</div><div class="flex flex-col min-w-0 pr-2"><span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Step 3</span><span class="text-xs sm:text-sm font-medium text-slate-700 truncate">Ambulance Assigned</span></div></div><div class="flex items-center gap-3 p-3 rounded-full bg-slate-50 border border-slate-100 opacity-65"><div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-headline font-semibold text-sm flex-shrink-0">4</div><div class="flex flex-col min-w-0 pr-2"><span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Step 4</span><span class="text-xs sm:text-sm font-medium text-slate-700 truncate">Live Tracking</span></div></div></div></section>
+<!-- MAIN LOCATION CARD -->
+<div class="max-w-2xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 flex flex-col gap-6">
+<!-- Title Section -->
+<div class="border-b border-slate-200 pb-5">
+<h1 class="font-headline text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Share Current Location</h1>
+<p class="text-slate-600 text-sm sm:text-base mt-1.5">Share your current location to request an ambulance.</p>
+</div>
+<!-- Location Status Subcard -->
+<div class="w-full bg-[#f8f9fa] border border-slate-200 rounded-xl p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-slate-200 pb-3">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-600">CURRENT LOCATION</span>
+<span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#fee2e2] text-[#991b1b] flex items-center gap-1" id="status-badge">
+<span class="w-2 h-2 rounded-full bg-[#991b1b]" id="status-badge-dot"></span>
+<span id="status-badge-text" class="">LOCATION NOT SHARED</span>
+</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 pt-1 text-center sm:text-left">
+<div class="w-16 h-16 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center flex-shrink-0 transition-colors" id="icon-bubble">
+<span class="material-symbols-outlined text-[32px]" id="icon-glyph">location_searching</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline font-bold text-slate-900 text-base sm:text-lg" id="card-message-title">Device Location Authorization</h2>
+<p class="text-sm text-slate-600 leading-relaxed" id="card-message-body">
+              Grant device location authorization to detect pickup coordinates for the ambulance.
+            </p>
+</div>
+</div>
+</div>
+<!-- Data Protection Note -->
+<div class="w-full bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#166534] text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-xs sm:text-sm text-[#166534]">Data Protection</span>
+<p class="text-xs sm:text-sm text-emerald-950 mt-0.5 leading-relaxed">
+            Your location is used strictly to route the emergency medical vehicle.
+          </p>
+</div>
+</div>
+<!-- Interactive Consent Checkbox -->
+<div class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between gap-4">
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input class="w-5 h-5 accent-[#166534] rounded text-[#166534] focus:ring-[#166534] cursor-pointer" id="consent-check" type="checkbox">
+<span class="text-xs sm:text-sm font-medium text-slate-800">I consent to share my device location to request an emergency ambulance</span>
+</label>
+<span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-red-100 text-red-700 whitespace-nowrap" id="consent-tag">
+          Required
+        </span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2"><button class="flex-1 h-12 px-8 py-3.5 bg-[#166534] hover:bg-[#14532d] text-white font-headline font-bold text-sm tracking-wide rounded-full shadow transition-all flex items-center justify-center gap-2 cursor-pointer" id="main-action-btn" type="button"><span class="material-symbols-outlined text-[20px]" id="btn-icon">near_me</span><span id="btn-label" class="">SHARE LOCATION</span></button><a class="h-12 px-5 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-headline font-semibold text-sm rounded-full transition-colors flex items-center justify-center gap-1.5" href="#emergency"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span class="">Back</span></a></div>
+</div>
+</main>
+<!-- INSTITUTIONAL DARK NAVY FOOTER -->
+<footer class="w-full bg-gov-navy text-slate-300 border-t border-gov-navy-light/50 mt-auto"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-700/60"><div class="md:col-span-2 flex flex-col gap-3"><div class="flex items-center gap-3"><img alt="Aarogya Case Official Emblem" class="w-12 h-12 object-contain bg-white rounded-full p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhbSyDN0UA0nn_oVZx3swW3hU73MVISdQi1011v6mL6Wr9Y9ylON0WxhdNuq8FsGurtcOn_76gItN0pmmKTgwXjEwT3QEisX0_BMQnMkQwb7Dvh7jtFEPGYqdZkuJje-bjQuXyUZVhkH00enUEXY4KSp_BSsSmar8IRIj29THFUYZwLUPVYthuzqO1pR1ZVnz7Hn0HoUME1a1QLLTMXfM1U4UTVP5d9zE-orwUOabH98pgSRNZcY-HqtmsdnwW3cZFOuo"><div><h3 class="font-headline font-bold text-white text-base">AAROGYA CASE</h3><p class="text-xs text-slate-400">Government Healthcare Digital Platform</p></div></div><p class="text-xs text-slate-400 leading-relaxed max-w-md mt-1">Official emergency medical response and hospital triage infrastructure. Designed for rapid emergency dispatch, patient coordination, and standardized Ayush &amp; allopathic healthcare records.</p></div><div class="flex flex-col gap-2.5"><h4 class="font-headline font-bold text-white text-xs uppercase tracking-wider">Emergency Services</h4><ul class="text-xs space-y-2 text-slate-400"><li class=""><a class="hover:text-white transition-colors" href="#ambulance">Request Ambulance (108)</a></li><li class=""><a class="hover:text-white transition-colors" href="#trauma">Trauma Center Locator</a></li><li class=""><a class="hover:text-white transition-colors" href="#triage">Emergency Protocol</a></li><li class=""><a class="hover:text-white transition-colors" href="#helpline">National Health Helpline (1075)</a></li></ul></div><div class="flex flex-col gap-2.5"><h4 class="font-headline font-bold text-white text-xs uppercase tracking-wider">Compliance &amp; Trust</h4><ul class="text-xs space-y-2 text-slate-400"><li class=""><a class="hover:text-white transition-colors" href="#privacy">Data Privacy Policy</a></li><li class=""><a class="hover:text-white transition-colors" href="#terms">Terms of Service</a></li><li class=""><a class="hover:text-white transition-colors" href="#accessibility">Accessibility Statement</a></li><li class=""><a class="hover:text-white transition-colors" href="#security">Security Architecture</a></li></ul></div></div><div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400"><p class="">© 2025 AAROGYA CASE — Ministry of Ayush &amp; Government Healthcare Digital Platform. All rights reserved.</p><div class="flex items-center gap-4"><span class="inline-flex items-center gap-1 text-emerald-400"><span class="material-symbols-outlined text-[15px]">verified</span><span class="">DISHA / ABDM Certified</span></span><span class="text-slate-600">|</span><span class="">v02.4-EMR</span></div></div></div></footer>
+<!-- INTERACTIVE STATE LOGIC -->
+<script>
+    (function() {
+      const consentCheck = document.getElementById('consent-check');
+      const consentTag = document.getElementById('consent-tag');
+      const actionBtn = document.getElementById('main-action-btn');
+      const btnLabel = document.getElementById('btn-label');
+      const btnIcon = document.getElementById('btn-icon');
+      const statusBadge = document.getElementById('status-badge');
+      const statusBadgeText = document.getElementById('status-badge-text');
+      const statusBadgeDot = document.getElementById('status-badge-dot');
+      const iconBubble = document.getElementById('icon-bubble');
+      const iconGlyph = document.getElementById('icon-glyph');
+      const cardMessageTitle = document.getElementById('card-message-title');
+      const cardMessageBody = document.getElementById('card-message-body');
+      const step1Num = document.getElementById('step-1-num');
+
+      let isLocationShared = false;
+
+      function renderUI() {
+        if (isLocationShared) {
+          // Status badge: green checkmark
+          statusBadge.className = "text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-[#166534] flex items-center gap-1";
+          statusBadgeText.textContent = "LOCATION SHARED";
+          statusBadgeDot.className = "w-2 h-2 rounded-full bg-[#166534]";
+
+          // Icon bubble: green
+          iconBubble.className = "w-16 h-16 rounded-full bg-emerald-100 text-[#166534] flex items-center justify-center flex-shrink-0 transition-colors";
+          iconGlyph.textContent = "check_circle";
+
+          // Message
+          cardMessageTitle.textContent = "Location Successfully Shared";
+          cardMessageBody.textContent = "Your device coordinates have been transmitted securely to the emergency medical dispatch team.";
+
+          // Consent tag
+          consentTag.textContent = "Authorized";
+          consentTag.className = "text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-emerald-100 text-[#166534] whitespace-nowrap";
+          consentCheck.checked = true;
+
+          // Action button: CONTINUE ->
+          btnLabel.textContent = "CONTINUE";
+          btnIcon.textContent = "arrow_forward";
+          actionBtn.className = "flex-1 h-12 px-6 bg-[#166534] hover:bg-[#14532d] text-white font-headline font-bold text-sm tracking-wide rounded-full shadow transition-all flex items-center justify-center gap-2 cursor-pointer";
+        } else {
+          // Status badge: warning red
+          statusBadge.className = "text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#fee2e2] text-[#991b1b] flex items-center gap-1";
+          statusBadgeText.textContent = "LOCATION NOT SHARED";
+          statusBadgeDot.className = "w-2 h-2 rounded-full bg-[#991b1b]";
+
+          // Icon bubble: neutral slate
+          iconBubble.className = "w-16 h-16 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center flex-shrink-0 transition-colors";
+          iconGlyph.textContent = "location_searching";
+
+          // Message
+          cardMessageTitle.textContent = "Device Location Authorization";
+          cardMessageBody.textContent = "Grant device location authorization to detect pickup coordinates for the ambulance.";
+
+          if (consentCheck.checked) {
+            consentTag.textContent = "Ready";
+            consentTag.className = "text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-blue-100 text-blue-800 whitespace-nowrap";
+          } else {
+            consentTag.textContent = "Required";
+            consentTag.className = "text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-red-100 text-red-700 whitespace-nowrap";
+          }
+
+          // Action button: SHARE LOCATION
+          btnLabel.textContent = "SHARE LOCATION";
+          btnIcon.textContent = "near_me";
+          actionBtn.className = "flex-1 h-12 px-6 bg-[#166534] hover:bg-[#14532d] text-white font-headline font-bold text-sm tracking-wide rounded-full shadow transition-all flex items-center justify-center gap-2 cursor-pointer";
+        }
+      }
+
+      consentCheck.addEventListener('change', function() {
+        if (!consentCheck.checked && isLocationShared) {
+          isLocationShared = false;
+        }
+        renderUI();
+      });
+
+      actionBtn.addEventListener('click', function() {
+        if (!isLocationShared) {
+          consentCheck.checked = true;
+          isLocationShared = true;
+          renderUI();
+        } else {
+          // Navigate to 02.03_REQUEST_AMBULANCE_CONFIRM
+          window.location.hash = "#confirm-request";
+        }
+      });
+    })();
+  </script>
+
+
+</body></html>

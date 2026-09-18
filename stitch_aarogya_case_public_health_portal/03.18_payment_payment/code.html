@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006b25",
+          "surface-dim": "#d8dadd",
+          "background": "#f8f9fc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#001b3d",
+          "primary-fixed": "#ffdbcf",
+          "on-primary-container": "#fffbff",
+          "surface-bright": "#f8f9fc",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "on-surface": "#191c1e",
+          "secondary-fixed-dim": "#adc7f8",
+          "surface-container": "#eceef0",
+          "error-container": "#ffdad6",
+          "secondary-container": "#b3cdfe",
+          "inverse-primary": "#ffb59a",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#9bf79f",
+          "outline-variant": "#dfc0b5",
+          "surface-container-low": "#f2f4f6",
+          "on-secondary-container": "#3c5781",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#a83903",
+          "on-tertiary-fixed-variant": "#00531b",
+          "secondary-fixed": "#d6e3ff",
+          "secondary": "#455f8a",
+          "on-tertiary": "#ffffff",
+          "outline": "#8f7066",
+          "surface-container-high": "#e7e8eb",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-surface-variant": "#5a4138",
+          "surface-container-highest": "#e1e2e5",
+          "on-tertiary-container": "#f7fff2",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#802a00",
+          "inverse-surface": "#2d3133",
+          "primary": "#7c2800",
+          "on-tertiary-fixed": "#002106",
+          "surface-variant": "#e1e2e5",
+          "tertiary": "#00501a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-background": "#191c1e",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-container": "#a43700",
+          "surface": "#f7f9fb",
+          "tertiary-fixed-dim": "#7edb85"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-3xl": "4rem",
+          "kiosk-touch-min": "4.5rem",
+          "space-lg": "1.5rem",
+          "gutter-kiosk": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Lexend"
+          ],
+          "body-xl": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "body-sm": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "label-sm": [
+            "Lexend"
+          ],
+          "body-md": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-md": [
+            "Lexend"
+          ],
+          "display-lg-mobile": [
+            "Lexend"
+          ],
+          "body-lg": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-sm": [
+            "Lexend"
+          ],
+          "display-lg": [
+            "Lexend"
+          ],
+          "label-lg": [
+            "Lexend"
+          ],
+          "label-md": [
+            "Lexend"
+          ],
+          "headline-lg-mobile": [
+            "Lexend"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "42px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-xl": [
+            "20px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "44px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Top Utility Strip -->
+<div class="w-full bg-surface-container-high px-gutter-desktop py-space-xs text-body-sm text-on-surface-variant">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-sm tracking-wide">
+<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">local_hospital</span>
+<span class="font-semibold text-on-surface">AAROGYA CASE</span>
+<span class="text-outline-variant">|</span>
+<span class="">Healthcare Digital Platform • Ministry of AYUSH &amp; Health Initiative</span>
+</div>
+<div class="flex items-center gap-space-lg text-body-sm">
+<button class="inline-flex items-center gap-1 hover:text-primary transition-colors cursor-pointer" onclick="toggleContrast()" type="button">
+<span class="material-symbols-outlined" style="font-size: 16px;">accessibility_new</span>
+<span class="">Accessibility</span>
+</button>
+<span class="text-outline-variant">|</span>
+<a class="inline-flex items-center gap-1 hover:text-primary transition-colors" href="#help-faq">
+<span class="material-symbols-outlined" style="font-size: 16px;">help_outline</span>
+<span class="">Help</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<header class="w-full bg-surface-container-lowest shadow-sm px-gutter-desktop py-space-md sticky top-0 z-30">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<img alt="Aarogya Case Seal" class="w-14 h-14 object-contain rounded-full bg-surface-container-low p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGxaiI-fZFFptDmV5ChZ8AYo0xyKP3y1v30_26NGo4I7-M35Jo_FH7SVJnri_kZ0eHqdRVqf6NMgVSY2cEsRYCu6lvoMDmve-7tuYqSbWgOxbgnyUumxAR7f9-BDl3WzRDMQO_npS12oXrsbm7RoBL3WJxU57u2ZYvWUBRs7kXNR8rM_EOTJsvP9tQVsV2_W53I0q8DYHwlAt1rWcdEs-w0mj4MYsEj3IbvvDDlOAtzCzGvWKvJ7wXYKPKtvL9m0CJ76c">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">AAROGYA CASE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Government Healthcare Digital Platform • Patient Portal</span>
+</div>
+</div>
+<nav class="flex items-center gap-space-md">
+<button class="px-space-md py-space-xs font-label-md text-label-md text-on-surface hover:text-primary transition-colors rounded-full hover:bg-surface-container" type="button">
+          Home
+        </button>
+<button class="px-space-md py-space-xs font-label-md text-label-md text-primary font-bold rounded-full bg-primary-fixed" type="button">
+          Patient Services
+        </button>
+<button class="px-space-md py-space-xs font-label-md text-label-md text-on-surface hover:text-primary transition-colors rounded-full hover:bg-surface-container" type="button">
+          Help
+        </button>
+<button class="px-space-lg py-space-xs font-label-md text-label-md text-on-error bg-error hover:bg-error/90 rounded-full shadow-sm flex items-center gap-1.5 cursor-pointer" type="button">
+<span class="material-symbols-outlined" style="font-size: 18px; font-variation-settings: 'FILL' 1;">emergency</span>
+          Emergency (108 / 112)
+        </button>
+</nav>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="w-full px-gutter-desktop py-space-xl">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-xl">
+<!-- Breadcrumbs & Return Bar -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="hover:underline cursor-pointer">Home</span>
+<span class="material-symbols-outlined text-outline-variant" style="font-size: 16px;">chevron_right</span>
+<span class="hover:underline cursor-pointer">Patient Portal</span>
+<span class="material-symbols-outlined text-outline-variant" style="font-size: 16px;">chevron_right</span>
+<span class="hover:underline cursor-pointer">Book Appointment</span>
+<span class="material-symbols-outlined text-outline-variant" style="font-size: 16px;">chevron_right</span>
+<span class="text-on-surface font-semibold">Payment</span>
+</div>
+<button class="inline-flex items-center gap-1.5 text-secondary hover:text-on-secondary-container px-space-md py-space-xs rounded-full bg-secondary-fixed hover:bg-secondary-fixed-dim transition-colors font-label-md text-label-md cursor-pointer" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
+<span class="">← Back</span>
+</button>
+</div>
+<!-- Stepper / Booking Progress Indicator -->
+<div class="w-full bg-surface-container-lowest p-space-lg rounded-lg shadow-sm">
+<div class="grid grid-cols-5 gap-space-sm relative">
+<!-- Connector line -->
+<div class="absolute top-5 left-8 right-8 h-1 bg-tertiary-fixed -z-0"></div>
+<!-- Step 1: Hospital -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 20px;">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-space-xs">Step 1: Hospital</span>
+<span class="font-body-sm text-body-sm text-tertiary">Done</span>
+</div>
+<!-- Step 2: Doctor -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 20px;">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-space-xs">Step 2: Doctor</span>
+<span class="font-body-sm text-body-sm text-tertiary">Done</span>
+</div>
+<!-- Step 3: Date & Time -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 20px;">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-space-xs">Step 3: Date &amp; Time</span>
+<span class="font-body-sm text-body-sm text-tertiary">Done</span>
+</div>
+<!-- Step 4: Confirm -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 20px;">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-space-xs">Step 4: Confirm</span>
+<span class="font-body-sm text-body-sm text-tertiary">Done</span>
+</div>
+<!-- Step 5: Payment (Active) -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-label-md shadow-md ring-4 ring-tertiary-fixed">
+<span class="font-bold text-on-tertiary">5</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold mt-space-xs">Step 5: Payment</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Active</span>
+</div>
+</div>
+</div>
+<!-- Page Headline -->
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Payment</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Outpatient registration fee status for public health consultation.</p>
+</div>
+<!-- State Demonstration Toggle (Prototype Demo Control) -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-lg py-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">science</span>
+<span class="font-semibold text-on-surface">Interactive Prototype Tier View:</span>
+<span class="">Switch between free public OPD and demonstrational paid consultation tier</span>
+</div>
+<div class="inline-flex p-1 bg-surface-container-highest rounded-full" id="prototypeSwitcher">
+<button class="px-space-md py-1 rounded-full text-label-sm font-label-sm bg-tertiary text-on-tertiary shadow-sm transition-all cursor-pointer" id="btn-mode-free" onclick="switchState('free')" type="button">
+            Default Free OPD (Standard)
+          </button>
+<button class="px-space-md py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all cursor-pointer" id="btn-mode-paid" onclick="switchState('paid')" type="button">
+            Demo Paid Specialist Tier (±₹50)
+          </button>
+</div>
+</div>
+<!-- STATE 1: Public Service Standard (Default - Primary Visual Focus) -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-xl shadow-md flex flex-col gap-space-lg transition-all" id="state-free">
+<!-- Shield Highlight Banner -->
+<div class="w-full bg-tertiary-fixed/30 rounded-lg p-space-lg flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-tertiary flex items-center justify-center flex-shrink-0 text-on-tertiary shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-tertiary tracking-tight font-bold">No Payment Required</h2>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">
+                100% Free Public Health Service
+              </span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Consultation Fee: ₹0.00 <span class="font-body-md text-body-md text-on-surface-variant font-normal">(Standard Public Health Facility Exemption)</span>
+</p>
+<p class="font-body-md text-body-md text-on-surface mt-space-2xs leading-relaxed">
+              This outpatient appointment at District Civil Hospital is covered under <strong>Universal Public Health Mission</strong> guidelines. No advance registration or consultation fee is required.
+            </p>
+<div class="flex items-center gap-2 mt-space-xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined" style="font-size: 20px;">task_alt</span>
+<span class="">Your appointment will be confirmed immediately upon continuing.</span>
+</div>
+</div>
+</div>
+<!-- Breakdown Details Table -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Public Service Exemption Breakdown</span>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-md text-body-md text-on-surface">Standard OPD Registration Charge</span>
+<span class="font-body-md text-body-md text-on-surface">₹10.00</span>
+</div>
+<div class="flex justify-between items-center py-1 text-tertiary">
+<span class="font-body-md text-body-md">Citizen Welfare Subsidy (100% Exemption)</span>
+<span class="font-body-md text-body-md font-semibold">- ₹10.00</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-md text-body-md text-on-surface">Doctor Consultation (AYUSH / Civil Medical Officer)</span>
+<span class="font-body-md text-body-md text-on-surface">₹0.00</span>
+</div>
+<div class="w-full h-px bg-outline-variant my-1"></div>
+<div class="flex justify-between items-center text-on-surface font-bold text-headline-sm">
+<span class="">Total Payable Amount</span>
+<span class="text-tertiary font-headline-md">₹0.00</span>
+</div>
+</div>
+</div>
+<!-- STATE 2: Demo Paid Consultation State (Hidden by default / Prototype Toggle) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-lg p-space-xl shadow-md flex flex-col gap-space-lg transition-all" id="state-paid">
+<div class="w-full bg-secondary-fixed/40 rounded-lg p-space-lg flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined" style="font-size: 28px;">payments</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Demo Simulation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Paid Consultation State (Optional Specialist Tier)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              This demo panel illustrates interface behavior when optional non-subsidized specialist or premium diagnostic slots are chosen in future rollouts.
+            </p>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-space-xs">₹50.00 <span class="text-label-sm font-label-sm text-on-surface-variant uppercase">[DEMO]</span></span>
+</div>
+</div>
+<!-- Payment Mode Selectors -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Select Payment Method (Simulation)</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- UPI / QR -->
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<input checked="" class="w-5 h-5 accent-tertiary" name="paymethod" type="radio">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">UPI / QR Code</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant mobile pay</span>
+</div>
+</label>
+<!-- Net Banking -->
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<input class="w-5 h-5 accent-tertiary" name="paymethod" type="radio">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Net Banking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All Indian scheduled banks</span>
+</div>
+</label>
+<!-- Counter Pay -->
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<input class="w-5 h-5 accent-tertiary" name="paymethod" type="radio">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Pay at Counter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cash / POS at reception</span>
+</div>
+</label>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-md text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">info</span>
+<span class=""><strong>Notice:</strong> Default government OPD consultations remain 100% free of charge nationwide.</span>
+</div>
+</div>
+<!-- Booking Summary Card -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary" style="font-size: 22px;">assignment</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Summary of Booking being confirmed</h3>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+            Registration Ref: OPD-2025-9921
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Patient Details -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-tertiary p-2 bg-surface-container-lowest rounded-full" style="font-size: 24px;">person</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Patient Name</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Rajesh Kumar Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ABHA / UHID: AC-2025-884920</span>
+</div>
+</div>
+<!-- Hospital / Facility -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary p-2 bg-surface-container-lowest rounded-full" style="font-size: 24px;">domain</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Healthcare Facility</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">District Civil Hospital, Sector 4 [DEMO]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">General Medicine • AYUSH Wing</span>
+</div>
+</div>
+<!-- Doctor -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary p-2 bg-surface-container-lowest rounded-full" style="font-size: 24px;">stethoscope</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Consulting Doctor</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Dr. Ananya Sen, MD [DEMO]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senior Medical Officer (Reg #DMC-44820)</span>
+</div>
+</div>
+<!-- Schedule -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-tertiary p-2 bg-surface-container-lowest rounded-full" style="font-size: 24px;">calendar_today</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Appointment Schedule</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Wednesday, 15 Oct 2025</span>
+<span class="font-body-sm text-body-sm text-tertiary font-semibold">09:00 AM – 09:30 AM (Morning Slot)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="w-full bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex items-center justify-between flex-wrap gap-space-md">
+<button class="inline-flex items-center gap-space-xs px-space-xl py-space-md rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors cursor-pointer" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined" style="font-size: 20px;">arrow_back</span>
+<span class="">← Back</span>
+</button>
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="text-right hidden sm:flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Amount Due</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold" id="due-amount-display">₹0.00 (Exempt)</span>
+</div>
+<!-- Primary Button with requested dominant color #166534 (tertiary-container / deep green tone) -->
+<button class="inline-flex items-center gap-space-xs px-space-2xl py-space-md rounded-full bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all cursor-pointer" onclick="handleConfirmation()" type="button">
+<span class="">CONTINUE TO CONFIRMATION →</span>
+<span class="material-symbols-outlined" style="font-size: 22px;">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Quick FAQs / Civic Help Box -->
+<div class="w-full bg-surface-container-low p-space-lg rounded-lg flex flex-col gap-space-sm" id="help-faq">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Frequently Asked Questions on Patient Fees</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md text-body-sm text-on-surface-variant">
+<div>
+<p class="font-semibold text-on-surface mb-1">Why is my consultation free?</p>
+<p class="">Under Government of India National Health Directives, all basic OPD consultations and generic medicines distributed in civil and district dispensaries are provided at zero direct citizen fee.</p>
+</div>
+<div>
+<p class="font-semibold text-on-surface mb-1">What if I am asked to pay at the counter?</p>
+<p class="">Show your digital Aarogya Case booking receipt with QR token. If an official auxiliary fee applies for specific advanced imaging, an institutional receipt will be generated on portal records.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Standard Institutional 3-Column Footer matching public portal design -->
+<footer class="w-full mt-space-3xl py-10 px-gutter-desktop text-white" style="background-color: rgb(7, 31, 56);">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+    <!-- Left Column: Branding & Overview -->
+    <div class="flex flex-col">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-white rounded-sm p-1 flex items-center justify-center flex-shrink-0">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuALG2vUyzohnbhdVR0-bVp4F5ktf4s73XF8k7D-HEdNZ0WVTeo_KkWPfO_jPUaovIXZa-oaOkcfmI6FzxaTpNOEoimbMCt7NXWVQxbgrypbsS5JPzt6qlU6Nv5IU-9BkYFzoMtLpNYNwc5WH6rHBgxA98vNr0Qih4DLVNBq-PuoA4Xsy0jSJcIYiEBlSHU0gpTOiR3kKKv0ptWI7RN8rbI0KjFA22ZVTYzftAPY02xire6ttXXfeVtxNrrB7nFsTlsHTo0" alt="AAROGYA CASE Official Emblem" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col">
+          <div class="font-bold text-white tracking-wider text-base uppercase leading-tight font-headline-sm">AAROGYA CASE</div>
+          <div class="text-xs text-slate-300 font-body-sm">Government Healthcare Digital Platform</div>
+        </div>
+      </div>
+      <p class="text-slate-300 text-xs mt-4 leading-relaxed font-body-sm max-w-sm">
+        An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.
+      </p>
+    </div>
+
+    <!-- Middle Column: Patient Services -->
+    <div class="flex flex-col">
+      <div class="font-bold text-white tracking-wider text-xs uppercase mb-3 font-headline-sm">PATIENT SERVICES</div>
+      <ul class="flex flex-col gap-2 text-xs text-slate-300 font-body-sm">
+        <li class=""><a href="#" class="hover:text-white transition-colors">Digital Clinical Intake</a></li>
+        <li class=""><a href="#" class="hover:text-white transition-colors">Tele-Consultation Request</a></li>
+        <li class=""><a href="#" class="hover:text-white transition-colors">Electronic Health Record Integration</a></li>
+        <li class=""><a href="#" class="hover:text-white transition-colors">Emergency Protocol Information</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column: Help & Accessibility -->
+    <div class="flex flex-col">
+      <div class="font-bold text-white tracking-wider text-xs uppercase mb-3 font-headline-sm">HELP &amp; ACCESSIBILITY</div>
+      <div class="flex flex-col gap-2 text-xs text-slate-300 font-body-sm">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-emerald-400" style="font-size: 16px;">call</span>
+          <span class="text-slate-200">National Health Helpline: <strong class="text-white font-bold">104</strong></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-red-400" style="font-size: 16px;">emergency</span>
+          <span class="text-slate-200">Ambulance Emergency: <strong class="text-white font-bold">108</strong></span>
+        </div>
+        <a href="#" class="hover:text-white transition-colors mt-0.5">Accessibility Options &amp; Screen Reader Guide</a>
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy &amp; Terms of Clinical Use</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom sub-strip divider and copyright line -->
+  <div class="max-w-6xl mx-auto border-t border-slate-700/60 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-body-sm">
+    <div class="">
+      © AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-emerald-400" style="font-size: 16px; font-variation-settings: 'FILL' 1;">verified_user</span>
+      <span class="text-slate-200 font-medium">ABDM Standard Integrated</span>
+      <span class="text-slate-500">•</span>
+      <span class="text-slate-400">v2.4-Production</span>
+    </div>
+  </div>
+</footer>
+</div>
+<!-- Inline Interaction Logic -->
+<script>
+  function switchState(state) {
+    const freeCard = document.getElementById('state-free');
+    const paidCard = document.getElementById('state-paid');
+    const btnFree = document.getElementById('btn-mode-free');
+    const btnPaid = document.getElementById('btn-mode-paid');
+    const dueDisplay = document.getElementById('due-amount-display');
+
+    if (state === 'free') {
+      freeCard.classList.remove('hidden');
+      paidCard.classList.add('hidden');
+      btnFree.className = 'px-space-md py-1 rounded-full text-label-sm font-label-sm bg-tertiary text-on-tertiary shadow-sm transition-all cursor-pointer';
+      btnPaid.className = 'px-space-md py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all cursor-pointer';
+      dueDisplay.innerText = '₹0.00 (Exempt)';
+      dueDisplay.className = 'font-headline-sm text-headline-sm text-tertiary font-bold';
+    } else {
+      freeCard.classList.add('hidden');
+      paidCard.classList.remove('hidden');
+      btnPaid.className = 'px-space-md py-1 rounded-full text-label-sm font-label-sm bg-secondary text-on-secondary shadow-sm transition-all cursor-pointer';
+      btnFree.className = 'px-space-md py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all cursor-pointer';
+      dueDisplay.innerText = '₹50.00 [DEMO]';
+      dueDisplay.className = 'font-headline-sm text-headline-sm text-primary font-bold';
+    }
+  }
+
+  function handleConfirmation() {
+    alert('Processing appointment confirmation for Rajesh Kumar Sharma. Redirecting to receipt...');
+  }
+
+  function toggleContrast() {
+    document.documentElement.classList.toggle('contrast-125');
+  }
+</script></main>
+
+</body></html>

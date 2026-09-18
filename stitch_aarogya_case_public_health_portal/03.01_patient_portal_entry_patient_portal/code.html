@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006b25",
+          "surface-dim": "#d8dadd",
+          "background": "#f8f9fc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#001b3d",
+          "primary-fixed": "#ffdbcf",
+          "on-primary-container": "#fffbff",
+          "surface-bright": "#f8f9fc",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "on-surface": "#191c1e",
+          "secondary-fixed-dim": "#adc7f8",
+          "surface-container": "#eceef0",
+          "error-container": "#ffdad6",
+          "secondary-container": "#b3cdfe",
+          "inverse-primary": "#ffb59a",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#9bf79f",
+          "outline-variant": "#dfc0b5",
+          "surface-container-low": "#f2f4f6",
+          "on-secondary-container": "#3c5781",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#a83903",
+          "on-tertiary-fixed-variant": "#00531b",
+          "secondary-fixed": "#d6e3ff",
+          "secondary": "#455f8a",
+          "on-tertiary": "#ffffff",
+          "outline": "#8f7066",
+          "surface-container-high": "#e7e8eb",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-surface-variant": "#5a4138",
+          "surface-container-highest": "#e1e2e5",
+          "on-tertiary-container": "#f7fff2",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#802a00",
+          "inverse-surface": "#2d3133",
+          "primary": "#7c2800",
+          "on-tertiary-fixed": "#002106",
+          "surface-variant": "#e1e2e5",
+          "tertiary": "#00501a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-background": "#191c1e",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-container": "#a43700",
+          "surface": "#f7f9fb",
+          "tertiary-fixed-dim": "#7edb85"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-3xl": "4rem",
+          "kiosk-touch-min": "4.5rem",
+          "space-lg": "1.5rem",
+          "gutter-kiosk": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Lexend"
+          ],
+          "body-xl": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "body-sm": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "label-sm": [
+            "Lexend"
+          ],
+          "body-md": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-md": [
+            "Lexend"
+          ],
+          "display-lg-mobile": [
+            "Lexend"
+          ],
+          "body-lg": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-sm": [
+            "Lexend"
+          ],
+          "display-lg": [
+            "Lexend"
+          ],
+          "label-lg": [
+            "Lexend"
+          ],
+          "label-md": [
+            "Lexend"
+          ],
+          "headline-lg-mobile": [
+            "Lexend"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "42px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-xl": [
+            "20px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "44px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+<!-- Navigation Bar: Back Action & Portal Indicator -->
+<div class="flex items-center justify-between gap-4 mb-8 sm:mb-12">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors duration-200 text-on-surface select-none group shadow-sm" href="#01_MAIN_PORTAL_ENTRY">
+<span class="material-symbols-outlined text-body-lg transition-transform group-hover:-translate-x-1">arrow_back</span>
+<span class="font-label-md text-label-md">Back to Home</span>
+</a>
+<!-- Breadcrumb badge -->
+<nav aria-label="Breadcrumb" class="hidden sm:flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Home</span>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="font-label-sm text-label-sm text-[#166534] font-semibold">Patient Portal</span>
+</nav>
+</div>
+<!-- Centered Core Card Canvas -->
+<div class="w-full max-w-2xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden relative">
+<!-- Subtle Institutional Top Accent Strip -->
+<div class="h-2 w-full bg-[#166534]"></div>
+<div class="p-6 sm:p-10 md:p-12 flex flex-col items-center text-center">
+<!-- Institutional Insignia Icon -->
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-[#166534] mb-6 shadow-inner">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+</div>
+<!-- Header & Identity -->
+<p class="font-label-sm text-label-sm tracking-wider uppercase text-[#166534] font-bold mb-2">
+            National Health Services Digital Directory
+          </p>
+<h1 class="font-headline-lg text-headline-lg text-[#0A2540] font-bold tracking-tight mb-4">
+            Patient Portal
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10">
+            Access government healthcare services, consultations, and digital records securely through verified citizen credentials.
+          </p>
+<!-- Primary Actions Block -->
+<div class="w-full flex flex-col gap-4 mb-10">
+<!-- Main Login CTA -->
+<a class="w-full flex items-center justify-center gap-3 bg-[#166534] hover:bg-[#124d27] active:scale-[0.99] text-white min-h-[4rem] px-8 rounded-full shadow-md transition-all duration-200 group select-none" href="#03.02_PATIENT_LOGIN">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">lock</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wide">LOGIN</span>
+<span class="material-symbols-outlined text-2xl group-hover:translate-x-1 transition-transform ml-1">arrow_forward</span>
+</a>
+<!-- Registration Action CTA -->
+<a class="w-full flex items-center justify-center gap-3 bg-surface-container-low hover:bg-[#166534]/10 active:scale-[0.99] text-[#166534] min-h-[4rem] px-8 rounded-full transition-all duration-200 group select-none shadow-sm" href="#03.03_NEW_PATIENT_REGISTRATION">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform">person_add</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wide font-semibold">NEW REGISTRATION</span>
+</a>
+</div>
+<!-- Security & Privacy Baseline Indicators -->
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 border-t border-surface-container-high text-left mb-10">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[#166534] text-xl">verified_user</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-[#0A2540] font-semibold">Encrypted Access</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Official digital health ledger</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[#166534] text-xl">fingerprint</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-[#0A2540] font-semibold">Citizen Identity</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Fast OTP &amp; Aadhaar sync</p>
+</div>
+</div>
+</div>
+<!-- Emergency Response Section -->
+<div class="w-full bg-error-container/40 rounded-xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-error-container font-bold">Need immediate medical help?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate triage and ambulance dispatch</p>
+</div>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#dc2626] hover:bg-[#b91c1c] active:scale-95 text-white rounded-full font-label-md text-label-md font-bold tracking-wide shadow-md transition-all duration-200 select-none shrink-0" href="#02_EMERGENCY_ENTRY">
+<span class="material-symbols-outlined text-xl">emergency_share</span>
+<span>EMERGENCY</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Public Portal Information Footer -->
+<div class="mt-8 text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Authorized public access system. For telephone support dial <span class="font-bold text-[#0A2540]">1075</span> (Toll Free).
+        </p>
+</div>
+</div>
+</div>
+</div></main></body></html>

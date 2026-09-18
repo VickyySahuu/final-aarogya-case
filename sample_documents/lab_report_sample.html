@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clinical Laboratory & Diagnostic Report</title>
+<style>
+  body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1a202c;
+    background: #ffffff;
+  }
+  .report-container {
+    border: 2px solid #005a9c;
+    padding: 24px;
+  }
+  .header-table {
+    width: 100%;
+    border-bottom: 2px solid #005a9c;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+  .facility-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #005a9c;
+  }
+  .facility-meta {
+    font-size: 12px;
+    color: #4a5568;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: #f7fafc;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #005a9c;
+    border-bottom: 1px solid #cbd5e0;
+    padding-bottom: 4px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .results-table th {
+    background: #edf2f7;
+    border: 1px solid #cbd5e0;
+    padding: 8px;
+    text-align: left;
+  }
+  .results-table td {
+    border: 1px solid #e2e8f0;
+    padding: 8px;
+  }
+  .flag-abnormal {
+    color: #c53030;
+    font-weight: bold;
+  }
+  .flag-normal {
+    color: #276749;
+    font-weight: bold;
+  }
+  .finding-box {
+    background: #fffaf0;
+    border-left: 4px solid #dd6b20;
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .signatures {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .sig-col {
+    text-align: center;
+    border-top: 1px solid #718096;
+    width: 200px;
+    padding-top: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="report-container">
+  <table class="header-table">
+    <tr>
+      <td>
+        <div class="facility-title">CENTRAL DIAGNOSTIC PATHOLOGY LABORATORY</div>
+        <div class="facility-meta">NABL Accredited Medical Testing Facility | Certificate #MC-2849</div>
+        <div class="facility-meta">Civil Hospital Complex, Rajendra Nagar, New Delhi - 110005</div>
+      </td>
+      <td style="text-align: right; vertical-align: top;">
+        <div style="font-size: 14px; font-weight: bold;">CLINICAL LAB REPORT</div>
+        <div style="font-size: 12px;">Sample ID: SPL-2026-88421</div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="info-grid">
+    <div><strong>Patient Name:</strong> Rajesh Kumar Sharma</div>
+    <div><strong>Document Date:</strong> 2026-09-12</div>
+    <div><strong>Age / Gender:</strong> 48 Yrs / Male</div>
+    <div><strong>Referring Doctor:</strong> Dr. Arvind Mehta, MD</div>
+    <div><strong>Patient Unique Code:</strong> AC-7F42K9</div>
+    <div><strong>Investigation Category:</strong> Hematology & Biochemical Profile</div>
+  </div>
+
+  <div class="section-title">1. COMPLETE BLOOD COUNT (CBC)</div>
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Test Name</th>
+        <th>Result Value</th>
+        <th>Reference Range</th>
+        <th>Unit</th>
+        <th>Clinical Flag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Hemoglobin (Hb)</strong></td>
+        <td>10.2</td>
+        <td>13.0 - 17.0</td>
+        <td>g/dL</td>
+        <td><span class="flag-abnormal">LOW (Mild Anemia)</span></td>
+      </tr>
+      <tr>
+        <td><strong>Total Leucocyte Count (TLC/WBC)</strong></td>
+        <td>8400</td>
+        <td>4000 - 11000</td>
+        <td>cells/mcL</td>
+        <td><span class="flag-normal">NORMAL</span></td>
+      </tr>
+      <tr>
+        <td><strong>Platelet Count</strong></td>
+        <td>210000</td>
+        <td>150000 - 450000</td>
+        <td>/mcL</td>
+        <td><span class="flag-normal">NORMAL</span></td>
+      </tr>
+      <tr>
+        <td><strong>Hematocrit (PCV)</strong></td>
+        <td>32.4</td>
+        <td>40.0 - 50.0</td>
+        <td>%</td>
+        <td><span class="flag-abnormal">LOW</span></td>
+      </tr>
+      <tr>
+        <td><strong>RBC Count</strong></td>
+        <td>4.1</td>
+        <td>4.5 - 5.9</td>
+        <td>million/mcL</td>
+        <td><span class="flag-abnormal">LOW</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">2. BIOCHEMICAL INVESTIGATIONS</div>
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Test Name</th>
+        <th>Result Value</th>
+        <th>Reference Range</th>
+        <th>Unit</th>
+        <th>Clinical Flag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Fasting Blood Sugar (Glucose)</strong></td>
+        <td>126</td>
+        <td>70 - 100</td>
+        <td>mg/dL</td>
+        <td><span class="flag-abnormal">HIGH</span></td>
+      </tr>
+      <tr>
+        <td><strong>Serum Creatinine</strong></td>
+        <td>0.9</td>
+        <td>0.6 - 1.2</td>
+        <td>mg/dL</td>
+        <td><span class="flag-normal">NORMAL</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="finding-box">
+    <strong>Documented Pathologist Remarks:</strong><br>
+    Microcytic hypochromic red blood cell picture observed. Fasting blood glucose mildly elevated. Renal function within normal parameters. Correlate clinically with dietary iron intake and symptom history.
+  </div>
+
+  <div class="signatures">
+    <div class="sig-col">
+      Dr. S. K. Gupta, MD (Pathology)<br>
+      Consultant Pathologist
+    </div>
+    <div class="sig-col">
+      Verified By: Dr. Arvind Mehta, MD<br>
+      Referring Physician
+    </div>
+  </div>
+</div>
+</body>
+</html>

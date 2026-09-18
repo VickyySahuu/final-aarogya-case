@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "secondary": "#455f8a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-secondary": "#ffffff",
+          "outline-variant": "#dfc0b5",
+          "secondary-container": "#b3cdfe",
+          "surface-container-high": "#e7e8eb",
+          "surface-container-highest": "#e1e2e5",
+          "inverse-on-surface": "#eff1f3",
+          "primary-fixed": "#ffdbcf",
+          "on-secondary-fixed": "#001b3d",
+          "surface-bright": "#f8f9fc",
+          "on-tertiary-fixed": "#002106",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-primary-fixed-variant": "#812900",
+          "tertiary": "#00501a",
+          "surface-dim": "#d8dadc",
+          "inverse-surface": "#2d3133",
+          "error-container": "#ffdad6",
+          "on-error-container": "#93000a",
+          "on-tertiary-container": "#8ee993",
+          "secondary-fixed": "#d6e3ff",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#adc7f8",
+          "on-surface": "#191c1e",
+          "on-surface-variant": "#58423a",
+          "tertiary-container": "#27853a",
+          "surface-variant": "#e1e2e5",
+          "surface": "#f7f9fb",
+          "on-tertiary-fixed-variant": "#00531b",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#8f7066",
+          "surface-tint": "#a83903",
+          "on-secondary-container": "#3c5781",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "tertiary-fixed-dim": "#7edb85",
+          "inverse-primary": "#ffb59a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#99f89e",
+          "background": "#f8f9fc",
+          "surface-container-low": "#f2f4f6",
+          "on-background": "#191c1e",
+          "primary": "#7c2800",
+          "surface-container": "#eceef0",
+          "primary-container": "#cd4700",
+          "on-primary-container": "#fffbff",
+          "civic-navy": "#071e33",
+          "civic-navy-dark": "#041220",
+          "civic-green": "#166534",
+          "civic-green-hover": "#14532d",
+          "civic-red": "#b91c1c",
+          "civic-red-hover": "#991b1b"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-sm": "0.75rem",
+          "kiosk-touch-min": "4.5rem",
+          "gutter-kiosk": "3rem",
+          "space-3xl": "4rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Lexend"],
+          "body-sm": ["Atkinson Hyperlegible Next"],
+          "body-xl": ["Atkinson Hyperlegible Next"],
+          "label-sm": ["Lexend"],
+          "body-md": ["Atkinson Hyperlegible Next"],
+          "headline-lg": ["Lexend"],
+          "display-lg": ["Lexend"],
+          "headline-lg-mobile": ["Lexend"],
+          "label-lg": ["Lexend"],
+          "label-md": ["Lexend"],
+          "display-lg-mobile": ["Lexend"],
+          "headline-sm": ["Lexend"],
+          "body-lg": ["Atkinson Hyperlegible Next"]
+        },
+        "fontSize": {
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-xl": ["20px", {"lineHeight": "30px", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["32px", {"lineHeight": "42px", "fontWeight": "600"}],
+          "display-lg": ["44px", {"lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+          "label-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="w-full fixed top-0 left-0 z-50 shadow-sm"><div class="w-full bg-civic-navy text-surface-bright py-space-xs px-gutter-desktop"><div class="max-w-7xl mx-auto flex justify-between items-center text-body-sm"><span class="font-label-sm tracking-wide text-surface-container-high flex items-center gap-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-tertiary-fixed"></span>AAROGYA CASE | Healthcare Digital Platform</span><div class="flex items-center gap-space-lg"><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#accessibility"><span class="material-symbols-outlined text-[16px]">accessibility_new</span>Accessibility</a><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#help"><span class="material-symbols-outlined text-[16px]">help_outline</span>Help</a></div></div></div><div class="h-24 bg-surface-container-lowest px-gutter-desktop shadow-[0_2px_8px_rgba(7,30,51,0.06)]"><div class="max-w-7xl h-full mx-auto flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex-shrink-0 w-16 h-16 rounded-xl bg-surface-container-low p-1.5 flex items-center justify-center overflow-hidden border border-outline-variant/30"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-civic-navy font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-civic-green font-semibold tracking-wide uppercase">Government Healthcare Digital Platform · Patient Portal</span></div></div><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-lg" data-active-classes="text-civic-green font-bold border-b-2 border-civic-green pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors text-civic-green font-bold border-b-2 border-civic-green pb-1" data-path="patient-services" href="#">Patient Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="help" href="#">Help</a></nav><a class="bg-civic-red hover:bg-civic-red-hover text-white font-label-md text-label-md px-space-lg py-2.5 rounded-full shadow-md hover:shadow-lg flex items-center gap-space-xs transition-all duration-150" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>Emergency (108)</span></a></div></div></div></header><main class="w-full bg-surface pt-[132px] flex-1"><div class="max-w-7xl mx-auto px-gutter-desktop py-space-xl"><div class="flex flex-col w-full">
+<div class="max-w-6xl mx-auto w-full flex flex-col gap-space-xl">
+<!-- Top Navigation Row: Breadcrumb & Back action -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<nav aria-label="Breadcrumb" class="flex items-center flex-wrap gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Previous Cases</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold bg-surface-container-high px-2.5 py-1 rounded-full">Case Details</span>
+</nav>
+<a class="inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shadow-sm" href="#03.21_PREVIOUS_CASES">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back to Previous Cases</span>
+</a>
+</div>
+<!-- Case Header Banner Card -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-xl sm:p-space-2xl shadow-md">
+<div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-tertiary/5 pointer-events-none blur-3xl"></div>
+<div class="relative flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm tracking-wider uppercase bg-surface-container-high text-on-surface-variant font-bold px-3 py-1 rounded-full">
+              Government Case Dossier
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Completed
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              15 Oct 2025
+            </span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-headline-lg text-on-surface tracking-tight mt-1">
+            Case Details: <span class="text-tertiary font-bold">CASE-2025-0981</span>
+<span class="text-on-surface-variant font-body-md text-body-md align-middle ml-2 px-2 py-0.5 rounded bg-surface-container">[DEMO]</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            National Health Mission clinical encounter record verified under Ayushman Bharat Digital Mission (ABDM) standards.
+          </p>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all shadow-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print Case</span>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-full bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg transition-all shadow-md" href="#03.21_PREVIOUS_CASES">
+<span class="material-symbols-outlined text-[20px]">folder_open</span>
+<span>All Cases</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Dossier Content Grid: Asymmetric 12-column layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Primary Clinical Stream (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- 1. Problem & Primary Complaint -->
+<section class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Section 01</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Chief Reported Problem</h2>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold">Triage Stage 1</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-2">
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Reported Complaint</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Fever and throat pain for 1–3 days</p>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Intake Protocol</span>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">how_to_reg</span>
+                Citizen Self-Report &amp; Clinical Triage
+              </p>
+</div>
+</div>
+</section>
+<!-- 2. Case Information -->
+<section class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">symptoms</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Section 02</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Case Profile &amp; Symptom Breakdown</h2>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-2">
+<!-- Duration -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Symptom Duration</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">1 to 3 days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Acute onset episode</span>
+</div>
+<!-- Severity -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Severity Classification</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Moderate</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Impacts daily routine</span>
+</div>
+<!-- Symptoms Chips -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Accompanying Symptoms</span>
+<div class="flex flex-wrap gap-1.5 mt-0.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Headache
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Body Ache
+                </span>
+</div>
+</div>
+</div>
+<!-- Symptom Progression Indicator SVG -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/60 flex flex-col gap-space-xs mt-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-medium">Physiological Stress Index</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">42 / 100 (Manageable Non-Critical)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-tertiary h-2.5 rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</section>
+<!-- 3. Assessment Summary & AI Safety -->
+<section class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-3 pb-space-xs">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/60 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">health_metrics</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Section 03</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Clinical Triage Recommendation</h2>
+</div>
+</div>
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md mt-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[28px] mt-0.5">local_hospital</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Assigned Route</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Outpatient Department (OPD) Consultation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">General Medicine Desk • Priority 3 Civic Routing</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+              Routed
+            </span>
+</div>
+<!-- Medical Safety Notice -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-high/60 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 mt-0.5">shield_with_heart</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Medical Safety Notice</span>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mt-0.5">
+                AI-assisted assessment. Doctor makes the final clinical decision.
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Algorithmic triage outputs serve purely as preparatory clinical intake aids under government guidelines.</span>
+</div>
+</div>
+</section>
+<!-- 5. Doctor Decision & Final Status -->
+<section class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">clinical_notes</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Section 05</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Physician Evaluation &amp; Verdict</h2>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">Signed Record</span>
+</div>
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-low flex flex-col gap-space-md mt-2">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-high/60">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-tertiary font-bold">
+                  AS
+                </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dr. Ananya Sen, MD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senior Medical Officer • Reg. No. WB-MCI-2014-9844 [DEMO]</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Consultation Mode</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">In-Person OPD Triage Desk</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Clinical Evaluation</span>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                Standard viral pharyngitis with mild pyrexia. Prescription issued. Next visit optional if symptoms persist beyond 5 days.
+              </p>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest flex items-center justify-between gap-space-md mt-1">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span class="font-label-md text-label-md font-bold">Final Status: Outpatient consultation completed.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Discharged in stable condition</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Associated Reports, Verification, Visuals (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- 4. Associated Reports & Documents -->
+<section class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-3 pb-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Section 04</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Reports &amp; Records</h2>
+</div>
+</div>
+<!-- Document item -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col gap-space-sm mt-2">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" title="AYUSH_Diagnostic_Summary_2024.pdf">AYUSH_Diagnostic_Summary_2024.pdf</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                  Verified 14 Oct 2025
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Signed SHA-256 • 1.4 MB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-1.5 text-secondary hover:text-on-secondary-container font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>View Document</span>
+</button>
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>PDF</span>
+</button>
+</div>
+</div>
+<!-- Empty fallback representation demo check -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/40 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Secondary Radiology</span>
+<span class="italic text-on-surface-variant/80">No information available</span>
+</div>
+</section>
+<!-- Visual Verification & Clinic Context Card -->
+<div class="rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Clinical Facility</span>
+<div class="relative w-full h-44 rounded-DEFAULT overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Modern government civic healthcare wellness clinic consultation room in India, spotless clean white and soft green tones, professional medical desk with diagnostic tools, soft natural sunlight streaming through a large window, calm sterile and reassuring ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAA2RjfBi-nTM0qYc_jvKvx-sN4MgQJzJz32VKqkm2QPN6LtXb5F0dwCx4Zt_99wEj8kHCT4WprRzzkx96hoYFhTow-muv_3t8_8b6UV1B3XjodNivxNOtnRc3sS6vSKI3rTT4qY1KJvFZUII_kAsZzwzBC6llc5BcINJpZnQpDJNC2LxEGSc1v3Ob5eVB5QRurEPzwEQPmeBQ5INh4bahQsrJjYdVD6O1BL9T6zRRs4Y5jpYSKhYVWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-civic-navy/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="font-label-md text-label-md font-bold leading-tight">Primary Urban Health Centre #14</p>
+<p class="font-body-sm text-body-sm text-surface-container-high">District Health Directorate • Sector 4</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1 text-body-sm font-body-sm">
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">ABDM Token ID</span>
+<span class="font-mono font-semibold text-on-surface">ABDM-9821-DEL</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Encrypted Lock</span>
+<span class="text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                Government Vault Sealed
+              </span>
+</div>
+</div>
+</div>
+<!-- Action Callout & Quick Return -->
+<div class="rounded-lg bg-surface-container-high/40 p-space-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[24px]">contact_support</span>
+<h3 class="font-headline-sm text-headline-sm">Need Help with this Case?</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            If symptoms recur or worsen, visit your nearest dispensary or dial the round-the-clock national healthcare guidance hotline.
+          </p>
+<div class="flex flex-col gap-space-sm pt-2">
+<button class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold transition-all shadow-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>PRINT CASE SUMMARY</span>
+</button>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-md text-label-md font-bold transition-all shadow-md" href="#03.21_PREVIOUS_CASES">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>BACK TO CASES</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></main><footer class="w-full bg-civic-navy text-surface-bright mt-auto pt-space-2xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-2xl pb-space-2xl border-b border-surface-dim/20"><div class="md:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest/10 p-1 flex items-center justify-center"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-white font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-tertiary-fixed">Government Healthcare Digital Platform</span></div></div><p class="font-body-md text-body-md text-surface-container-high/90 max-w-md leading-relaxed">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="md:col-span-3 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Patient Services</h4><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-surface-container-high/90"><li><a class="hover:text-white hover:underline transition-colors" href="#">Digital Clinical Intake</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Tele-Consultation Request</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Electronic Health Record Integration</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Emergency Protocol Information</a></li></ul></div><div class="md:col-span-4 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Help &amp; Accessibility</h4><ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-surface-container-high/90"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">call</span><span>National Health Helpline: <strong class="text-white font-semibold">104</strong></span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-civic-red">emergency</span><span>Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span></li><li><a class="hover:text-white hover:underline transition-colors" href="#accessibility-options">Accessibility Options &amp; Screen Reader Guide</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#terms-privacy">Privacy Policy &amp; Terms of Clinical Use</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row justify-between items-center gap-space-sm text-body-sm text-surface-container-high/70"><p>© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p><span class="font-label-sm text-label-sm text-surface-container-high/80 px-3 py-1 bg-surface-container-lowest/10 rounded-full">ABDM Standard Integrated • v2.4-Production</span></div></div></footer></body></html>

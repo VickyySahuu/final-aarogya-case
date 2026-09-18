@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Emergency Call | AAROGYA CASE</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: "#166534",
+              'green-dark': "#14532d",
+              'green-light': "#dcfce7"
+            },
+            navy: {
+              DEFAULT: "#0A2540",
+              dark: "#06182b",
+              light: "#1e3a5f"
+            },
+            emergency: {
+              red: "#dc2626",
+              'red-dark': "#b91c1c",
+              'red-soft': "#fee2e2"
+            }
+          },
+          fontFamily: {
+            display: ["Lexend", "sans-serif"],
+            body: ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#ffffff] font-body text-[#0A2540] flex flex-col min-h-screen antialiased selection:bg-brand-green/20">
+<!-- 1. TOP UTILITY STRIP -->
+<header class="w-full bg-slate-100 border-b border-slate-200 py-1.5 px-4 md:px-8 text-xs text-slate-700">
+<div class="max-w-7xl mx-auto flex items-center justify-between font-display"><div class="flex items-center gap-2 tracking-wide font-medium"><span class="font-semibold text-slate-900">AAROGYA CASE</span><span class="text-slate-300">|</span><span class="">Healthcare Digital Platform</span></div><div class="flex items-center gap-4 text-slate-600 font-medium"><a class="inline-flex items-center gap-1 hover:text-slate-900 transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">accessibility_new</span><span class="">Accessibility</span></a><span class="text-slate-300">|</span><a class="inline-flex items-center gap-1 hover:text-slate-900 transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">help</span><span class="">Help</span></a></div></div>
+</header>
+<!-- INSTITUTIONAL MAIN HEADER -->
+<nav class="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+<!-- Institutional Identity -->
+<a class="flex items-center gap-3.5 group text-left" href="#">
+<img alt="AAROGYA CASE Official Emblem" class="w-14 h-14 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmT_7lTSqJh478-BMiA5u6YlN_04i3-ddKzZQrzJBhNSQ4OrXHqwZjHuBXeVuOzEVS_3pg4KgMXFEyTX6EzTji482ZMuOQj8TkOm6GALKBvIlQEK00U9qbNr4rxihNWlj_DQsMx7cvA4umT9hlFtHwl7cI3vYuUtvn_CyIrZuwVb69p3C8PrXRu8UzZkp7Z6rn2ns--fmkpHt3XHPSvGpnD_0eDWTnXmz-HoNf-OAQ3fh6SETj5SYwLAEEuAoUIkEleHw">
+<div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-display font-bold text-xl tracking-tight text-[#0A2540] group-hover:text-brand-green transition-colors">AAROGYA CASE</span><span class="hidden md:inline-block px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase bg-brand-green/10 text-brand-green rounded">Official Portal</span></div><span class="text-xs text-slate-500 font-medium leading-none mt-0.5">Government Healthcare Digital Platform</span><span class="text-xs font-semibold text-brand-green leading-none mt-1">Patient Portal</span></div>
+</a>
+<!-- Simple Primary Nav & Active Emergency -->
+<div class="flex items-center gap-1 sm:gap-2">
+<div class="hidden lg:flex items-center gap-1 mr-4 font-display font-medium text-sm text-slate-700">
+<a class="px-3 py-2 rounded-md hover:text-[#0A2540] hover:bg-slate-100 transition-colors" href="#">HOME</a>
+<a class="px-3 py-2 rounded-md hover:text-[#0A2540] hover:bg-slate-100 transition-colors" href="#">PATIENT SERVICES</a>
+<a class="px-3 py-2 rounded-md hover:text-[#0A2540] hover:bg-slate-100 transition-colors" href="#">HELP</a>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-display font-semibold bg-brand-green text-white shadow-sm hover:bg-brand-green-dark transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+<span class="">EMERGENCY</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- BREADCRUMB & BACK CONTEXT BAR -->
+<div class="w-full bg-[#f8fafc] border-b border-slate-200 py-3 px-4 md:px-8">
+<div class="max-w-7xl mx-auto flex items-center justify-between font-display text-sm">
+<div class="flex items-center gap-2 text-slate-600">
+<a class="hover:text-[#0A2540] transition-colors" href="#">Home</a>
+<span class="text-slate-400">/</span>
+<a class="hover:text-[#0A2540] transition-colors" data-path="emergency-entry" href="#">Emergency</a>
+<span class="text-slate-400">/</span>
+<span class="text-[#0A2540] font-semibold">Emergency Call</span>
+</div>
+<a class="inline-flex items-center gap-1.5 font-medium text-slate-700 hover:text-[#0A2540] bg-white border border-slate-300 hover:border-slate-400 px-3 py-1 text-xs sm:text-sm shadow-2xs transition-colors rounded-full" data-path="emergency-entry" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back</span>
+</a>
+</div>
+</div>
+<!-- MAIN CONTENT -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-14 flex flex-col items-center justify-center">
+<!-- Title & Subtitle -->
+<div class="text-center max-w-2xl mb-8">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emergency-red-soft text-emergency-red font-display text-xs font-bold tracking-wider uppercase mb-3">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+<span class="">Immediate Assistance</span>
+</div>
+<h1 class="font-display font-bold text-3xl md:text-4xl text-[#0A2540] tracking-tight mb-2">Emergency Call</h1>
+<p class="text-base md:text-lg text-slate-600">Call emergency services for immediate help.</p>
+</div>
+<!-- Centered High-Contrast Institutional Card -->
+<div class="w-full max-w-xl bg-white border border-slate-200 rounded-2xl shadow-xl p-6 sm:p-10 flex flex-col items-center text-center relative overflow-hidden">
+<!-- Top subtle emergency stripe -->
+<div class="absolute top-0 inset-x-0 h-1.5 bg-emergency-red"></div>
+<!-- Phone Emergency Icon in soft red circle -->
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-emergency-red-soft flex items-center justify-center mb-6 shadow-inner border border-red-200">
+<span class="material-symbols-outlined text-emergency-red text-[48px] sm:text-[54px]" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<!-- Heading & Instructions -->
+<h2 class="font-display font-bold text-xl sm:text-2xl text-[#0A2540] mb-2">
+        Immediate Emergency Dispatch Assistance
+      </h2>
+<p class="text-sm sm:text-base text-slate-600 mb-8 max-w-md">
+        Press the button below to initiate an urgent emergency call. Priority routing will connect your session directly to response coordination.
+      </p>
+<!-- Large Emergency Call Button -->
+<button class="w-full min-h-[4.25rem] px-8 py-4 bg-emergency-red hover:bg-emergency-red-dark text-white shadow-lg hover:shadow-xl font-display text-base sm:text-lg font-bold uppercase tracking-wider flex items-center justify-center gap-3 transition-all duration-150 active:scale-[0.99] cursor-pointer focus:outline-none focus:ring-4 focus:ring-red-300 rounded-full" id="emergencyCallBtn" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="">CALL EMERGENCY SERVICES</span>
+</button>
+<!-- Explicit Prototype Notice -->
+<div class="mt-6 pt-5 border-t border-slate-100 w-full flex items-start justify-center gap-2 text-xs text-slate-500">
+<span class="material-symbols-outlined text-[18px] text-slate-400 shrink-0 mt-0.5">info</span>
+<span class="text-left font-medium">PROTOTYPE / DEMO: Triggers verified emergency call simulation in prototype mode.</span>
+</div>
+<!-- Secondary Action Button -->
+<div class="mt-6">
+<a class="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-slate-700 hover:text-[#0A2540] py-2 px-4 hover:bg-slate-100 transition-colors rounded-full" data-path="emergency-entry" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="">Back to Emergency</span>
+</a>
+</div>
+<!-- Prototype Feedback Simulation Overlay Modal -->
+<div class="hidden absolute inset-0 bg-white/98 backdrop-blur-sm p-6 sm:p-8 flex flex-col items-center justify-center text-center z-20" id="callFeedbackModal">
+<div class="w-16 h-16 rounded-full bg-brand-green-light text-brand-green flex items-center justify-center mb-4 ring-8 ring-green-50">
+<span class="material-symbols-outlined text-[36px] animate-pulse">ring_volume</span>
+</div>
+<h3 class="font-display font-bold text-xl text-[#0A2540] mb-1">Connecting Emergency Dispatch</h3>
+<p class="text-sm text-slate-600 max-w-xs mb-2">Simulating direct line to local central ambulance &amp; emergency team...</p>
+<span class="inline-block px-3 py-1 bg-amber-50 border border-amber-200 rounded text-amber-800 text-xs font-medium mb-6">
+          Prototype Verification Mode Active
+        </span>
+<button class="px-6 py-2.5 bg-slate-200 hover:bg-slate-300 text-[#0A2540] font-display font-semibold text-sm transition-colors cursor-pointer rounded-full" id="dismissCallFeedback" type="button">
+          End Call / Cancel
+        </button>
+</div>
+</div>
+</main>
+<!-- 4. INSTITUTIONAL FOOTER (MATCHING 02_EMERGENCY_ENTRY) -->
+<footer class="w-full bg-[#0A2540] text-slate-300 pt-12 pb-8 border-t border-[#06182b] mt-auto">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Upper Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+<!-- Logo & Brand Col -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="AAROGYA CASE Official Emblem" class="w-14 h-14 object-contain bg-white rounded-full p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBieOGlm33scNjz2wELlK05NzpsLsQ11WZDVLMuqLhvHsUjTazehpXULQccXTcRS2W40Jr1lYr3CSwvS5rRg4AM1rx6jaTO-OvU_jQ4ThbgOZtcpSkfK5frnnVyTbMRr_jon_4du2PUmjWqpjpsumzu2SjIjZ2f4nhtXYBkoINQpqgB9ni29BKrIFvygBqrLvpW5Z3DjNFyiRSRWY3rTWDqvlSD8wc3qgV6t80WijyE7UzJ0B22sNR03lUQo59lVfGBASk">
+<div class="flex flex-col">
+<span class="font-display font-bold text-lg text-white tracking-wide">AAROGYA CASE</span>
+<span class="text-xs text-slate-400">Government Healthcare Digital Platform</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed">
+            Standardized, accessible digital clinical portal providing integrated healthcare management and emergency triage response protocols.
+          </p>
+</div>
+<!-- Col 2: About Aarogya Case -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-display font-semibold text-sm text-white uppercase tracking-wider mb-1">AAROGYA CASE</h4>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">National Health Initiative</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Digital Health Mission</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Clinical Standards &amp; Compliance</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Public Health Guidelines</a>
+</div>
+<!-- Col 3: Patient Services -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-display font-semibold text-sm text-white uppercase tracking-wider mb-1">PATIENT SERVICES</h4>
+<a class="text-xs text-slate-400 hover:text-white transition-colors font-medium text-green-400 rounded-full" data-path="emergency-entry" href="#">Emergency Services Entry</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Outpatient Registrations</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Medical Records (EHR)</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Facility Locator</a>
+</div>
+<!-- Col 4: Help & Accessibility -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-display font-semibold text-sm text-white uppercase tracking-wider mb-1">HELP &amp; ACCESSIBILITY</h4>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Screen Reader Instructions</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Multilingual Support</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Security &amp; Privacy Terms</a>
+<a class="text-xs text-slate-400 hover:text-white transition-colors" href="#">Grievance Redressal</a>
+</div>
+</div>
+<!-- Prototype Notice Banner -->
+<div class="py-4 my-4 bg-slate-900/80 border border-slate-800 rounded-lg px-4 flex items-center justify-between flex-wrap gap-2 text-xs">
+<div class="flex items-center gap-2 text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-amber-400">info</span>
+<span class="">Official Project Prototype — For demonstration and evaluation purposes only.</span>
+</div>
+<div class="flex items-center gap-3 text-slate-400 font-mono text-[11px]">
+<span class="">REF: 02.01_EMERGENCY_CALL</span>
+<span class="">SECURE PROTOCOL</span>
+</div>
+</div>
+<!-- Lower Copyright Bar -->
+<div class="pt-2 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-display">
+<p class="">© 2025 AAROGYA CASE — Government Healthcare Digital Platform. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-brand-green">verified_user</span>
+<span class="">National Digital Health Architecture</span>
+</span>
+<span class="text-slate-600">|</span>
+<span class="">Version v02.4-EMR</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    (function() {
+      const callBtn = document.getElementById('emergencyCallBtn');
+      const modal = document.getElementById('callFeedbackModal');
+      const dismissBtn = document.getElementById('dismissCallFeedback');
+
+      if (callBtn && modal) {
+        callBtn.addEventListener('click', function() {
+          modal.classList.remove('hidden');
+        });
+      }
+
+      if (dismissBtn && modal) {
+        dismissBtn.addEventListener('click', function() {
+          modal.classList.add('hidden');
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

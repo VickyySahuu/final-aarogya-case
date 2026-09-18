@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "aarogya-green": "#166534",
+            "aarogya-green-hover": "#14532d",
+            "aarogya-green-light": "#f0fdf4",
+            "aarogya-green-border": "#bbf7d0",
+            "navy-dark": "#0A2540",
+            "navy-muted": "#3c4d62",
+            "surface-soft": "#F8FAFC",
+            "surface-border": "#E2E8F0"
+          },
+          fontFamily: {
+            sans: ["Lexend", "sans-serif"],
+            body: ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F8FAFC] font-body text-navy-dark min-h-screen flex flex-col antialiased selection:bg-aarogya-green selection:text-white">
+<!-- TOP INSTITUTIONAL UTILITY BAR -->
+<header class="w-full bg-white border-b border-slate-200 sticky top-0 z-50 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="bg-slate-100/90 px-4 sm:px-8 py-1.5 border-b border-slate-200/80 text-xs font-sans text-navy-muted">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 font-medium">
+<span class="tracking-wide">AAROGYA CASE</span>
+<span class="text-slate-300">|</span>
+<span class="text-slate-600">Healthcare Digital Platform</span>
+<span class="hidden md:inline text-slate-300">|</span>
+<span class="hidden md:inline text-slate-500 font-normal">Citizen Health Services Division • National Health Mission</span>
+</div>
+<div class="flex items-center gap-5">
+<button class="flex items-center gap-1.5 hover:text-navy-dark transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[15px] text-slate-600">accessibility_new</span>
+<span class="">Accessibility</span>
+</button>
+<a class="flex items-center gap-1.5 hover:text-navy-dark transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px] text-slate-600">help_center</span>
+<span class="">Help</span>
+</a>
+</div>
+</div>
+</div>
+<!-- MAIN BRAND HEADER -->
+<div class="max-w-6xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<!-- Uncropped High-Res Emblem -->
+<a class="shrink-0 flex items-center" href="#">
+<img alt="Aarogya Case Official Emblem" class="h-12 w-12 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2JLTZoMBw0N9ZXDyRc-8kNtAy5bM4v70qn3zJRwfqU6Z3K2BRov9WpRPj7-VeJXpKfZmfiefLAEhMfwBwX96d8qNLnI6gnwvbXWfTKb3GeY0lnhlrll11gO0iee9p55yms9PyZzIhIkGRVO0rBkmAOqA1qS25evi0Lpam4snSpiSdDJXwO_2AB3Nb27LdFsR3dXoc-Rny5CDD1pWfkGkvtVhHTgM4Uz-l0s8ZWUIqpGrKc31ZaugvpJFsgYpCTnOK_ek">
+</a>
+<div class="flex flex-col">
+<div class="flex items-center gap-2.5">
+<span class="font-sans font-bold text-xl tracking-tight text-[#0A2540]">AAROGYA CASE</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-100 text-emerald-900 border border-emerald-200/80 tracking-wide uppercase">
+              Patient Portal
+            </span>
+</div>
+<span class="text-xs text-slate-500 font-sans tracking-tight">Government Healthcare Digital Platform</span>
+</div>
+</div>
+<!-- Clean Public Navigation -->
+<div class="flex items-center gap-2 sm:gap-4">
+<nav class="hidden md:flex items-center gap-1 font-sans text-sm font-medium">
+<a class="px-3.5 py-1.5 text-navy-muted hover:text-[#0A2540] hover:bg-slate-100 rounded-md transition-colors" href="#">Home</a>
+<a class="px-3.5 py-1.5 text-navy-muted hover:text-[#0A2540] hover:bg-slate-100 rounded-md transition-colors" href="#">Services</a>
+<a class="px-3.5 py-1.5 text-navy-muted hover:text-[#0A2540] hover:bg-slate-100 rounded-md transition-colors" href="#">Help</a>
+</nav>
+<div class="h-6 w-px bg-slate-200 hidden md:block"></div>
+<a class="inline-flex items-center gap-1.5 bg-red-700 hover:bg-red-800 text-white font-sans text-xs font-semibold px-3.5 py-2 rounded-full shadow-sm transition-all active:scale-95" href="#emergency">
+<span class="material-symbols-outlined text-[16px]">e911_emergency</span>
+<span class="">Emergency</span>
+</a>
+<div class="w-9 h-9 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-navy-muted font-sans text-xs font-semibold hover:border-slate-300 transition-colors ml-1 cursor-pointer" title="Citizen Account">
+<span class="material-symbols-outlined text-[20px] text-slate-700">person</span>
+</div>
+</div>
+</div>
+</header>
+<!-- MAIN VIEWPORT CONTAINER -->
+<main class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 py-8 flex flex-col">
+<!-- BREADCRUMB & BACK ACTION -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs font-sans text-slate-500">
+<a class="hover:text-aarogya-green transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+<span class="">Home</span>
+</a>
+<span class="material-symbols-outlined text-[13px] text-slate-400">chevron_right</span>
+<a class="hover:text-aarogya-green transition-colors" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[13px] text-slate-400">chevron_right</span>
+<span aria-current="page" class="font-semibold text-navy-dark">Next Step</span>
+</nav>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md border border-slate-300 bg-white hover:bg-slate-50 text-navy-dark text-xs font-sans font-medium transition-all shadow-sm active:scale-95 w-fit" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Back to Assessment Result</span>
+</button>
+</div>
+<!-- MAIN BODY SECTION -->
+<div class="max-w-3xl mx-auto w-full flex flex-col gap-6">
+<!-- PAGE TITLE BLOCK -->
+<div class="border-b border-slate-200 pb-5">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-aarogya-green border border-emerald-200 font-sans text-xs font-semibold uppercase tracking-wider mb-2">
+<span class="w-2 h-2 rounded-full bg-aarogya-green"></span>
+          Recommended Pathway
+        </div>
+<h1 class="font-sans font-bold text-3xl sm:text-4xl text-[#0A2540] tracking-tight">
+          Next Step
+        </h1>
+<p class="font-body text-lg text-slate-600 mt-1">
+          What should I do now?
+        </p>
+</div>
+<!-- CENTRAL RECOMMENDED PATHWAY CARD -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 relative overflow-hidden transition-all hover:shadow-md">
+<!-- Institutional brand left spine -->
+<div class="absolute left-0 top-0 bottom-0 w-2.5 bg-aarogya-green"></div>
+<div class="flex items-start gap-4 sm:gap-5 mb-6">
+<div class="w-14 h-14 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0 text-aarogya-green">
+<span class="material-symbols-outlined text-[32px]">calendar_month</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<h2 class="font-sans font-semibold text-xl sm:text-2xl text-[#0A2540]">
+                Schedule an Outpatient Consultation
+              </h2>
+<span class="text-xs font-sans font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">OPD Booking</span>
+</div>
+<p class="font-body text-slate-600 text-base sm:text-lg leading-relaxed">
+              Based on your clinical triage assessment, scheduling an appointment with a general medical officer is the recommended course of care. You can select your nearby healthcare facility and preferred time slot.
+            </p>
+</div>
+</div>
+<!-- Structured Pathway Key Information -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50/80 rounded-xl p-4 sm:p-5 border border-slate-200/70 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-aarogya-green text-[22px] mt-0.5">schedule</span>
+<div>
+<p class="text-xs font-sans font-medium uppercase tracking-wider text-slate-500">Recommended Timeframe</p>
+<p class="font-sans font-semibold text-sm text-[#0A2540] mt-0.5">Within 24 to 48 Hours</p>
+<p class="text-xs text-slate-500 mt-0.5 font-body">Non-critical regular hours slot</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-aarogya-green text-[22px] mt-0.5">local_hospital</span>
+<div>
+<p class="text-xs font-sans font-medium uppercase tracking-wider text-slate-500">Facility Level</p>
+<p class="font-sans font-semibold text-sm text-[#0A2540] mt-0.5">Community Health Center (CHC)</p>
+<p class="text-xs text-slate-500 mt-0.5 font-body">Or Primary Health Center (PHC)</p>
+</div>
+</div>
+</div>
+<!-- ACTION BUTTONS -->
+<div class="flex flex-col gap-3.5">
+<!-- Primary CTA Button (Dominant AAROGYA CASE Green #166534) -->
+<a class="w-full min-h-[52px] bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-6 py-3.5 font-sans font-semibold text-base sm:text-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 text-center active:scale-[0.99] tracking-wide" href="#">
+<span class="material-symbols-outlined text-[22px]">event_available</span>
+<span class="">BOOK DOCTOR APPOINTMENT</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<p class="font-body text-xs text-slate-500 text-center">
+            Proceed to facility selection, doctor consultation schedule, or submit existing medical history.
+          </p>
+<!-- Optional secondary action: File Upload -->
+<button class="w-full min-h-[44px] bg-slate-100/80 hover:bg-slate-200/70 text-slate-700 border border-slate-200 rounded-xl px-5 py-2.5 font-sans font-medium text-sm transition-colors flex items-center justify-center gap-2 active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px] text-slate-600">upload_file</span>
+<span class="">Upload Previous Documents / Prescriptions (Optional)</span>
+</button>
+</div>
+</div>
+<!-- RED EMERGENCY WARNING CALLOUT -->
+<div class="bg-red-50/70 border border-red-200 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-red-100 border border-red-200 text-red-700 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div>
+<h3 class="font-sans font-bold text-base text-red-950">
+              Experiencing sudden acute distress or worsening symptoms?
+            </h3>
+<p class="font-body text-xs sm:text-sm text-red-800/90 mt-0.5 leading-relaxed">
+              If breathing difficulty, chest pain, or severe weakness occurs, request emergency ambulance or proceed to nearest casualty trauma center.
+            </p>
+</div>
+</div>
+<a class="shrink-0 w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-red-700 hover:bg-red-800 text-white font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-lg shadow-sm transition-all active:scale-95 uppercase tracking-wider" href="#" id="emergency">
+<span class="material-symbols-outlined text-[18px]">e911_emergency</span>
+<span class="">EMERGENCY</span>
+</a>
+</div>
+<!-- Direct Return Anchor -->
+<div class="flex items-center justify-center pt-2">
+<button class="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#0A2540] font-sans font-medium text-xs transition-colors py-1" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Return to 03.10_ASSESSMENT_RESULT</span>
+</button>
+</div>
+</div>
+</main>
+<!-- INSTITUTIONAL 3-COLUMN FOOTER -->
+<footer class="w-full bg-[#0A2540] text-white mt-12 pt-10 pb-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-700/60 text-sm">
+      <!-- Left Column: Authority & Platform Info -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <img alt="Aarogya Case Official Emblem" class="h-11 w-11 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6RTsBEQ3tykNfS0gCAc6t_WX-uF3jm8uckRwIL-vBt4o_L_b3fDraLB1a5dLTNhvo5zSBwlfaveCUC70htDE9dceAZaF_L1tIcu32fkZD-G-QNEA4uogBlHFfgsrJJAvF-FcQIY4FB05vMs_gAay7RZPNd7AQarzIHeb3oBc0KC_NQb0yTR0wtPsPOS72giHVsZsfBP6k9sRNEGoRbswVbuVGWQK6mjCyepwF6ykUJLXOoEYi3B9bsG62VrMUMOFRcU">
+          <div class="flex flex-col">
+            <span class="font-sans font-bold text-base tracking-tight text-white">AAROGYA CASE</span>
+            <span class="text-[11px] text-slate-300 font-sans tracking-wide">Government Healthcare Digital Platform</span>
+          </div>
+        </div>
+        <p class="font-body text-xs text-slate-300 leading-relaxed pr-2">
+          An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.
+        </p>
+      </div>
+      <!-- Center Column: Patient Services -->
+      <div class="space-y-2.5 font-sans">
+        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-200">PATIENT SERVICES</h4>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li class=""><a class="hover:text-emerald-300 transition-colors" href="#">Digital Clinical Intake</a></li>
+          <li class=""><a class="hover:text-emerald-300 transition-colors" href="#">Tele-Consultation Request</a></li>
+          <li class=""><a class="hover:text-emerald-300 transition-colors" href="#">Electronic Health Record Integration</a></li>
+          <li class=""><a class="hover:text-emerald-300 transition-colors" href="#">Emergency Protocol Information</a></li>
+        </ul>
+      </div>
+      <!-- Right Column: Help & Accessibility -->
+      <div class="space-y-2.5 font-sans">
+        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-200">HELP &amp; ACCESSIBILITY</h4>
+        <div class="space-y-2 text-xs text-slate-300">
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-emerald-300">call</span>
+            <span class=""><span class="font-medium text-white">National Health Helpline:</span> 104</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-red-400">emergency</span>
+            <span class=""><span class="font-medium text-white">Ambulance Emergency:</span> 108</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-slate-400">accessibility_new</span>
+            <a class="hover:text-emerald-300 transition-colors" href="#">Accessibility Options &amp; Screen Reader Guide</a>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-slate-400">policy</span>
+            <a class="hover:text-emerald-300 transition-colors" href="#">Privacy Policy &amp; Terms of Clinical Use</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Copyright & ABDM Status Bar -->
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-body text-slate-400">
+      <p class="text-center md:text-left">
+        © AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.
+      </p>
+      <div class="flex items-center gap-4 text-[11px] font-sans">
+        <span class="text-slate-300 font-medium">ABDM Standard Integrated</span>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-400">v2.4-Production</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body></html>

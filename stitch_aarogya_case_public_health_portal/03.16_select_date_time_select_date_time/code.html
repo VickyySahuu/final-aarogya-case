@@ -1,0 +1,701 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006b25",
+          "surface-dim": "#d8dadd",
+          "background": "#f8f9fc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#001b3d",
+          "primary-fixed": "#ffdbcf",
+          "on-primary-container": "#fffbff",
+          "surface-bright": "#f8f9fc",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "on-surface": "#191c1e",
+          "secondary-fixed-dim": "#adc7f8",
+          "surface-container": "#eceef0",
+          "error-container": "#ffdad6",
+          "secondary-container": "#b3cdfe",
+          "inverse-primary": "#ffb59a",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#9bf79f",
+          "outline-variant": "#dfc0b5",
+          "surface-container-low": "#f2f4f6",
+          "on-secondary-container": "#3c5781",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#a83903",
+          "on-tertiary-fixed-variant": "#00531b",
+          "secondary-fixed": "#d6e3ff",
+          "secondary": "#455f8a",
+          "on-tertiary": "#ffffff",
+          "outline": "#8f7066",
+          "surface-container-high": "#e7e8eb",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-surface-variant": "#5a4138",
+          "surface-container-highest": "#e1e2e5",
+          "on-tertiary-container": "#f7fff2",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#802a00",
+          "inverse-surface": "#2d3133",
+          "primary": "#7c2800",
+          "on-tertiary-fixed": "#002106",
+          "surface-variant": "#e1e2e5",
+          "tertiary": "#00501a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-background": "#191c1e",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-container": "#a43700",
+          "surface": "#f7f9fb",
+          "tertiary-fixed-dim": "#7edb85"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-3xl": "4rem",
+          "kiosk-touch-min": "4.5rem",
+          "space-lg": "1.5rem",
+          "gutter-kiosk": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Lexend"
+          ],
+          "body-xl": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "body-sm": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "label-sm": [
+            "Lexend"
+          ],
+          "body-md": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-md": [
+            "Lexend"
+          ],
+          "display-lg-mobile": [
+            "Lexend"
+          ],
+          "body-lg": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-sm": [
+            "Lexend"
+          ],
+          "display-lg": [
+            "Lexend"
+          ],
+          "label-lg": [
+            "Lexend"
+          ],
+          "label-md": [
+            "Lexend"
+          ],
+          "headline-lg-mobile": [
+            "Lexend"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "42px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-xl": [
+            "20px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "44px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Top Utility Strip -->
+<header class="w-full bg-surface-container text-on-surface py-space-xs px-gutter-desktop shadow-sm">
+<div class="max-w-6xl mx-auto flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-semibold tracking-wide">AAROGYA CASE | Healthcare Digital Platform</span>
+<span class="text-on-surface-variant font-normal text-xs ml-space-xs">Ministry of AYUSH • National Health Portal</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<button class="flex items-center gap-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+<span class="">Accessibility Options</span>
+</button>
+<span class="text-outline-variant font-light">|</span>
+<button class="flex items-center gap-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+<span class="">Help Desk (1800-11-2260)</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Institutional Main Navigation Bar -->
+<nav class="w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-6xl mx-auto px-gutter-desktop py-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container p-1 shadow-inner flex items-center justify-center">
+<img alt="Aarogya Case Government Healthcare Emblem" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa6J7IR8ulhKlIK6mJpRE2vpgIsR7_zS5R7VOJ1EiGzbl8neX58YkidlmpWwMEEz6gbeS4M8mvbX4kk7h8mVGE2X5AGTgA3H5UzPnobB4DFh9H5H5y18CaDpUMRo646z_BPE6OIr-CZZnoPuCkBjw_fmtx7Ku2rc2oU3NoNlkEuJEF5sK3i0__p-0XjAI0sj7zUCQYRJvgfWUII0t4RXDYrjBPY8LUHZpVUzWQ63OECrodPiYTxvsnc4SMAGHnOnHg5PQ">
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="bg-tertiary text-on-tertiary px-2 py-0.5 rounded-full font-label-sm text-[11px] tracking-wider uppercase font-bold">Official Portal</span>
+<span class="text-on-surface-variant font-label-sm text-xs">Govt. of India</span>
+</div>
+<h1 class="font-headline-md text-headline-sm text-on-surface font-bold leading-tight">
+            AAROGYA CASE <span class="font-normal text-on-surface-variant text-base">| Outpatient Care Booking</span>
+</h1>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex items-center gap-space-md font-label-md text-label-md">
+<a class="px-space-sm py-space-xs text-on-surface hover:text-primary transition-colors font-medium" href="#">Home</a>
+<a class="px-space-sm py-space-xs text-primary font-bold bg-primary-fixed rounded-full" href="#">Patient Services</a>
+<a class="px-space-sm py-space-xs text-on-surface hover:text-primary transition-colors font-medium" href="#">Help</a>
+<a class="px-space-md py-space-xs bg-error text-on-error rounded-full font-bold flex items-center gap-1 shadow-sm hover:opacity-90 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+          Emergency (108)
+        </a>
+</div>
+</div>
+</nav>
+<!-- Breadcrumb, Back Action & Clinical Context Strip -->
+<section class="w-full bg-surface-container-low py-space-sm shadow-inner">
+<div class="max-w-6xl mx-auto px-gutter-desktop flex flex-col md:flex-row md:items-center md:justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<a class="inline-flex items-center gap-1 text-tertiary hover:text-on-tertiary-fixed-variant font-bold bg-surface-container-lowest px-space-sm py-1.5 rounded-full shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+          Back to Doctors
+        </a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Home</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Patient Portal</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Book Appointment</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Select Date &amp; Time</span>
+</div>
+<!-- Verified Consultation Context Chip -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">local_hospital</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">
+          District Civil Hospital, Sector 4
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">stethoscope</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">
+          Dr. Ananya Sen, MD [DEMO]
+        </span>
+</div>
+</div>
+</section>
+<!-- 5-Step Civic Workflow Stepper -->
+<section class="w-full bg-surface py-space-lg">
+<div class="max-w-6xl mx-auto px-gutter-desktop">
+<div class="w-full bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="grid grid-cols-5 items-center relative">
+<!-- Connector line -->
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-surface-container-highest z-0"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1/2 h-1 bg-tertiary z-0"></div>
+<!-- Step 1: Hospital -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface mt-1 font-semibold">1. Hospital</span>
+<span class="font-label-sm text-[10px] text-tertiary">Completed</span>
+</div>
+<!-- Step 2: Doctor -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface mt-1 font-semibold">2. Doctor</span>
+<span class="font-label-sm text-[10px] text-tertiary">Completed</span>
+</div>
+<!-- Step 3: Date & Time (Active) -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md shadow-md">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<span class="font-label-sm text-[12px] text-tertiary mt-1 font-bold">3. Date &amp; Time</span>
+<span class="font-label-sm text-[10px] text-tertiary font-medium">In Progress</span>
+</div>
+<!-- Step 4: Confirm -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md">
+              4
+            </div>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">4. Confirm</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Pending</span>
+</div>
+<!-- Step 5: Payment / OPD Slip -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md">
+              5
+            </div>
+<span class="font-label-sm text-[12px] text-on-surface-variant mt-1">5. Summary</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Pending</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Title & Instructions -->
+<section class="w-full pb-space-md">
+<div class="max-w-6xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-tertiary uppercase tracking-widest font-bold">Step 03 of 05 • Outpatient Consultation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Select Date &amp; Time</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Choose an appointment date and outpatient consultation time slot for in-person assessment.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant bg-surface-container px-space-md py-space-xs rounded-full">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+          Slot reserved for 10 minutes upon selection
+        </div>
+</div>
+</div>
+</section>
+<!-- Main Booking Interface (Balanced Two-Column Desktop Grid) -->
+<main class="w-full pb-space-2xl">
+<div class="max-w-6xl mx-auto px-gutter-desktop grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Date Picker & Quick Select (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Quick Date Horizontal Pills -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<label class="block font-label-md text-label-md text-on-surface font-bold mb-space-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-tertiary">bolt</span>
+            Quick Select Date
+          </label>
+<div class="grid grid-cols-3 gap-space-xs font-label-sm text-label-sm">
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-medium transition-colors" type="button">
+              Today (14 Oct)
+            </button>
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-tertiary text-on-tertiary font-bold shadow-sm transition-all flex flex-col items-center justify-center" type="button">
+<span class="">Tomorrow</span>
+<span class="text-[11px] opacity-90 font-normal">15 Oct • Active</span>
+</button>
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-medium transition-colors" type="button">
+              Wed, 16 Oct
+            </button>
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-medium transition-colors" type="button">
+              Thu, 17 Oct
+            </button>
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-medium transition-colors" type="button">
+              Fri, 18 Oct
+            </button>
+<button class="py-space-xs px-space-xs text-center rounded-DEFAULT bg-surface-container-low text-on-surface hover:bg-surface-container font-medium transition-colors" type="button">
+              Sat, 19 Oct
+            </button>
+</div>
+</div>
+<!-- Comprehensive Calendar View -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<!-- Calendar Navigation Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">calendar_month</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">October 2025</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Previous Month" class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container transition-colors disabled:opacity-30" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-label="Next Month" class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Day Labels -->
+<div class="grid grid-cols-7 text-center font-label-sm text-label-sm text-on-surface-variant py-space-xs mb-space-xs">
+<span class="text-error font-bold">Sun</span>
+<span class="">Mon</span>
+<span class="">Tue</span>
+<span class="">Wed</span>
+<span class="">Thu</span>
+<span class="">Fri</span>
+<span class="">Sat</span>
+</div>
+<!-- Calendar Days Grid -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-md text-label-md">
+<!-- Trailing Previous Month Days -->
+<div class="py-2.5 text-outline-variant opacity-40 font-normal">28</div>
+<div class="py-2.5 text-outline-variant opacity-40 font-normal">29</div>
+<div class="py-2.5 text-outline-variant opacity-40 font-normal">30</div>
+<!-- Oct 1 to 5 -->
+<div class="py-2.5 text-on-surface-variant opacity-40">1</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">2</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">3</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">4</div>
+<!-- Week 2 -->
+<div class="py-2.5 text-error opacity-40 font-normal">5</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">6</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">7</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">8</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">9</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">10</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">11</div>
+<!-- Week 3: Present Week -->
+<div class="py-2.5 text-error opacity-40 font-normal">12</div>
+<div class="py-2.5 text-on-surface-variant opacity-40">13</div>
+<!-- Today: Oct 14 -->
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">14</button>
+<!-- Selected: Oct 15 -->
+<button class="py-2.5 rounded-full bg-tertiary text-on-tertiary font-bold shadow-md flex items-center justify-center mx-auto w-10 h-10" type="button">
+                15
+              </button>
+<!-- Next days -->
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">16</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">17</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">18</button>
+<!-- Week 4 -->
+<div class="py-2.5 text-error opacity-40 font-normal">19</div>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">20</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">21</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">22</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">23</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">24</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">25</button>
+<!-- Week 5 -->
+<div class="py-2.5 text-error opacity-40 font-normal">26</div>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">27</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">28</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">29</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">30</button>
+<button class="py-2.5 rounded-full hover:bg-surface-container font-medium text-on-surface" type="button">31</button>
+<div class="py-2.5 text-outline-variant opacity-40 font-normal">1</div>
+</div>
+</div>
+<!-- Calendar Note & Legend -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-DEFAULT flex items-center justify-between text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
+<span class="font-label-sm text-[12px] text-on-surface font-semibold">Selected (15 Oct)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error-container inline-block"></span>
+<span class="font-label-sm text-[12px]">Sunday (Closed)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Available OPD Time Slots (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col justify-between h-full">
+<div>
+<!-- Section Header with Selected Date Banner -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-md">
+<div>
+<span class="font-label-sm text-tertiary uppercase font-bold tracking-wider">OPD Slot Allocation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+                  Available OPD Time Slots for Tomorrow, 15 Oct [DEMO]
+                </h3>
+</div>
+<span class="self-start sm:self-auto bg-surface-container text-on-surface font-label-sm text-[12px] px-space-sm py-1 rounded-full font-semibold">
+                Room #104 • OPD Block B
+              </span>
+</div>
+<!-- MORNING SESSIONS -->
+<div class="mt-space-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+                  Morning Sessions (08:30 AM – 12:30 PM)
+                </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">5 of 6 available</span>
+</div>
+<!-- Slots Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Slot 1: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">08:30 AM – 09:00 AM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (3 tokens)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+<!-- Slot 2: Selected (Solid Green #166534) -->
+<button class="p-space-md rounded-DEFAULT bg-tertiary text-on-tertiary shadow-md text-left flex items-center justify-between transition-all scale-[1.01]" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-tertiary font-bold">09:00 AM – 09:30 AM</span>
+<span class="font-body-sm text-body-sm text-on-tertiary opacity-90 font-medium">Selected Consultation Slot</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] font-bold">check</span>
+</div>
+</button>
+<!-- Slot 3: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">09:30 AM – 10:00 AM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (4 tokens)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+<!-- Slot 4: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">10:00 AM – 10:30 AM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (1 token left)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+<!-- Slot 5: Unavailable / Booked (Grayed Out) -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-high text-on-surface-variant opacity-60 text-left flex items-center justify-between cursor-not-allowed">
+<div>
+<span class="block font-label-md text-label-md font-bold line-through">10:30 AM – 11:00 AM</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Slot Full / Booked</span>
+</div>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded text-[11px] font-bold uppercase">Full</span>
+</div>
+<!-- Slot 6: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">11:30 AM – 12:00 PM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (5 tokens)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+<!-- AFTERNOON SESSIONS -->
+<div class="mt-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary font-bold text-[20px]">routine</span>
+                  Afternoon Sessions (01:00 PM – 02:30 PM)
+                </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">2 of 2 available</span>
+</div>
+<!-- Slots Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Slot 7: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">01:00 PM – 01:30 PM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (6 tokens)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+<!-- Slot 8: Available -->
+<button class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group" type="button">
+<div>
+<span class="block font-label-md text-label-md text-on-surface font-bold">01:30 PM – 02:00 PM</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Available (4 tokens)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Slot Legend & Institutional Guidelines -->
+<div class="mt-space-lg pt-space-md">
+<!-- Legend indicators -->
+<div class="flex flex-wrap items-center gap-space-lg font-label-sm text-label-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-tertiary inline-block"></span>
+<span class="text-on-surface font-medium">Green: Selected</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-surface-container-lowest shadow-inner inline-block"></span>
+<span class="text-on-surface font-medium">White: Available</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-surface-container-high inline-block"></span>
+<span class="text-on-surface-variant font-medium">Gray: Booked / Full</span>
+</div>
+</div>
+<!-- Mandatory Civic OPD Notice -->
+<div class="bg-secondary-fixed text-on-secondary-fixed p-space-md rounded-DEFAULT flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5">info</span>
+<div>
+<span class="block font-label-md text-label-md font-bold">Mandatory OPD Check-in Advisory</span>
+<p class="font-body-sm text-body-sm text-on-secondary-fixed-variant mt-0.5">
+                  Please arrive 15 minutes prior to your allocated slot at the OPD Registration Desk (Ground Floor, Wing B) with your Aadhaar / Ayushman Bharat Health Account (ABHA) Card for biometric verification.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Sticky / Bottom Action Bar -->
+<section class="w-full bg-surface-container-lowest shadow-md py-space-md">
+<div class="max-w-6xl mx-auto px-gutter-desktop flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="px-space-xl py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 transition-colors w-full sm:w-auto shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+          Back
+        </a>
+<span class="hidden md:inline font-body-sm text-body-sm text-on-surface-variant">
+          Slot: <strong class="text-on-surface font-semibold">15 Oct, 09:00 AM – 09:30 AM</strong> with Dr. Ananya Sen
+        </span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="px-space-2xl py-space-sm rounded-full bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md transition-all w-full sm:w-auto" type="button">
+<span class="">CONTINUE</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Standard Institutional 3-Column Footer -->
+<footer class="w-full bg-[#071e33] text-white py-8 px-gutter-desktop border-t border-[#0e2c4a]"><div class="max-w-6xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8"><div class="flex flex-col"><div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-sm bg-white p-0.5 flex items-center justify-center flex-shrink-0 shadow-sm"><img alt="Aarogya Case Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDawED2AHrPvUe2AIohFh8juHfxq3--IILPop1ZDCwF8Jcg04Hx42PyOtJZvL74q0ad94400r_2SKrAiJggH_JFiyUmt__aAVJtCvnWAT0izzCxyUuE47Vw5AWSIbEqF6fIuDe2TQW3dO7r7Zt0M7rSSoRYRCza7RlkGCU0FlwL8GVhaVVCS7RmBxjbeBuTplSLsIjSlMDVSPxInpXHH_I9_IRmopKchPrqkFxTkpeLWTWZ5GF5RvZc7pjUyZX4FzcYJGo"></div><div><div class="font-bold text-white tracking-wider text-sm sm:text-base font-headline-sm">AAROGYA CASE</div><div class="text-[11px] text-slate-300 font-normal">Government Healthcare Digital Platform</div></div></div><p class="text-slate-300 text-xs leading-relaxed max-w-sm font-normal">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="flex flex-col"><div class="font-bold text-white tracking-wider text-xs uppercase mb-3 font-headline-sm">PATIENT SERVICES</div><ul class="space-y-2 text-xs text-slate-300 font-normal"><li class=""><a class="hover:text-white transition-colors block" href="#">Digital Clinical Intake</a></li><li class=""><a class="hover:text-white transition-colors block" href="#">Tele-Consultation Request</a></li><li class=""><a class="hover:text-white transition-colors block" href="#">Electronic Health Record Integration</a></li><li class=""><a class="hover:text-white transition-colors block" href="#">Emergency Protocol Information</a></li></ul></div><div class="flex flex-col"><div class="font-bold text-white tracking-wider text-xs uppercase mb-3 font-headline-sm">HELP &amp; ACCESSIBILITY</div><div class="space-y-2 text-xs text-slate-300 font-normal"><div class="flex items-center gap-2"><span class="text-[#22c55e] text-sm leading-none">📞</span><span class="">National Health Helpline: <strong class="text-white font-semibold">104</strong></span></div><div class="flex items-center gap-2"><span class="text-[#ef4444] text-sm leading-none font-bold">✱</span><span class="">Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span></div><div><a class="hover:text-white transition-colors block" href="#">Accessibility Options &amp; Screen Reader Guide</a></div><div><a class="hover:text-white transition-colors block" href="#">Privacy Policy &amp; Terms of Clinical Use</a></div></div></div></div><div class="pt-4 border-t border-[#0e2c4a] flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-400 gap-2 font-normal"><div class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</div><div class="flex items-center gap-3 text-slate-300"><div class="flex items-center gap-1 text-[#22c55e]"><span class="material-symbols-outlined text-[14px]">verified</span><span class="text-slate-200 font-medium">ABDM Standard Integrated</span></div><span class="text-slate-500">•</span><span class="text-slate-400">v2.4-Production</span></div></div></div></footer>
+</div>
+<script>
+  // Simple interactive slot selector demonstration
+  document.addEventListener('DOMContentLoaded', () => {
+    const slotButtons = document.querySelectorAll('.grid-cols-1.sm\\:grid-cols-2 button');
+    slotButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Only react to active buttons (excluding disabled ones)
+        if (this.disabled) return;
+        
+        slotButtons.forEach(b => {
+          // Reset styling
+          b.className = 'p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-low text-left flex items-center justify-between transition-all group';
+          const title = b.querySelector('.text-label-md');
+          const sub = b.querySelector('.text-body-sm');
+          const icon = b.querySelector('.material-symbols-outlined');
+          if (title) title.className = 'block font-label-md text-label-md text-on-surface font-bold';
+          if (sub) {
+            sub.className = 'font-body-sm text-body-sm text-tertiary font-medium';
+            sub.textContent = 'Available slot';
+          }
+          if (icon) {
+            icon.textContent = 'radio_button_unchecked';
+            icon.className = 'material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors';
+          }
+        });
+
+        // Activate selected
+        this.className = 'p-space-md rounded-DEFAULT bg-tertiary text-on-tertiary shadow-md text-left flex items-center justify-between transition-all scale-[1.01]';
+        const activeTitle = this.querySelector('.text-label-md');
+        const activeSub = this.querySelector('.text-body-sm');
+        const activeIcon = this.querySelector('.material-symbols-outlined');
+        if (activeTitle) activeTitle.className = 'block font-label-md text-label-md text-on-tertiary font-bold';
+        if (activeSub) {
+          activeSub.className = 'font-body-sm text-body-sm text-on-tertiary opacity-90 font-medium';
+          activeSub.textContent = 'Selected Consultation Slot';
+        }
+        if (activeIcon) {
+          activeIcon.textContent = 'check';
+          activeIcon.className = 'material-symbols-outlined text-[20px] font-bold text-tertiary';
+        }
+      });
+    });
+  });
+</script></main>
+
+</body></html>

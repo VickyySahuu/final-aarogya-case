@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AI Case Assessment | Aarogya Case Public Healthcare Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#f0fdf4",
+              100: "#dcfce7",
+              200: "#bbf7d0",
+              600: "#16a34a",
+              700: "#15803d",
+              800: "#166534",
+              900: "#14532d",
+            }
+          },
+          fontFamily: {
+            headline: ["Lexend", "sans-serif"],
+            body: ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Atkinson Hyperlegible Next', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 min-h-screen flex flex-col antialiased selection:bg-[#166534] selection:text-white">
+<!-- TOP UTILITY BAR -->
+<div class="w-full bg-slate-900 text-slate-200 border-b border-slate-800 text-xs py-1.5 px-4 sm:px-8">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="font-medium tracking-wide">भारत सरकार | Government of India</span>
+<span class="text-slate-600">|</span>
+<span class="text-slate-300">Ministry of Ayush &amp; National Health Mission</span>
+</div>
+<div class="flex items-center gap-5 text-slate-300">
+<a class="hover:text-white flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]">accessibility_new</span> Accessibility
+        </a>
+<a class="hover:text-white flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]">language</span> English / हिन्दी
+        </a>
+<a class="hover:text-white flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]">help_center</span> Help Desk
+        </a>
+</div>
+</div>
+</div>
+<!-- INSTITUTIONAL PATIENT PORTAL HEADER -->
+<header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3.5 group" href="#">
+<img alt="Aarogya Case Emblem" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc2R3wsgi0b0aHenmw16jTd3M6kE2Z_UkCr0RyLjF32UxCshWyk4WoUig-EbaZF1GUZc7QBgSVRxUuQX76f9Jkx4hXkxI6bW9px63_SoxeJ8uuoDACIR7Bz-vPBs8uyHUUxEHMgDi3qL5ldiEoGnimbhzl8cCdTf7Bt_QnkgD3D4SX8SdObqgh8IB0zuay5qT6FMDZbpxSxKPQJFpXrFGjL-vYbPC-LjqBbww7xWrUHzwtHriDV1qTPxQTaUx7CihF0gQ">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xl text-[#166534] tracking-tight">AAROGYA CASE</span>
+</div>
+<span class="text-xs text-slate-600 font-medium">Citizen Public Healthcare Portal</span>
+</div>
+</a>
+</div>
+<!-- Clean institutional navigation (Zero operations/dispatch tags) -->
+<nav class="hidden md:flex items-center gap-1 lg:gap-2">
+<a class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-[#166534] hover:bg-slate-50 transition-colors" href="#">Home</a>
+<a class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-[#166534] hover:bg-slate-50 transition-colors" href="#">Services</a>
+<a class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-[#166534] hover:bg-slate-50 transition-colors" href="#">Help</a>
+<a class="px-3.5 py-2 rounded-lg text-sm font-medium text-rose-700 hover:bg-rose-50 transition-colors flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-base">emergency</span>
+          Emergency
+        </a>
+</nav>
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex flex-col text-right">
+<span class="text-xs font-semibold text-slate-900">Ayushman Citizen ID</span>
+<span class="text-[11px] text-slate-500 font-mono">ABHA-9821-4019</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-[#166534]/10 border border-[#166534]/30 text-[#166534] flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB & CONTEXT BAR -->
+<div class="bg-white border-b border-slate-200">
+<div class="max-w-5xl mx-auto px-4 sm:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs sm:text-sm text-slate-500">
+<a class="hover:text-[#166534] transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-slate-400">chevron_right</span>
+<a class="hover:text-[#166534] transition-colors" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[14px] text-slate-400">chevron_right</span>
+<span aria-current="page" class="text-[#166534] font-semibold">AI Case Assessment</span>
+</nav>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1 px-3 py-1 rounded-md text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors border border-slate-200" data-target="03.08_CASE_INFORMATION" href="#03.08_CASE_INFORMATION">
+<span class="material-symbols-outlined text-[15px]">arrow_back</span>
+<span class="">Back to Case Information</span>
+</a>
+<span class="text-xs font-mono text-slate-600 bg-slate-100 px-2.5 py-1 rounded border border-slate-200">
+          Case ID: #AC-89240
+        </span>
+</div>
+</div>
+</div>
+<!-- MAIN ASSESSMENT LAYOUT -->
+<main class="flex-1 py-8 sm:py-10 px-4 sm:px-8">
+<div class="max-w-5xl mx-auto space-y-6">
+<!-- ASSESSMENT CARD CONTAINER -->
+<div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-10">
+<!-- Header & Progress Note -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#166534]/10 text-[#166534]">
+<span class="material-symbols-outlined text-[16px]">clinical_notes</span>
+<span class="">AI Case Assessment</span>
+</div>
+<h1 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 mt-2">
+              Clinical Symptom Evaluation
+            </h1>
+</div>
+<div class="flex flex-col sm:items-end gap-1.5">
+<div class="flex items-center gap-2">
+<span class="text-sm font-semibold text-slate-700">Question 2 of 6</span>
+<span class="text-xs font-medium text-slate-500 font-mono">(33%)</span>
+</div>
+<div class="w-48 h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
+<div class="h-full bg-[#166534] rounded-full transition-all duration-300" style="width: 33.33%;"></div>
+</div>
+</div>
+</div>
+<!-- Clean Safety Note -->
+<div class="my-6 p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+<span class="material-symbols-outlined text-[#166534] text-xl mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<div class="text-sm leading-relaxed text-slate-700">
+<strong class="font-semibold text-slate-900">Clinical Safety Protocol:</strong> AI-assisted assessment. Doctor makes the final clinical decision. All responses are verified by the triage physician.
+          </div>
+</div>
+<!-- QUESTION SECTION -->
+<div class="space-y-4 pt-2">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-500 font-headline">Respiratory &amp; Chest Assessment</span>
+<button class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#166534] hover:text-[#14532d] bg-[#166534]/5 hover:bg-[#166534]/10 px-3 py-1.5 rounded-full transition-colors" id="btn-audio" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span class="">Repeat Question</span>
+</button>
+</div>
+<h2 class="font-headline text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+            Are you experiencing any difficulty in breathing or chest tightness?
+          </h2>
+<p class="text-sm text-slate-600">Please choose the option that most accurately represents your current condition right now.</p>
+</div>
+<!-- WIDE INTERACTIVE OPTIONS -->
+<div aria-label="Breathing difficulty options" class="space-y-3.5 my-7" id="options-group" role="radiogroup">
+<!-- Option 1 (Selected default) -->
+<button class="option-card w-full text-left rounded-xl p-5 sm:p-6 transition-all border-2 border-[#166534] bg-emerald-50/40 shadow-xs flex items-center justify-between group" data-selected="true" onclick="selectChoice(this)" type="button">
+<div class="flex items-start sm:items-center gap-4 min-w-0">
+<div class="indicator w-7 h-7 rounded-full bg-[#166534] text-white flex items-center justify-center shrink-0 mt-0.5 sm:mt-0 shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<div class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#166534] transition-colors">
+                  No difficulty breathing
+                </div>
+<div class="text-sm text-slate-600 mt-0.5">
+                  Breathing normally at rest and during typical daily tasks with no discomfort.
+                </div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#166534] text-2xl shrink-0 ml-3">radio_button_checked</span>
+</button>
+<!-- Option 2 -->
+<button class="option-card w-full text-left rounded-xl p-5 sm:p-6 transition-all border border-slate-200 bg-white hover:bg-slate-50/80 hover:border-slate-300 flex items-center justify-between group" data-selected="false" onclick="selectChoice(this)" type="button">
+<div class="flex items-start sm:items-center gap-4 min-w-0">
+<div class="indicator w-7 h-7 rounded-full border-2 border-slate-300 bg-white text-transparent flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[16px]">circle</span>
+</div>
+<div>
+<div class="text-base sm:text-lg font-semibold text-slate-800 group-hover:text-slate-900 transition-colors">
+                  Mild difficulty when walking or climbing stairs
+                </div>
+<div class="text-sm text-slate-600 mt-0.5">
+                  Noticeable shortness of breath only upon physical exertion, relieved by resting.
+                </div>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-300 text-2xl shrink-0 ml-3 group-hover:text-slate-400">radio_button_unchecked</span>
+</button>
+<!-- Option 3 -->
+<button class="option-card w-full text-left rounded-xl p-5 sm:p-6 transition-all border border-slate-200 bg-white hover:bg-slate-50/80 hover:border-slate-300 flex items-center justify-between group" data-selected="false" onclick="selectChoice(this)" type="button">
+<div class="flex items-start sm:items-center gap-4 min-w-0">
+<div class="indicator w-7 h-7 rounded-full border-2 border-slate-300 bg-white text-transparent flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[16px]">circle</span>
+</div>
+<div>
+<div class="text-base sm:text-lg font-semibold text-slate-800 group-hover:text-slate-900 transition-colors">
+                  Significant tightness or shortness of breath
+                </div>
+<div class="text-sm text-slate-600 mt-0.5">
+                  Present even while resting quietly, difficulty speaking full sentences without gasping.
+                </div>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-300 text-2xl shrink-0 ml-3 group-hover:text-slate-400">radio_button_unchecked</span>
+</button>
+</div>
+<!-- MULTI-MODAL VOICE & NOTES SUPPORT -->
+<div class="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200/80 space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-300 hover:border-[#166534] hover:text-[#166534] text-slate-800 font-semibold text-sm shadow-xs transition-all active:scale-95" id="voice-trigger" type="button">
+<span class="material-symbols-outlined text-[#166534] text-[20px]">mic</span>
+<span class="">Voice Input</span>
+</button>
+<div class="text-xs">
+<span class="font-medium text-slate-800 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                  Ready • Click to speak
+                </span>
+<span class="text-slate-500">Supports Hindi, English, and 12 regional languages</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 text-xs font-semibold text-[#166534] hover:underline self-start sm:self-center" type="button">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span class="">Change previous answer</span>
+</button>
+</div>
+<!-- Notes textfield -->
+<div class="pt-2 border-t border-slate-200">
+<label class="block text-xs font-medium text-slate-600 mb-1.5" for="optional-notes">
+              Additional clarification or observations (Optional)
+            </label>
+<input class="w-full text-sm bg-white border border-slate-300 rounded-lg px-3.5 py-2.5 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#166534] focus:border-transparent transition-all" id="optional-notes" maxlength="140" placeholder="e.g. Sensation started 2 hours ago after coughing" type="text">
+</div>
+</div>
+<!-- ACTION FOOTER: BACK, SKIP, NEXT -->
+<div class="pt-8 mt-6 border-t border-slate-100 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm transition-colors shadow-xs" href="#03.08_CASE_INFORMATION">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back</span>
+</a>
+<button class="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 font-medium text-sm transition-colors" type="button">
+              Skip Question
+            </button>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-[#166534] hover:bg-[#14532d] text-white font-headline font-semibold text-base transition-all shadow-sm hover:shadow active:scale-95" type="button">
+<span class="">Next Question</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- SECURITY & PROTOCOL BADGES -->
+<div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500 pt-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">verified_user</span>
+<span class="">Government Certified Health Digital Infrastructure</span>
+</div>
+<span class="text-slate-300">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-slate-600">lock</span>
+<span class="">256-Bit Encrypted Confidential Record</span>
+</div>
+<span class="text-slate-300">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-slate-600">medical_services</span>
+<span class="">Duty Medical Officer Tele-Triage Synchronized</span>
+</div>
+</div>
+</div>
+</main>
+<!-- INSTITUTIONAL PUBLIC SERVICE FOOTER -->
+<footer class="mt-auto bg-[#071e33] text-slate-300 border-t border-[#0e2c48] text-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-[#0e2c48]">
+      <!-- Left Column -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <img alt="Aarogya Case Official Emblem" class="h-12 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIvykSI8Yzcv3pJkTwJGFoGAqX2CuxH6A-b7kQuMDBOCnEgaiiE39oYE90SMADQEuYYuH-Y37SShaQGl0rLc4O8gXfeCH05Ev0sXRVZj6SlyF76g3B8K87U3p8cKR9xStF13NiVzto5e_AsqvV8uAIOGSgJnkOPHODs1c7VOyl9b2-l9GjnOzrW-BGAir9aXrveXcxxVnAX-AOvRAK6HlGFcIWPTxt0LiAK4Ldcd2i5bd91HxYpfSKoS5Xcdv2hX2Ys4U">
+          <div>
+            <div class="font-headline font-bold text-white text-base tracking-tight">AAROGYA CASE</div>
+            <div class="text-xs text-slate-300 font-medium">Government Healthcare Digital Platform</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed max-w-sm pt-1">
+          An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.
+        </p>
+      </div>
+
+      <!-- Center Column -->
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-wider font-headline mb-3.5">PATIENT SERVICES</h3>
+        <ul class="space-y-2.5 text-xs">
+          <li class=""><a class="text-slate-400 hover:text-white transition-colors" href="#">Digital Clinical Intake</a></li>
+          <li class=""><a class="text-slate-400 hover:text-white transition-colors" href="#">Tele-Consultation Request</a></li>
+          <li class=""><a class="text-slate-400 hover:text-white transition-colors" href="#">Electronic Health Record Integration</a></li>
+          <li class=""><a class="text-slate-400 hover:text-white transition-colors" href="#">Emergency Protocol Information</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <h3 class="text-white text-xs font-bold uppercase tracking-wider font-headline mb-3.5">HELP &amp; ACCESSIBILITY</h3>
+        <div class="space-y-2.5 text-xs text-slate-400">
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm text-slate-300">call</span>
+            <span class=""><strong class="text-white font-medium">National Health Helpline:</strong> 104</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm text-rose-400">emergency</span>
+            <span class=""><strong class="text-white font-medium">Ambulance Emergency:</strong> 108</span>
+          </p>
+          <p class="pt-1">
+            <a class="text-slate-400 hover:text-white transition-colors" href="#">Accessibility Options &amp; Screen Reader Guide</a>
+          </p>
+          <p class="">
+            <a class="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy &amp; Terms of Clinical Use</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & ABDM Standard Line -->
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p>
+      <div class="flex items-center gap-4 text-slate-400 font-mono text-[11px]">
+        <span class="">ABDM Standard Integrated</span>
+        <span class="text-slate-600">|</span>
+        <span class="">v2.4-Production</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Interactive behavior -->
+<script>
+    function selectChoice(target) {
+      const allOptions = document.querySelectorAll('.option-card');
+      allOptions.forEach(opt => {
+        opt.setAttribute('data-selected', 'false');
+        opt.className = 'option-card w-full text-left rounded-xl p-5 sm:p-6 transition-all border border-slate-200 bg-white hover:bg-slate-50/80 hover:border-slate-300 flex items-center justify-between group';
+        
+        const title = opt.querySelector('.font-bold, .font-semibold');
+        if (title) {
+          title.className = 'text-base sm:text-lg font-semibold text-slate-800 group-hover:text-slate-900 transition-colors';
+        }
+
+        const ind = opt.querySelector('.indicator');
+        if (ind) {
+          ind.className = 'indicator w-7 h-7 rounded-full border-2 border-slate-300 bg-white text-transparent flex items-center justify-center shrink-0 mt-0.5 sm:mt-0';
+          ind.innerHTML = '<span class="material-symbols-outlined text-[16px]">circle</span>';
+        }
+        
+        const radioIcon = opt.querySelector('.material-symbols-outlined:last-child');
+        if (radioIcon) {
+          radioIcon.textContent = 'radio_button_unchecked';
+          radioIcon.className = 'material-symbols-outlined text-slate-300 text-2xl shrink-0 ml-3 group-hover:text-slate-400';
+        }
+      });
+
+      target.setAttribute('data-selected', 'true');
+      target.className = 'option-card w-full text-left rounded-xl p-5 sm:p-6 transition-all border-2 border-[#166534] bg-emerald-50/40 shadow-xs flex items-center justify-between group';
+      
+      const activeTitle = target.querySelector('.text-base, .text-lg');
+      if (activeTitle) {
+        activeTitle.className = 'text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#166534] transition-colors';
+      }
+
+      const activeInd = target.querySelector('.indicator');
+      if (activeInd) {
+        activeInd.className = 'indicator w-7 h-7 rounded-full bg-[#166534] text-white flex items-center justify-center shrink-0 mt-0.5 sm:mt-0 shadow-xs';
+        activeInd.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span>';
+      }
+      
+      const activeRadio = target.querySelector('.material-symbols-outlined:last-child');
+      if (activeRadio) {
+        activeRadio.textContent = 'radio_button_checked';
+        activeRadio.className = 'material-symbols-outlined text-[#166534] text-2xl shrink-0 ml-3';
+      }
+    }
+
+    // Voice trigger simulated toggling
+    const voiceBtn = document.getElementById('voice-trigger');
+    if (voiceBtn) {
+      voiceBtn.addEventListener('click', () => {
+        const isListening = voiceBtn.getAttribute('data-listening') === 'true';
+        if (!isListening) {
+          voiceBtn.setAttribute('data-listening', 'true');
+          voiceBtn.classList.add('bg-emerald-100', 'border-emerald-600', 'text-[#166534]');
+          voiceBtn.querySelector('span:last-child').textContent = 'Listening...';
+        } else {
+          voiceBtn.setAttribute('data-listening', 'false');
+          voiceBtn.classList.remove('bg-emerald-100', 'border-emerald-600', 'text-[#166534]');
+          voiceBtn.querySelector('span:last-child').textContent = 'Voice Input';
+        }
+      });
+    }
+
+    // Audio repeat feedback
+    const repeatAudio = document.getElementById('btn-audio');
+    if (repeatAudio) {
+      repeatAudio.addEventListener('click', () => {
+        repeatAudio.classList.add('opacity-50');
+        setTimeout(() => repeatAudio.classList.remove('opacity-50'), 600);
+      });
+    }
+  </script>
+
+
+</body></html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AAROGYA CASE - Upload Documents | Patient Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "brand-green": "#166534",
+            "brand-green-hover": "#14532d",
+            "brand-green-light": "#f0fdf4",
+            "brand-green-border": "#bbf7d0",
+            "surface-bg": "#f8fafc",
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#475569",
+            "surface-card": "#ffffff",
+            "surface-muted": "#f1f5f9",
+            "outline-subtle": "#e2e8f0"
+          },
+          fontFamily: {
+            headline: ["Lexend", "sans-serif"],
+            body: ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface-bg font-body text-slate-800 antialiased min-h-screen flex flex-col">
+<!-- TOP CIVIC UTILITY BAR -->
+<div class="w-full bg-[#0f391e] text-emerald-100 text-xs px-4 md:px-8 py-2">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="font-semibold tracking-wide">GOVERNMENT OF INDIA</span>
+<span class="text-emerald-400 opacity-60">|</span>
+<span class="opacity-90">Ministry of Ayush &amp; National Health Mission</span>
+</div>
+<div class="flex items-center gap-5">
+<a class="inline-flex items-center gap-1.5 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">translate</span>
+<span class="">English (India)</span>
+</a>
+<a class="inline-flex items-center gap-1.5 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">accessibility_new</span>
+<span class="">Accessibility</span>
+</a>
+<a class="inline-flex items-center gap-1.5 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">support_agent</span>
+<span class="">Toll-Free: 1075</span>
+</a>
+</div>
+</div>
+</div>
+<!-- MAIN HEADER (DESKTOP PORTAL) -->
+<header class="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+<div class="max-w-6xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+<!-- Brand & Identity -->
+<div class="flex items-center gap-3.5">
+<img alt="Aarogya Case Official Emblem" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKbT5mKRbEPD6JWFCXqnLveqDhFIQmAKx3ipetVz-paePCotGtg771MwD_V9JucpG4Vv3dEEY4F67ZfOQg9B3q3RbG2-lhhZqc1YMmU8ao2eEwGEPUwjqFXvYWDDHmV7RIgaa56bpeUGe_ftbxunjRUbFd8wly7CSx9tNj-NJZuw1zjyCW0t2RAT9DrOrzjtnjBvmCl3AsNaDt8hnA-f4C4pi3Rn6qWfWPfctiO1fhaZ_pWbyocN9UjPS3vMMvlGC3zV4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xl text-slate-900 tracking-tight">AAROGYA CASE</span>
+<span class="bg-[#166534]/10 text-[#166534] border border-[#166534]/20 font-headline font-semibold text-[11px] px-2 py-0.5 rounded uppercase tracking-wider">Citizen Health</span>
+</div>
+<span class="text-xs text-slate-500 font-medium">Patient Portal • Universal Healthcare Access</span>
+</div>
+</div>
+<!-- Public Portal Navigation (Home, Services, Help, Emergency) -->
+<nav class="hidden md:flex items-center gap-1">
+<a class="px-4 py-2 rounded-md font-headline font-medium text-sm text-slate-700 hover:text-[#166534] hover:bg-slate-100 transition-colors" href="#">Home</a>
+<a class="px-4 py-2 rounded-md font-headline font-medium text-sm text-[#166534] bg-emerald-50 font-semibold transition-colors" href="#">Services</a>
+<a class="px-4 py-2 rounded-md font-headline font-medium text-sm text-slate-700 hover:text-[#166534] hover:bg-slate-100 transition-colors" href="#">Help</a>
+<a class="px-4 py-2 rounded-md font-headline font-semibold text-sm text-red-600 hover:bg-red-50 transition-colors flex items-center gap-1.5 ml-2" href="#">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+          Emergency
+        </a>
+</nav>
+<!-- User Badge / Quick Actions -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2.5 pl-3 border-l border-slate-200">
+<div class="w-9 h-9 rounded-full bg-[#166534] text-white flex items-center justify-center font-headline font-semibold text-sm">
+            VK
+          </div>
+<div class="hidden lg:flex flex-col text-left">
+<span class="font-headline text-xs font-semibold text-slate-800">Vikram K.</span>
+<span class="text-[11px] text-slate-500">ABHA: 91-8201-9042</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- MAIN WRAPPER (WIDE DESKTOP LAYOUT max-w-6xl) -->
+<main class="flex-1 w-full max-w-6xl mx-auto px-4 md:px-8 py-8">
+<!-- BREADCRUMB & RETURN -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-200">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-slate-500 font-medium">
+<a class="hover:text-[#166534] transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span class="">Home</span>
+</a>
+<span class="text-slate-300">/</span>
+<a class="hover:text-[#166534] transition-colors" href="#">Patient Portal</a>
+<span class="text-slate-300">/</span>
+<span class="text-slate-900 font-semibold">Upload Documents</span>
+</nav>
+<a class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-[#166534] transition-colors self-start sm:self-auto px-3 py-1.5 rounded-md hover:bg-slate-100" href="03.11_NEXT_STEP">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back</span>
+</a>
+</div>
+<!-- MAIN CONTENT CARD -->
+<div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden mb-8">
+<!-- Stepper / Status Strip -->
+<div class="bg-slate-50 px-6 md:px-10 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-800 border border-amber-200 text-xs font-semibold px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+            Optional Step
+          </span>
+<span class="text-xs font-medium text-slate-500">Step 3 of 4 • Consultation Booking</span>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-[#166534]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="">Secure ABDM &amp; DigiLocker Integrated Gateway</span>
+</div>
+</div>
+<div class="p-6 md:p-10">
+<!-- Heading & Description -->
+<div class="max-w-3xl mb-8">
+<h1 class="font-headline text-3xl font-bold text-slate-900 tracking-tight mb-2">
+            Upload Documents
+          </h1>
+<p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Add previous health summaries, laboratory reports, or physical prescriptions if available.
+          </p>
+</div>
+<!-- Prominent Info Notice (Optional Reassurance) -->
+<div class="w-full bg-emerald-50/80 border-l-4 border-[#166534] rounded-r-xl p-5 mb-8 flex items-start gap-4">
+<div class="w-9 h-9 rounded-full bg-[#166534] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<div class="flex-1">
+<h2 class="font-headline font-semibold text-slate-900 text-base mb-1">
+              Documents are completely optional
+            </h2>
+<p class="text-slate-700 text-sm md:text-[15px] leading-relaxed">
+              Documents are completely optional. You can continue directly to appointment time booking without uploading any files. Your consulting doctor or specialist will take your history during consultation.
+            </p>
+</div>
+</div>
+<!-- Wide Clean Dropzone Area -->
+<div class="relative group w-full rounded-2xl border-2 border-dashed border-slate-300 hover:border-[#166534] bg-slate-50/60 hover:bg-emerald-50/20 transition-all duration-200 p-8 md:p-12 flex flex-col items-center justify-center text-center cursor-pointer" id="dropzone">
+<input accept=".pdf,.png,.jpg,.jpeg" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" id="file-upload-input" multiple="" type="file">
+<div class="w-20 h-20 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4 group-hover:scale-105 group-hover:border-[#166534] group-hover:text-[#166534] text-slate-600 transition-all duration-200">
+<span class="material-symbols-outlined text-[44px]">cloud_upload</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-slate-900 mb-1.5">
+            Select or drag &amp; drop medical files
+          </h3>
+<p class="text-sm text-slate-500 max-w-lg mb-6 leading-relaxed">
+            Attach prior prescriptions, lab findings, scan reports, or diagnostic slips from your computer or phone.
+          </p>
+<button class="pointer-events-none inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#166534] text-white font-headline font-semibold text-sm shadow-sm group-hover:bg-[#14532d] transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="">Select Document</span>
+</button>
+<div class="mt-6 flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs text-slate-500">
+<span class="flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">description</span>
+              Allowed: PDF, JPG, PNG
+            </span>
+<span class="text-slate-300">•</span>
+<span class="flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">folder_zip</span>
+              Max size: Up to 10MB per file
+            </span>
+<span class="text-slate-300">•</span>
+<span class="flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">lock</span>
+              256-bit Encrypted &amp; ABDM Compliant
+            </span>
+</div>
+</div>
+<!-- Staged / Uploaded Files List -->
+<div class="mt-8">
+<div class="flex items-center justify-between mb-3">
+<h4 class="font-headline text-sm font-bold uppercase tracking-wider text-slate-700">Attached Documents (1)</h4>
+<span class="text-xs text-slate-500">Files will be attached to your appointment record</span>
+</div>
+<div class="space-y-3" id="file-list-section">
+<!-- Simulated Uploaded Item with preview and remove -->
+<div class="w-full bg-slate-50 hover:bg-slate-100/80 border border-slate-200 rounded-xl p-4 flex items-center justify-between gap-4 transition-colors">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-emerald-100/70 border border-emerald-200 text-[#166534] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline font-semibold text-sm text-slate-900 truncate">AYUSH_Diagnostic_Summary_2024.pdf</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-50 text-[#166534] border border-emerald-200">Ready</span>
+</div>
+<span class="text-xs text-slate-500">2.4 MB • Uploaded via Citizen Portal</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-[#166534] hover:bg-white rounded-lg border border-transparent hover:border-slate-200 transition-all" title="Preview document" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="hidden sm:inline">Preview</span>
+</button>
+<button aria-label="Remove AYUSH_Diagnostic_Summary_2024.pdf" class="p-2 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" onclick="this.closest('.border').remove()" title="Remove file" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTION TOOLBAR: Primary CONTINUE in #166534, secondary prominent SKIP FOR NOW, and Back -->
+<div class="mt-12 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Back button -->
+<a class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-300 hover:border-slate-400 bg-white text-slate-700 font-headline font-semibold text-sm hover:bg-slate-50 transition-colors order-3 md:order-1" href="03.11_NEXT_STEP">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back</span>
+</a>
+<!-- Skip & Continue Actions -->
+<div class="w-full md:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3 order-1 md:order-2">
+<!-- SKIP FOR NOW - Prominent and effortless -->
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-700 font-headline font-semibold text-sm transition-all shadow-sm" href="#">
+<span class="">SKIP FOR NOW</span>
+<span class="material-symbols-outlined text-[18px] text-slate-500">skip_next</span>
+</a>
+<!-- CONTINUE - Dominant #166534 brand green -->
+<a class="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-[#166534] hover:bg-[#14532d] text-white font-headline font-bold text-sm tracking-wide shadow-md hover:shadow-lg transition-all" href="#">
+<span class="">CONTINUE</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Assistance & Kendra Banner -->
+<div class="rounded-xl border border-slate-200 bg-slate-100/80 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-700">
+<div class="flex items-center gap-3 text-center sm:text-left">
+<div class="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-[#166534] shrink-0">
+<span class="material-symbols-outlined text-[22px]">contact_support</span>
+</div>
+<div>
+<span class="font-semibold text-slate-900">Need help scanning paper documents?</span>
+<p class="text-xs text-slate-500">Free document scanning and ABHA linking are available at any district <span class="font-medium text-slate-800">Aarogya Seva Kendra</span>.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1 font-headline font-semibold text-xs text-[#166534] hover:underline shrink-0" href="#">
+<span class="">Find Nearest Service Kiosk</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</main>
+<!-- INSTITUTIONAL 3-COLUMN FOOTER -->
+<footer class="w-full bg-[#071e33] text-slate-300 mt-12 border-t-4 border-[#166534]"><div class="max-w-6xl mx-auto px-4 md:px-8 py-12"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Aarogya Case Official Emblem" class="h-12 w-auto object-contain rounded-full bg-white p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEOW7xksefAqxyYUnxwquP079a4rNHf7z_OhUXA9YRLEl5Epv3xnM1M5CAPBdPXZi2Y5MrUSa2UsvjjkO5ko08G62EmorHlisFjvBNASOlsqGp9Gn1qpRsg-vkJJHLoIf2NjiUyY5hQZvCEkJ6daF7PwpoYj4IMDHZXh68DHZR4zVSo8vKmnuK9F7WtfOjBHc9rp_qlXQyJe6PpAPazJbZOKB_OuGub78tglYS7Cwz3ul7GErGRAMlb_Xa6xitNImzJx4"><div><h3 class="font-headline font-bold text-white text-base tracking-tight">AAROGYA CASE</h3><p class="text-xs text-slate-300">Government Healthcare Digital Platform</p></div></div><p class="text-xs leading-relaxed text-slate-400">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="space-y-3"><h4 class="font-headline text-sm font-semibold text-white uppercase tracking-wider">PATIENT SERVICES</h4><ul class="space-y-2 text-xs text-slate-300"><li class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">chevron_right</span>Digital Clinical Intake</a></li><li class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">chevron_right</span>Tele-Consultation Request</a></li><li class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">chevron_right</span>Electronic Health Record Integration</a></li><li class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">chevron_right</span>Emergency Protocol Information</a></li></ul></div><div class="space-y-3"><h4 class="font-headline text-sm font-semibold text-white uppercase tracking-wider">HELP &amp; ACCESSIBILITY</h4><div class="space-y-2 text-xs text-slate-300"><p class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-emerald-400">call</span><span class=""><strong class="text-white font-medium">National Health Helpline:</strong> 104</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-red-400">emergency</span><span class=""><strong class="text-white font-medium">Ambulance Emergency:</strong> 108</span></p><p class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">accessibility_new</span>Accessibility Options &amp; Screen Reader Guide</a></p><p class=""><a class="hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[14px] text-emerald-400">policy</span>Privacy Policy &amp; Terms of Clinical Use</a></p></div></div></div><div class="mt-10 pt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400"><p class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p><p class="font-mono text-[11px] text-slate-400">ABDM Standard Integrated   v2.4-Production</p></div></div></footer>
+<!-- DYNAMIC UPLOAD SCRIPT -->
+<script>
+    (function initDocumentUpload() {
+      const input = document.getElementById('file-upload-input');
+      const dropzone = document.getElementById('dropzone');
+      const listSection = document.getElementById('file-list-section');
+
+      if (!input || !dropzone || !listSection) return;
+
+      ['dragenter', 'dragover'].forEach(eventName => {
+        dropzone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          dropzone.classList.add('border-[#166534]', 'bg-emerald-50/40');
+        }, false);
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        dropzone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          dropzone.classList.remove('border-[#166534]', 'bg-emerald-50/40');
+        }, false);
+      });
+
+      input.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files || []);
+        files.forEach(file => {
+          const item = document.createElement('div');
+          item.className = 'w-full bg-slate-50 hover:bg-slate-100/80 border border-slate-200 rounded-xl p-4 flex items-center justify-between gap-4 transition-colors animate-fade-in';
+          
+          const icon = file.name.endsWith('.pdf') ? 'picture_as_pdf' : 'image';
+
+          item.innerHTML = `
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-12 h-12 rounded-lg bg-emerald-100/70 border border-emerald-200 text-[#166534] flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[24px]">${icon}</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <div class="flex items-center gap-2">
+                  <span class="font-headline font-semibold text-sm text-slate-900 truncate">${file.name}</span>
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-50 text-[#166534] border border-emerald-200">Uploaded</span>
+                </div>
+                <span class="text-xs text-slate-500">${(file.size / (1024 * 1024)).toFixed(2)} MB • Added just now</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 shrink-0">
+              <button type="button" class="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-[#166534] hover:bg-white rounded-lg border border-transparent hover:border-slate-200 transition-all" title="Preview document">
+                <span class="material-symbols-outlined text-[16px]">visibility</span>
+                <span class="hidden sm:inline">Preview</span>
+              </button>
+              <button type="button" onclick="this.closest('.border').remove()" class="p-2 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" title="Remove file" aria-label="Remove document">
+                <span class="material-symbols-outlined text-[20px]">delete</span>
+              </button>
+            </div>
+          `;
+          listSection.appendChild(item);
+        });
+      });
+    })();
+  </script>
+
+
+</body></html>

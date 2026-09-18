@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006b25",
+          "surface-dim": "#d8dadd",
+          "background": "#f8f9fc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#001b3d",
+          "primary-fixed": "#ffdbcf",
+          "on-primary-container": "#fffbff",
+          "surface-bright": "#f8f9fc",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "on-surface": "#191c1e",
+          "secondary-fixed-dim": "#adc7f8",
+          "surface-container": "#eceef0",
+          "error-container": "#ffdad6",
+          "secondary-container": "#b3cdfe",
+          "inverse-primary": "#ffb59a",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#9bf79f",
+          "outline-variant": "#dfc0b5",
+          "surface-container-low": "#f2f4f6",
+          "on-secondary-container": "#3c5781",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#a83903",
+          "on-tertiary-fixed-variant": "#00531b",
+          "secondary-fixed": "#d6e3ff",
+          "secondary": "#455f8a",
+          "on-tertiary": "#ffffff",
+          "outline": "#8f7066",
+          "surface-container-high": "#e7e8eb",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-surface-variant": "#5a4138",
+          "surface-container-highest": "#e1e2e5",
+          "on-tertiary-container": "#f7fff2",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#802a00",
+          "inverse-surface": "#2d3133",
+          "primary": "#7c2800",
+          "on-tertiary-fixed": "#002106",
+          "surface-variant": "#e1e2e5",
+          "tertiary": "#00501a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-background": "#191c1e",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-container": "#a43700",
+          "surface": "#f7f9fb",
+          "tertiary-fixed-dim": "#7edb85"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-3xl": "4rem",
+          "kiosk-touch-min": "4.5rem",
+          "space-lg": "1.5rem",
+          "gutter-kiosk": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Lexend"
+          ],
+          "body-xl": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "body-sm": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "label-sm": [
+            "Lexend"
+          ],
+          "body-md": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-md": [
+            "Lexend"
+          ],
+          "display-lg-mobile": [
+            "Lexend"
+          ],
+          "body-lg": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-sm": [
+            "Lexend"
+          ],
+          "display-lg": [
+            "Lexend"
+          ],
+          "label-lg": [
+            "Lexend"
+          ],
+          "label-md": [
+            "Lexend"
+          ],
+          "headline-lg-mobile": [
+            "Lexend"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "42px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-xl": [
+            "20px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "44px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Top Utility Strip -->
+<div class="w-full bg-surface-container-high py-space-xs px-gutter-desktop">
+<div class="max-w-5xl mx-auto flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-label-sm text-tertiary">राष्ट्रीय स्वास्थ्य डिजिटल पोर्टल</span>
+<span class="text-outline-variant">|</span>
+<span class="font-label-sm">AAROGYA CASE • Healthcare Digital Platform</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button aria-label="Accessibility Options" class="flex items-center gap-space-2xs hover:text-on-surface focus:outline-none">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+<span class="">Accessibility</span>
+</button>
+<span class="text-outline-variant">|</span>
+<button aria-label="Help and Support" class="flex items-center gap-space-2xs hover:text-on-surface focus:outline-none">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span class="">Help</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Navigation Header -->
+<header class="w-full bg-surface-container-lowest shadow-sm py-space-sm px-gutter-desktop">
+<div class="max-w-5xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<img alt="Aarogya Case Seal Emblem" class="w-14 h-14 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpgny52Vp8d9uvA81uRl6Jc12BO9cZParUVAjknKmBXbz4Wzc6TjuWWQ5Wqbic003y_O3sqlYWOCB2KcfvKtN8mEqmDFfe7nTsqhh4UbgqeRzWYXImISsBQNKD2BygVGRM0ae2BGwnHCcAbyozk125BQVqdivjCdiuCnABbx4uc5q7yTCboIPFPo-kR5n-H1RxZt0OekJL9DT2vMWdDPaiJNUVzNtjVlV4W1c2rkuXSmaJiDCOAFOz41V3RC5VRkkUoCQ">
+<div class="flex flex-col">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">AAROGYA CASE</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-medium">Government Healthcare Digital Platform • Patient Portal</div>
+</div>
+</div>
+<nav class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-tertiary transition-colors" href="#home">Home</a>
+<a class="hover:text-tertiary text-tertiary font-bold transition-colors" href="#services">Patient Services</a>
+<a class="hover:text-tertiary transition-colors" href="#help">Help</a>
+<a class="flex items-center gap-space-2xs bg-error text-on-error px-space-md py-space-xs rounded-full font-label-sm tracking-wide shadow-sm hover:opacity-95 transition-opacity" href="#emergency">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+<span class="">Emergency</span>
+</a>
+</nav>
+</div>
+</header>
+<!-- Breadcrumb & Back Navigation -->
+<div class="w-full bg-surface py-space-md px-gutter-desktop">
+<div class="max-w-5xl mx-auto flex items-center justify-between">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-tertiary" href="#home">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-tertiary" href="#patient-portal">Patient Portal</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-tertiary" href="#book-appointment">Book Appointment</a>
+<span class="text-outline-variant">/</span>
+<span class="font-bold text-on-surface">Confirm Appointment</span>
+</nav>
+<button class="flex items-center gap-space-2xs text-secondary hover:text-on-surface font-label-md text-label-md focus:outline-none transition-colors" onclick="window.history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="">Back</span>
+</button>
+</div>
+</div>
+<!-- Main Body Content Area -->
+<main class="w-full px-gutter-desktop pb-space-3xl">
+<div class="max-w-5xl mx-auto flex flex-col gap-space-xl">
+<!-- Booking Progress Indicator -->
+<section aria-label="Booking Progress" class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm">
+<ol class="grid grid-cols-5 items-center gap-space-xs text-center font-label-md text-label-md">
+<!-- Step 1 -->
+<li class="flex flex-col items-center gap-space-2xs relative">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Hospital</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Done</span>
+</li>
+<!-- Step 2 -->
+<li class="flex flex-col items-center gap-space-2xs relative">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Doctor</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Done</span>
+</li>
+<!-- Step 3 -->
+<li class="flex flex-col items-center gap-space-2xs relative">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Date &amp; Time</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Done</span>
+</li>
+<!-- Step 4: Active -->
+<li class="flex flex-col items-center gap-space-2xs relative">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold shadow-md ring-4 ring-tertiary-fixed">
+<span class="">4</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary font-bold">Confirm</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Active</span>
+</li>
+<!-- Step 5 -->
+<li class="flex flex-col items-center gap-space-2xs opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">
+<span class="">5</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Payment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending</span>
+</li>
+</ol>
+</section>
+<!-- Page Heading -->
+<section class="flex flex-col gap-space-2xs">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Confirm Appointment</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Please review your appointment summary and patient details before final confirmation.</p>
+</section>
+<!-- Main Structured Review Card -->
+<article class="w-full bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Top Institutional Banner inside card -->
+<div class="w-full bg-tertiary px-space-xl py-space-md flex items-center justify-between text-on-tertiary">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span class="font-headline-sm text-headline-sm">Outpatient Consultation (OPD) Booking Review [DEMO]</span>
+</div>
+<span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full uppercase tracking-wider font-bold">Standard Intake</span>
+</div>
+<div class="p-space-xl flex flex-col gap-space-xl">
+<!-- 1. Patient Details -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-2xs text-tertiary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">person</span>
+<h2 class="">Patient Details</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md bg-surface-container-low p-space-lg rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Patient Name</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-2xs font-semibold">Rajesh Kumar Sharma</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Patient ID</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="font-body-lg text-body-lg font-bold text-on-surface">AC-2025-884920</span>
+<span class="inline-flex items-center gap-space-2xs bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-xs py-space-2xs rounded-full">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span class="">ABDM Verified</span>
+</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Mobile Number</span>
+<span class="font-body-lg text-body-lg text-on-surface mt-space-2xs font-medium">+91 98XXXXXX10</span>
+</div>
+</div>
+</div>
+<!-- 2. Appointment Summary -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-2xs text-tertiary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+<h2 class="">Appointment Summary</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md bg-surface-container-low p-space-lg rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hospital / Healthcare Facility</span>
+<span class="font-body-xl text-body-xl font-semibold text-on-surface mt-space-2xs">District Civil Hospital, Sector 4, Civil Lines [DEMO]</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Consulting Doctor</span>
+<span class="font-body-xl text-body-xl font-semibold text-on-surface mt-space-2xs">Dr. Ananya Sen, MD [DEMO]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">General Medicine &amp; Outpatient</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Date &amp; Time Slot</span>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-space-2xs">Wednesday, 15 October 2025</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">09:00 AM – 09:30 AM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Appointment Type</span>
+<div class="mt-space-2xs">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md px-space-md py-space-xs rounded-full">
+                    Outpatient Department (OPD)
+                  </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Attached Clinical Intake Context -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-2xs text-tertiary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">clinical_notes</span>
+<h2 class="">Attached Clinical Intake Context</h2>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Reason / Primary Problem</span>
+<p class="font-body-md text-body-md text-on-surface mt-space-2xs font-medium">
+                  Fever and throat pain for 1-3 days (Intake Assessment Linked)
+                </p>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Attached Documents</span>
+<div class="flex items-center gap-space-sm mt-space-xs bg-surface-container-lowest p-space-sm rounded w-fit shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">description</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">AYUSH_Diagnostic_Summary_2024.pdf</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-space-2xs font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> 1 file verified
+                    </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Important Patient Instructions -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-2xs text-on-surface font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[22px]">info</span>
+<h2 class="">Important Patient Instructions</h2>
+</div>
+<div class="bg-secondary-fixed/30 p-space-lg rounded flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">badge</span>
+<p class="font-body-md text-body-md text-on-surface">
+                  Please carry a valid government photo identity card and your Patient ID (AC-2025-884920) or show the digital slip at the reception desk.
+                </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">health_and_safety</span>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+                  Free public OPD consultation under National Healthcare Mission standard protocols.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar inside Review Card Container -->
+<div class="bg-surface-container-high px-space-xl py-space-lg flex items-center justify-between">
+<button class="flex items-center justify-center gap-space-xs px-space-xl py-space-sm rounded-full bg-surface-container-lowest text-secondary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-colors min-h-touch-min" onclick="window.history.back()">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="">Back</span>
+</button>
+<button class="flex items-center justify-center gap-space-sm px-space-3xl py-space-sm rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-md hover:bg-tertiary-container transition-all min-h-touch-min transform active:scale-95" id="confirm-btn">
+<span class="">CONFIRM APPOINTMENT</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</main>
+<!-- Standard Institutional Footer -->
+<footer class="w-full bg-[#071e33] mt-space-3xl pt-10 pb-6 px-gutter-desktop text-slate-300 text-xs"><div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8"><div class="flex flex-col"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-white rounded flex items-center justify-center p-0.5 shadow-sm shrink-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuADY1JYfd_sB3A7zt2tpsvON7Zhwzaf1S-B1rAitLcTpP8Z2_qLdjNJKvehFxlgjeyWDxU2raUKD2ieQjx6ZDmSq-VmM-sGzNWAsArxPyKVBHHEsVQHK4LReNQcJf2a4aiVVMREmAnygK_D1p2PtxVqt2LplaVCtfdg13qIWmygsR7miYQIJHeHPj5F40dRqPFVM08CfOz4t4_niqvP6L13nWNB4DwMP7y-Z53QWAOFFpZ86QfHal6R-hg7g_EKvZMrwgI" alt="AAROGYA CASE Logo" class="w-full h-full object-contain"></div><div class="flex flex-col"><div class="font-bold text-white tracking-wider text-base">AAROGYA CASE</div><div class="text-xs text-slate-300">Government Healthcare Digital Platform</div></div></div><p class="text-slate-300 text-xs mt-4 leading-relaxed max-w-sm">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="flex flex-col"><div class="font-bold text-white tracking-wider text-xs uppercase mb-3">PATIENT SERVICES</div><div class="flex flex-col gap-2.5 text-xs text-slate-300"><a href="#intake" class="hover:text-white transition-colors">Digital Clinical Intake</a><a href="#tele-consultation" class="hover:text-white transition-colors">Tele-Consultation Request</a><a href="#ehr" class="hover:text-white transition-colors">Electronic Health Record Integration</a><a href="#emergency-protocol" class="hover:text-white transition-colors">Emergency Protocol Information</a></div></div><div class="flex flex-col"><div class="font-bold text-white tracking-wider text-xs uppercase mb-3">HELP &amp; ACCESSIBILITY</div><div class="flex flex-col gap-2.5 text-xs text-slate-300"><div class="flex items-center gap-2"><span class="text-[#2ecc71]">📞</span><span class="">National Health Helpline: <strong class="text-white font-semibold">104</strong></span></div><div class="flex items-center gap-2"><span class="text-[#e74c3c]">🚨</span><span class="">Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span></div><a href="#accessibility" class="hover:text-white transition-colors">Accessibility Options &amp; Screen Reader Guide</a><a href="#privacy" class="hover:text-white transition-colors">Privacy Policy &amp; Terms of Clinical Use</a></div></div></div><div class="max-w-5xl mx-auto pt-5 border-t border-[#122e4d] flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-400 gap-3"><div class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</div><div class="flex items-center gap-3"> <div class="flex items-center gap-1.5 text-slate-300"><span class="material-symbols-outlined text-[15px] text-[#2ecc71]">verified</span><span class="font-medium">ABDM Standard Integrated</span></div><span class="text-slate-500">•</span><span class="">v2.4-Production</span></div></div></footer>
+<script>
+    document.getElementById('confirm-btn').addEventListener('click', function() {
+      const btn = this;
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span> <span>Processing Confirmation...</span>';
+      btn.classList.add('opacity-90', 'pointer-events-none');
+      setTimeout(function() {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> <span>Appointment Confirmed!</span>';
+        btn.classList.remove('bg-tertiary');
+        btn.classList.add('bg-tertiary-container');
+      }, 1200);
+    });
+  </script>
+</div></main>
+
+</body></html>

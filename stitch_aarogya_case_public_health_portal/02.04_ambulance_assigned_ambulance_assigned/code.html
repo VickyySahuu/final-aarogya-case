@@ -1,0 +1,315 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AAROGYA CASE - Ambulance Assigned</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "aarogya-green": "#166534",
+            "aarogya-dark": "#0A2540",
+            "on-background": "#191c1e",
+            "surface-container-highest": "#e1e2e5",
+            "primary": "#166534",
+            "primary-container": "#166534",
+            "surface": "#f7f9fb",
+            "surface-container": "#eceef0",
+            "surface-container-low": "#f2f4f6",
+            "surface-container-high": "#e6e8ea",
+            "surface-container-lowest": "#ffffff",
+            "background": "#f8f9fc",
+            "on-surface": "#191c1e",
+            "on-surface-variant": "#58423a"
+          },
+          fontFamily: {
+            "lexend": ["Lexend", "sans-serif"],
+            "body": ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen">
+<!-- TOP UTILITY BAR & MAIN HEADER -->
+<header class="w-full z-50 bg-white border-b border-surface-container-high shrink-0">
+<!-- Utility Strip -->
+<div class="bg-surface-container-low border-b border-surface-container px-4 md:px-10 py-1.5 flex items-center justify-between text-xs text-on-surface-variant font-lexend">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-[#0A2540]">AAROGYA CASE</span>
+<span class="text-gray-300">|</span>
+<span class="">Healthcare Digital Platform</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-1 hover:text-[#166534] transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">accessibility_new</span>
+<span class="">Accessibility</span>
+</a>
+<span class="text-gray-300">|</span>
+<a class="flex items-center gap-1 hover:text-[#166534] transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">help_outline</span>
+<span class="">Help</span>
+</a>
+</div>
+</div>
+<!-- Institutional Main Header -->
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<img alt="AAROGYA CASE Official Emblem" class="h-14 w-14 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAogM32xGPLx3mbgXbPSX9lGU_Dll1-OUrfq7h1kMbkAtYWMebR2-wNXxN4XxxSHSxn18TvJwliimCi0k1V-IyjT7lOu9eNwNVFsubJ2ZX332571YQ1dZvSj51O-60791MCagLDRcx7WsC0IXuRxG5WvQc6e16r6yTWsDb7OYfZjewsYiPxKSmnV-q2xSxR6EjSB6lj7fxrbzC3cXUDaFfAC9kopHIViLiQbxo9uVnAncTo4eH1aOoiRYXuzBjyg2-15Y8">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-lexend text-xl font-bold tracking-tight text-[#0A2540] leading-none">AAROGYA CASE</span>
+<span class="bg-[#166534]/10 text-[#166534] text-[11px] font-lexend font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Patient Portal</span>
+</div>
+<span class="text-xs text-gray-500 font-medium mt-1">Government Healthcare Digital Platform</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex items-center gap-1 sm:gap-2 font-lexend text-sm">
+<a class="px-3 py-1.5 rounded-md text-gray-600 hover:text-on-surface hover:bg-gray-100 transition-colors font-medium" href="#">HOME</a>
+<a class="px-3 py-1.5 rounded-md text-gray-600 hover:text-on-surface hover:bg-gray-100 transition-colors font-medium" href="#">PATIENT SERVICES</a>
+<a class="px-3 py-1.5 rounded-md text-gray-600 hover:text-on-surface hover:bg-gray-100 transition-colors font-medium" href="#">HELP</a>
+<a class="ml-2 px-3.5 py-1.5 rounded-full bg-red-50 text-red-700 border border-red-200 hover:bg-red-100 transition-colors font-semibold flex items-center gap-1.5" href="#">
+<span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+          EMERGENCY
+        </a>
+</nav>
+</div>
+</header>
+<!-- Context / Breadcrumb & Back Strip -->
+<div class="bg-surface-container-low/70 border-b border-surface-container-high py-2.5 px-4 md:px-8">
+<div class="max-w-5xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 text-xs font-lexend text-gray-500">
+<a class="hover:underline" href="#">Home</a>
+<span class="text-gray-400">/</span>
+<a class="hover:underline" href="#">Emergency</a>
+<span class="text-gray-400">/</span>
+<span class="text-gray-800 font-semibold">Ambulance Assigned</span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-lexend font-semibold text-gray-700 hover:text-[#166534] bg-white border border-gray-300 rounded-full px-5 py-2 shadow-2xs hover:bg-gray-50 transition-colors" data-path="02.02_REQUEST_OVERVIEW" href="#"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span class="">Back to Overview</span></a>
+</div>
+</div>
+<main class="flex-1 w-full py-6 md:py-8 px-4 md:px-8">
+<div class="max-w-5xl mx-auto flex flex-col gap-6">
+<!-- STEPPER: 4-Step Progress Tracker -->
+<section aria-label="Dispatch Progress" class="w-full bg-white rounded-xl border border-surface-container-high p-4 shadow-sm">
+<div class="flex items-center justify-between gap-2 overflow-x-auto">
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-2 shrink-0">
+<div class="w-8 h-8 rounded-full bg-[#166534] text-white flex items-center justify-center font-bold text-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-lexend font-bold text-[#166534] whitespace-nowrap">Step 1</span>
+<span class="text-xs text-gray-600 whitespace-nowrap">Location Shared</span>
+</div>
+</div>
+<div class="h-0.5 flex-1 bg-[#166534] min-w-[20px] max-w-[80px]"></div>
+<!-- Step 2: Completed -->
+<div class="flex items-center gap-2 shrink-0">
+<div class="w-8 h-8 rounded-full bg-[#166534] text-white flex items-center justify-center font-bold text-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-lexend font-bold text-[#166534] whitespace-nowrap">Step 2</span>
+<span class="text-xs text-gray-600 whitespace-nowrap">Request Confirmed</span>
+</div>
+</div>
+<div class="h-0.5 flex-1 bg-[#166534] min-w-[20px] max-w-[80px]"></div>
+<!-- Step 3: Active (#166534) -->
+<div class="flex items-center gap-2 bg-green-50 border border-green-200 px-3 py-1.5 rounded-full shrink-0">
+<div class="w-7 h-7 rounded-full bg-[#166534] text-white flex items-center justify-center font-lexend font-bold text-xs shadow-sm">
+              3
+            </div>
+<div class="flex flex-col pr-1">
+<span class="text-xs font-lexend font-bold text-[#166534] whitespace-nowrap">Ambulance Assigned</span>
+<span class="text-[10px] text-green-800 font-medium">In Progress</span>
+</div>
+</div>
+<div class="h-0.5 flex-1 bg-gray-200 min-w-[20px] max-w-[80px]"></div>
+<!-- Step 4: Upcoming -->
+<div class="flex items-center gap-2 opacity-50 shrink-0">
+<div class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-lexend font-bold text-xs">
+              4
+            </div>
+<div class="flex flex-col">
+<span class="text-xs font-lexend font-medium text-gray-500 whitespace-nowrap">Step 4</span>
+<span class="text-xs text-gray-500 whitespace-nowrap">Live Tracking</span>
+</div>
+</div>
+</div>
+</section>
+<!-- DISPATCH CONFIRMATION BANNER -->
+<section class="bg-white rounded-xl border border-surface-container-high p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden">
+<div class="flex items-start gap-4 z-10">
+<div class="w-14 h-14 rounded-full bg-green-100 text-[#166534] flex items-center justify-center shrink-0 border border-green-200 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-lexend text-xs uppercase tracking-wider text-[#166534] font-bold">Dispatch Confirmed</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#166534]"></span>
+<span class="font-lexend text-xs text-gray-500">Emergency Dispatch Unit</span>
+<span class="px-1.5 py-0.5 text-[10px] font-bold font-lexend rounded bg-gray-100 text-gray-600 border border-gray-200">DEMO</span>
+</div>
+<h1 class="font-lexend text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mt-1">Ambulance Assigned</h1>
+<p class="font-body text-base text-gray-600 mt-1">Emergency vehicle is dispatched and en route to your location.</p>
+</div>
+</div>
+<!-- Token Number Display Card -->
+<div class="flex flex-col items-start md:items-end bg-surface-container-low border border-surface-container-high px-5 py-3.5 rounded-xl shrink-0 z-10 w-full md:w-auto">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-lexend text-xs uppercase tracking-wider text-gray-600 font-semibold">Token Number</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-gray-200 text-gray-700">DEMO</span>
+</div>
+<span class="font-lexend text-2xl md:text-3xl font-bold tracking-tight text-[#166534]">A45821</span>
+<span class="text-xs text-gray-500 mt-0.5">Show this token to crew on arrival</span>
+</div>
+</section>
+<!-- STRUCTURED PROTOTYPE ASSIGNMENT CARD -->
+<section class="bg-white rounded-xl border border-surface-container-high p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<h2 class="font-lexend text-base font-bold text-gray-900">Assigned Vehicle &amp; Routing Details</h2>
+<span class="px-1.5 py-0.5 text-[10px] font-bold rounded bg-gray-100 text-gray-600 border border-gray-200">DEMO</span>
+</div>
+<span class="font-lexend text-xs text-[#166534] font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#166534] animate-ping"></span>
+            Active Dispatch Link
+          </span>
+</div>
+<!-- Vehicle Details Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Ambulance Number -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center gap-4 border border-surface-container-high/60">
+<div class="w-12 h-12 rounded-xl bg-[#166534] text-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">ambulance</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-xs uppercase tracking-wider text-gray-500 font-lexend font-medium">Ambulance Number</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-gray-200 text-gray-600">DEMO</span>
+</div>
+<div class="font-lexend text-2xl font-bold text-[#166534] tracking-tight mt-0.5">AMB-102</div>
+</div>
+</div>
+<!-- Vehicle Plate Number -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center gap-4 border border-surface-container-high/60">
+<div class="w-12 h-12 rounded-xl bg-gray-200 text-gray-800 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">directions_car</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-xs uppercase tracking-wider text-gray-500 font-lexend font-medium">Vehicle Number</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-gray-200 text-gray-600">DEMO</span>
+</div>
+<div class="font-lexend text-2xl font-bold text-gray-900 tracking-wider mt-0.5">PB10 AB 1234</div>
+</div>
+</div>
+</div>
+<!-- Metric Details Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<!-- Estimated Arrival (ETA) -->
+<div class="p-4 rounded-xl flex flex-col justify-between border border-green-200 bg-green-50/70">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="font-lexend text-xs font-semibold text-[#166534]">Estimated Arrival (ETA)</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-green-100 text-green-800">DEMO</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-[#166534]">timer</span>
+</div>
+<div class="my-1">
+<span class="font-lexend text-3xl font-bold leading-none text-[#166534]" id="eta-countdown">2</span>
+<span class="font-lexend text-lg font-semibold ml-1 text-[#166534]">Minutes</span>
+</div>
+<div class="mt-2 w-full bg-green-200/80 rounded-full h-2 overflow-hidden">
+<div class="h-full rounded-full w-3/4 bg-[#166534]"></div>
+</div>
+</div>
+<!-- Distance -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col justify-between border border-surface-container-high/60">
+<div class="flex items-center justify-between text-gray-600 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="font-lexend text-xs font-semibold text-gray-700">Distance</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-gray-200 text-gray-600">DEMO</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-gray-500">near_me</span>
+</div>
+<div class="my-1">
+<span class="font-lexend text-3xl font-bold leading-none text-gray-900">2.4</span>
+<span class="font-lexend text-lg font-semibold ml-1 text-gray-700">km</span>
+</div>
+<span class="text-xs text-gray-500 mt-2">En route to your location</span>
+</div>
+<!-- Destination -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col justify-between border border-surface-container-high/60">
+<div class="flex items-center justify-between text-gray-600 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="font-lexend text-xs font-semibold text-gray-700">Destination</span>
+<span class="px-1.5 py-0.2 text-[10px] font-bold rounded bg-gray-200 text-gray-600">DEMO</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-gray-500">local_hospital</span>
+</div>
+<div class="my-1">
+<span class="font-lexend text-xl font-bold text-gray-900">City Hospital</span>
+</div>
+<div class="mt-2">
+<span class="font-lexend text-[11px] bg-green-100 text-[#166534] px-2 py-0.5 rounded font-semibold border border-green-200 inline-block">Bed Reserved</span>
+</div>
+</div>
+</div>
+<!-- Arrival Advisory -->
+<div class="bg-surface-container-low p-4 rounded-xl border border-surface-container-high/60">
+<span class="font-lexend text-xs uppercase tracking-wider text-gray-600 block font-bold mb-2">Arrival Instructions for Patient</span>
+<ul class="space-y-1.5 text-gray-700 text-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#166534] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Keep phone line clear in case the ambulance crew calls for landmark directions.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#166534] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Have Token Number <strong class="text-gray-900 font-semibold">A45821</strong> ready to verify responder arrival.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- ACTION BUTTONS -->
+<section class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 pb-8">
+<a class="w-full sm:w-auto px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-300 font-lexend font-semibold text-sm flex items-center justify-center gap-2 hover:bg-gray-50 transition-colors shadow-xs order-2 sm:order-1" data-path="02.02_REQUEST_OVERVIEW" href="#"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span class="">Back</span></a>
+<a class="w-full sm:w-auto rounded-full bg-[#166534] text-white font-lexend font-bold text-sm tracking-wide px-8 py-3.5 flex items-center justify-center gap-2.5 hover:bg-[#12532b] transition-all shadow-md hover:shadow-lg order-1 sm:order-2 group" data-path="02.05_AMBULANCE_LIVE_LOCATION" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span class="">VIEW LIVE LOCATION</span><span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</section>
+</div>
+</main>
+<!-- INSTITUTIONAL FOOTER (Dark Navy #0A2540) -->
+<footer class="w-full bg-[#0A2540] text-white mt-auto py-8"><div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col gap-8"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-white/10"><div class="flex flex-col gap-3"><div class="flex items-center gap-3"><img alt="AAROGYA CASE Official Emblem" class="h-10 w-10 object-contain brightness-0 invert opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH3Ph9bl5rKCeQNRswbEQvcxfcdErUdlIfip60FvjwR_gRJ7k7K8AlgkSXNldYf126kQn52RXDUNqCL68yChyRDAPkBzPz3rgnOPLQOp5ky83J2Z5XxDPCbLcfb47KpNTcTifyINKU5PzVHY8BeLK2ZVcRaGLVK-2My9KUh0mRgYSopjBYwAqIaLQaweQrX_0uSlRvZhJEuuM_Uu2wijFOaFtw4pWFvMQ3LgvrRDzRe9-7siw02fIRsmx14vxeGADnsZw"><div><span class="font-lexend font-bold text-base tracking-tight block text-white">AAROGYA CASE</span><span class="text-xs text-gray-300">Healthcare Digital Platform</span></div></div><p class="text-xs text-gray-400 font-body mt-1">Ministry of Health &amp; Family Welfare, Government of India. Rapid emergency medical dispatch network.</p></div><div><h3 class="font-lexend font-semibold text-xs text-white uppercase tracking-wider mb-3">Emergency Services</h3><ul class="space-y-2 text-xs text-gray-300 font-lexend"><li class=""><a class="hover:text-white transition-colors" href="#">Ambulance Dispatch</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Live GPS Tracking</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Hospital Bed Status</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Emergency Helpline (112)</a></li></ul></div><div><h3 class="font-lexend font-semibold text-xs text-white uppercase tracking-wider mb-3">Platform &amp; Legal</h3><ul class="space-y-2 text-xs text-gray-300 font-lexend"><li class=""><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Citizen Charter</a></li><li class=""><a class="hover:text-white transition-colors" href="#">National Emergency Portal</a></li></ul></div><div><h3 class="font-lexend font-semibold text-xs text-white uppercase tracking-wider mb-3">Support &amp; Help</h3><ul class="space-y-2 text-xs text-gray-300 font-lexend"><li class=""><a class="hover:text-white transition-colors" href="#">Accessibility Help</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Contact Control Room</a></li><li class=""><a class="hover:text-white transition-colors" href="#">Grievance Redressal</a></li><li class=""><a class="hover:text-white transition-colors" href="#">FAQ &amp; User Guide</a></li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400 font-body"><p class="text-center md:text-left">© AAROGYA CASE — Ministry of Health &amp; Family Welfare. Digital Project Prototype. For demonstration purposes only.</p><div class="flex items-center gap-4 font-lexend text-gray-300"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-green-400">verified_user</span>Secure Digital Infrastructure</span><span class="text-gray-500">|</span><span class="text-gray-400">v02.4-EMR</span></div></div></div></footer>
+<script>
+    (function() {
+      let minutesLeft = 7;
+      const etaDisplay = document.getElementById('eta-countdown');
+      if (etaDisplay) {
+        const interval = setInterval(() => {
+          if (minutesLeft > 2) {
+            minutesLeft -= 1;
+            etaDisplay.textContent = minutesLeft;
+          } else {
+            clearInterval(interval);
+          }
+        }, 30000);
+      }
+    })();
+  </script>
+
+
+</body></html>

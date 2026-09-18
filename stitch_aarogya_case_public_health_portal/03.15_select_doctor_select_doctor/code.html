@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006b25",
+          "surface-dim": "#d8dadd",
+          "background": "#f8f9fc",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#001b3d",
+          "primary-fixed": "#ffdbcf",
+          "on-primary-container": "#fffbff",
+          "surface-bright": "#f8f9fc",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "on-surface": "#191c1e",
+          "secondary-fixed-dim": "#adc7f8",
+          "surface-container": "#eceef0",
+          "error-container": "#ffdad6",
+          "secondary-container": "#b3cdfe",
+          "inverse-primary": "#ffb59a",
+          "error": "#ba1a1a",
+          "tertiary-fixed": "#9bf79f",
+          "outline-variant": "#dfc0b5",
+          "surface-container-low": "#f2f4f6",
+          "on-secondary-container": "#3c5781",
+          "inverse-on-surface": "#eff1f3",
+          "surface-tint": "#a83903",
+          "on-tertiary-fixed-variant": "#00531b",
+          "secondary-fixed": "#d6e3ff",
+          "secondary": "#455f8a",
+          "on-tertiary": "#ffffff",
+          "outline": "#8f7066",
+          "surface-container-high": "#e7e8eb",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-surface-variant": "#5a4138",
+          "surface-container-highest": "#e1e2e5",
+          "on-tertiary-container": "#f7fff2",
+          "on-error-container": "#93000a",
+          "on-primary-fixed-variant": "#802a00",
+          "inverse-surface": "#2d3133",
+          "primary": "#7c2800",
+          "on-tertiary-fixed": "#002106",
+          "surface-variant": "#e1e2e5",
+          "tertiary": "#00501a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-background": "#191c1e",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-container": "#a43700",
+          "surface": "#f7f9fb",
+          "tertiary-fixed-dim": "#7edb85"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-xl": "2rem",
+          "space-xs": "0.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-3xl": "4rem",
+          "kiosk-touch-min": "4.5rem",
+          "space-lg": "1.5rem",
+          "gutter-kiosk": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.75rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-2xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Lexend"
+          ],
+          "body-xl": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "body-sm": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "label-sm": [
+            "Lexend"
+          ],
+          "body-md": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-md": [
+            "Lexend"
+          ],
+          "display-lg-mobile": [
+            "Lexend"
+          ],
+          "body-lg": [
+            "Atkinson Hyperlegible Next"
+          ],
+          "headline-sm": [
+            "Lexend"
+          ],
+          "display-lg": [
+            "Lexend"
+          ],
+          "label-lg": [
+            "Lexend"
+          ],
+          "label-md": [
+            "Lexend"
+          ],
+          "headline-lg-mobile": [
+            "Lexend"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "42px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-xl": [
+            "20px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "44px",
+            {
+              "lineHeight": "54px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Top Utility Strip -->
+<div class="w-full bg-surface-container-high px-gutter-desktop py-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-space-xs tracking-wide uppercase">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="">AAROGYA CASE | Healthcare Digital Platform</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<button class="hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+          Accessibility
+        </button>
+<button class="hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+          Help
+        </button>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<nav class="w-full bg-surface-container-lowest shadow-sm px-gutter-desktop py-space-md">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<img alt="AAROGYA CASE Official Emblem" class="h-14 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDegQNljkllGdHHYUCIB3Ka-5OP619skK2uhK9jKGm4eIC7afSc4eMz13rGuNbVqO5acWHj-NGjZpL5xi56i2LY8lAq-f-ZPNafD3FFRJMTRveIzFNE9zv3mP2P4o_APLU48y0jWJXoMHOY5BUVk5OtCJP4c_jvAFumwZG36CyeYZLeO31r7PoeENAsjkv24hofu0Y2RWWRciNN9_FzDCBW30i5PSWiPB2vL9bN5r1buSplqf6WCc4cYQbgypeoam3qyNA">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">AAROGYA CASE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Government Healthcare Digital Platform • Patient Portal</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="#home">Home</a>
+<a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="#services">Patient Services</a>
+<a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="#help">Help</a>
+<a class="px-space-lg py-space-xs font-label-md text-label-md text-on-error bg-error rounded-full flex items-center gap-1 shadow-sm hover:opacity-95 transition-opacity" href="#emergency">
+<span class="material-symbols-outlined text-[18px]">e911_emergency</span>
+          Emergency
+        </a>
+</div>
+</div>
+</nav>
+<!-- Hospital Context Summary Strip -->
+<div class="w-full bg-surface-container-low px-gutter-desktop py-space-sm">
+<div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm text-on-surface font-body-md text-body-md">
+<span class="material-symbols-outlined text-tertiary">local_hospital</span>
+<span class="">Selected Facility: <strong class="font-label-md">District Civil Hospital, Sector 4</strong> <span class="text-on-surface-variant">[DEMO]</span></span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" type="button">
+        Change Hospital
+        <span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+</div>
+</div>
+<!-- Breadcrumb & Workflow Shell -->
+<div class="w-full max-w-6xl mx-auto px-gutter-desktop py-space-lg">
+<!-- Breadcrumb & Back Action -->
+<div class="flex items-center justify-between mb-space-lg">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-on-surface">Home</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="hover:text-on-surface">Patient Portal</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="hover:text-on-surface">Book Appointment</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface font-label-sm">Select Doctor</span>
+</nav>
+<button class="px-space-md py-space-xs font-label-md text-label-md rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors flex items-center gap-1" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Back
+      </button>
+</div>
+<!-- Booking Multi-Step Indicator -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm mb-space-xl">
+<div class="grid grid-cols-5 gap-space-xs items-center relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-label-md mb-space-2xs shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">1. Facility</span>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex flex-col items-center text-center">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md mb-space-2xs shadow-md">
+            2
+          </div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">2. Select Doctor</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md mb-space-2xs">
+            3
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3. Date &amp; Time</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md mb-space-2xs">
+            4
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4. Confirm</span>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md mb-space-2xs">
+            5
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5. Token &amp; Slip</span>
+</div>
+</div>
+</div>
+<!-- Title and Subtitle -->
+<div class="mb-space-xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">Select Doctor</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Select an available duty medical officer or consulting physician at District Civil Hospital.</p>
+</div>
+<!-- Filter/Toggle Pills -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-xl" id="filterContainer">
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-tertiary text-on-tertiary shadow-sm transition-all" data-category="all" type="button">
+        All Physicians
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-all" data-category="general" type="button">
+        General Medicine / Outpatient
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-all" data-category="ayush" type="button">
+        AYUSH Integrative Care
+      </button>
+</div>
+<!-- Doctor Selection Grid / List -->
+<div class="flex flex-col gap-space-md mb-space-2xl" id="doctorCardGroup">
+<!-- Auto Allocation Tile Option -->
+<label class="doctor-select-card cursor-pointer block rounded-lg p-space-lg transition-all duration-200 bg-surface-container-lowest shadow-sm hover:shadow-md">
+<input class="sr-only" name="doctor_choice" type="radio" value="auto_allocate">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">shuffle</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Any Available Duty Medical Officer</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container font-label-sm text-label-sm text-on-secondary-container">Fastest Check-in</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">Auto-allocates the earliest available doctor at clinic check-in desk.</p>
+<div class="flex items-center gap-space-md mt-space-sm text-on-surface font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Immediate OPD Allocation
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+                  Triage &amp; General Outpatient Desk
+                </span>
+</div>
+</div>
+</div>
+<div class="radio-indicator w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="radio-dot w-3 h-3 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+</label>
+<!-- Doctor Card 1 (Selected State Default) -->
+<label class="doctor-select-card cursor-pointer block rounded-lg p-space-lg transition-all duration-200 bg-surface-container-lowest shadow-sm hover:shadow-md active-card" data-dept="general">
+<input checked="" class="sr-only" name="doctor_choice" type="radio" value="dr_ananya_sen">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">stethoscope</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Ananya Sen, MD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[DEMO]</span>
+<span class="badge-selected px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Selected Doctor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">General Medicine &amp; Outpatient Duty Physician</p>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-space-lg mt-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+                  Outpatient General Consultation (OPD)
+                </span>
+<span class="flex items-center gap-1 text-tertiary font-label-sm">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+                  Available Today &amp; Tomorrow • Morning OPD
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+                  In-Person Public OPD
+                </span>
+</div>
+</div>
+</div>
+<div class="radio-indicator w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 self-end md:self-center">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+</label>
+<!-- Doctor Card 2 -->
+<label class="doctor-select-card cursor-pointer block rounded-lg p-space-lg transition-all duration-200 bg-surface-container-lowest shadow-sm hover:shadow-md" data-dept="general">
+<input class="sr-only" name="doctor_choice" type="radio" value="dr_rajeshwar_prasad">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">stethoscope</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Rajeshwar Prasad, MBBS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[DEMO]</span>
+<span class="badge-selected hidden px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Selected Doctor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">Medical Officer - Clinical Triage</p>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-space-lg mt-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+                  General Medicine Outpatient
+                </span>
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                  Available Monday to Friday
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+                  In-Person Public OPD
+                </span>
+</div>
+</div>
+</div>
+<div class="radio-indicator w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 self-end md:self-center">
+<span class="radio-dot w-3 h-3 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+</label>
+<!-- Doctor Card 3 -->
+<label class="doctor-select-card cursor-pointer block rounded-lg p-space-lg transition-all duration-200 bg-surface-container-lowest shadow-sm hover:shadow-md" data-dept="ayush">
+<input class="sr-only" name="doctor_choice" type="radio" value="dr_meenakshi_sundaram">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Meenakshi Sundaram, BAMS, MD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[DEMO]</span>
+<span class="badge-selected hidden px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Selected Doctor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">Senior Consulting Physician</p>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-space-lg mt-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+                  AYUSH Integrative Health &amp; Wellness
+                </span>
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                  Available Tue, Thu, Sat
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+                  In-Person Public OPD
+                </span>
+</div>
+</div>
+</div>
+<div class="radio-indicator w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 self-end md:self-center">
+<span class="radio-dot w-3 h-3 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+</label>
+</div>
+<!-- Institutional Quality Notice -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-center gap-space-md mb-space-2xl text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[24px]">verified</span>
+<p class="font-body-md text-body-md leading-relaxed">
+        Duty physicians are certified government healthcare officers under the National Health Mission. Patient consultation slots are allocated equitably per clinical triage protocols.
+      </p>
+</div>
+<!-- Bottom Action Bar -->
+<div class="flex items-center justify-between pt-space-md mb-space-3xl">
+<button class="px-space-xl py-space-sm rounded-full bg-surface-container-lowest text-secondary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+        Back
+      </button>
+<button class="px-space-3xl py-space-sm rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-md hover:opacity-90 active:scale-[0.99] transition-all flex items-center gap-space-sm" id="continueBtn" type="button">
+<span class="">CONTINUE</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Standard Institutional 3-Column Footer -->
+<footer class="w-full bg-[#071e33] text-white pt-8 pb-6 px-gutter-desktop font-body-sm text-xs border-t border-slate-800">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-700/60">
+    <!-- Col 1: Brand & Description -->
+    <div>
+      <div class="flex items-center gap-3 mb-3">
+        <div class="bg-white rounded p-1 flex items-center justify-center shrink-0 w-11 h-11 shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQ9C3Or33Mf1WIkrEXtWFVdRK2ExVV-OVlkmAioxfj59YWTjpjjPjOonzoAVuub601abJDvRqmrj3-3CgPdMZK0atsPPfSBQ1ceK1ULvjBWi9K_OhwItcE9wIz2CHu_b7jMKzlCyVZTwh7thuHvba1m3wsT1PYpzz3auLrO1WLqlA3xrIzlUDggdbCws8LfRL-lpdSlMMkUG89EjmDDv3kcrP_joHxasjDCGR4oqBrlVjYJov3pxT7k0l0pUpKmJBFYY" alt="AAROGYA CASE Emblem" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <div class="font-bold text-white tracking-wider text-base uppercase leading-tight">AAROGYA CASE</div>
+          <div class="text-[11px] text-slate-300 font-medium">Government Healthcare Digital Platform</div>
+        </div>
+      </div>
+      <p class="text-slate-300 text-xs mt-3 leading-relaxed max-w-sm">
+        An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.
+      </p>
+    </div>
+    <!-- Col 2: Patient Services -->
+    <div>
+      <div class="font-bold text-white tracking-wider text-xs uppercase mb-3">PATIENT SERVICES</div>
+      <ul class="space-y-2 text-slate-300 text-xs">
+        <li class=""><a href="#services" class="hover:text-white transition-colors">Digital Clinical Intake</a></li>
+        <li class=""><a href="#tele-consult" class="hover:text-white transition-colors">Tele-Consultation Request</a></li>
+        <li class=""><a href="#ehr" class="hover:text-white transition-colors">Electronic Health Record Integration</a></li>
+        <li class=""><a href="#emergency-info" class="hover:text-white transition-colors">Emergency Protocol Information</a></li>
+      </ul>
+    </div>
+    <!-- Col 3: Help & Accessibility -->
+    <div>
+      <div class="font-bold text-white tracking-wider text-xs uppercase mb-3">HELP &amp; ACCESSIBILITY</div>
+      <div class="space-y-2 text-slate-300 text-xs">
+        <div class="flex items-center gap-2">
+          <span class="text-[#2cd15b] text-sm">📞</span>
+          <span class="">National Health Helpline: <strong class="text-white font-semibold">104</strong></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#ff4d4d] text-sm">🚨</span>
+          <span class="">Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span>
+        </div>
+        <div>
+          <a href="#accessibility-guide" class="hover:text-white transition-colors block">Accessibility Options &amp; Screen Reader Guide</a>
+        </div>
+        <div>
+          <a href="#privacy-terms" class="hover:text-white transition-colors block">Privacy Policy &amp; Terms of Clinical Use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Strip -->
+  <div class="max-w-6xl mx-auto pt-4 flex flex-col md:flex-row items-center justify-between gap-3 text-slate-400 text-[11px]">
+    <div class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</div>
+    <div class="flex items-center gap-3 text-slate-300">
+      <div class="flex items-center gap-1.5 text-[#30db74] font-medium">
+        <span class="material-symbols-outlined text-[15px]">verified_user</span>
+        <span class="">ABDM Standard Integrated</span>
+      </div>
+      <span class="text-slate-500">•</span>
+      <span class="text-slate-400">v2.4-Production</span>
+    </div>
+  </div>
+</footer>
+<!-- Interactive Logic for Filter and Radio Selection -->
+<script>
+    (function () {
+      const cards = document.querySelectorAll('.doctor-select-card');
+      const filterPills = document.querySelectorAll('.filter-pill');
+
+      // Handle card selection styling
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          cards.forEach(c => {
+            const input = c.querySelector('input[type="radio"]');
+            const badge = c.querySelector('.badge-selected');
+            const indicator = c.querySelector('.radio-indicator');
+            c.classList.remove('bg-surface-container-low', 'shadow-md');
+            c.classList.add('bg-surface-container-lowest');
+            if (badge) badge.classList.add('hidden');
+            if (indicator) {
+              indicator.className = 'radio-indicator w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 self-end md:self-center';
+              indicator.innerHTML = '<span class="radio-dot w-3 h-3 rounded-full bg-surface-container-high"></span>';
+            }
+          });
+
+          card.classList.remove('bg-surface-container-lowest');
+          card.classList.add('bg-surface-container-low', 'shadow-md');
+          const currentBadge = card.querySelector('.badge-selected');
+          if (currentBadge) currentBadge.classList.remove('hidden');
+
+          const currentIndicator = card.querySelector('.radio-indicator');
+          if (currentIndicator) {
+            currentIndicator.className = 'radio-indicator w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 self-end md:self-center';
+            currentIndicator.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span>';
+          }
+        });
+      });
+
+      // Filter pills
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-tertiary', 'text-on-tertiary');
+            p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          pill.classList.add('bg-tertiary', 'text-on-tertiary');
+
+          const category = pill.getAttribute('data-category');
+          cards.forEach(c => {
+            const dept = c.getAttribute('data-dept');
+            if (!dept || category === 'all' || dept === category) {
+              c.classList.remove('hidden');
+            } else {
+              c.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Continue Button feedback
+      const continueBtn = document.getElementById('continueBtn');
+      if (continueBtn) {
+        continueBtn.addEventListener('click', () => {
+          const selected = document.querySelector('input[name="doctor_choice"]:checked');
+          if (selected) {
+            continueBtn.innerHTML = '<span>Processing...</span><span class="material-symbols-outlined animate-spin text-[20px]">sync</span>';
+            setTimeout(() => {
+              window.location.hash = '#step-datetime';
+            }, 600);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main>
+
+</body></html>

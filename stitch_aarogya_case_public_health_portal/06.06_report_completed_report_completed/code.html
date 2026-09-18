@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AAROGYA CASE — Diagnostic &amp; Scan Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#2c4770",
+        "primary": "#7c2800",
+        "on-tertiary": "#ffffff",
+        "outline-variant": "#e3bfb2",
+        "surface-container-highest": "#e0e3e5",
+        "on-tertiary-container": "#f7fff2",
+        "surface-variant": "#e1e2e5",
+        "on-tertiary-fixed-variant": "#00531b",
+        "surface-dim": "#d8dadd",
+        "primary-container": "#cd4700",
+        "tertiary-fixed-dim": "#7edb85",
+        "secondary-fixed": "#d6e3ff",
+        "on-secondary-container": "#3c5781",
+        "on-primary-fixed-variant": "#812900",
+        "on-primary-container": "#fffbff",
+        "tertiary-container": "#006b25",
+        "primary-fixed": "#ffdbcf",
+        "background": "#f8f9fc",
+        "on-secondary-fixed": "#001b3d",
+        "surface-container": "#eceef0",
+        "surface-container-lowest": "#ffffff",
+        "on-surface-variant": "#5a4138",
+        "secondary-fixed-dim": "#adc7f8",
+        "on-primary-fixed": "#380d00",
+        "on-tertiary-fixed": "#002106",
+        "tertiary-fixed": "#99f89e",
+        "inverse-primary": "#ffb59a",
+        "on-secondary": "#ffffff",
+        "on-background": "#191c1e",
+        "surface-tint": "#a83903",
+        "surface": "#f7f9fb",
+        "outline": "#8f7066",
+        "primary-fixed-dim": "#ffb59a",
+        "surface-bright": "#f7f9fb",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#b2cdfe",
+        "error": "#ba1a1a",
+        "on-surface": "#191c1e",
+        "inverse-surface": "#2e3133",
+        "on-primary": "#ffffff",
+        "error-container": "#ffdad6",
+        "secondary": "#455f8a",
+        "on-error": "#ffffff",
+        "surface-container-high": "#e7e8eb",
+        "on-error-container": "#93000a",
+        "tertiary": "#00501a"
+      },
+      "borderRadius": {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1.5rem",
+        "space-sm": "0.75rem",
+        "space-xs": "0.5rem",
+        "space-md": "1rem",
+        "gutter-mobile": "1rem",
+        "gutter-tablet": "1.5rem",
+        "space-xl": "2rem",
+        "kiosk-touch-min": "4.5rem",
+        "gutter-desktop": "2.5rem",
+        "gutter-kiosk": "3rem",
+        "space-2xs": "0.25rem",
+        "space-3xl": "4rem",
+        "touch-min": "3.5rem",
+        "space-2xl": "3rem"
+      },
+      "fontFamily": {
+        "label-lg": [
+          "Lexend"
+        ],
+        "headline-sm": [
+          "Lexend"
+        ],
+        "body-lg": [
+          "Atkinson Hyperlegible Next"
+        ],
+        "body-md": [
+          "Atkinson Hyperlegible Next"
+        ],
+        "headline-md": [
+          "Lexend"
+        ],
+        "headline-lg-mobile": [
+          "Lexend"
+        ],
+        "headline-lg": [
+          "Lexend"
+        ],
+        "label-md": [
+          "Lexend"
+        ],
+        "body-sm": [
+          "Atkinson Hyperlegible Next"
+        ],
+        "body-xl": [
+          "Atkinson Hyperlegible Next"
+        ],
+        "display-lg": [
+          "Lexend"
+        ],
+        "display-lg-mobile": [
+          "Lexend"
+        ],
+        "label-sm": [
+          "Lexend"
+        ]
+      },
+      "fontSize": {
+        "label-lg": [
+          "18px",
+          {
+            "lineHeight": "24px",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-sm": [
+          "20px",
+          {
+            "lineHeight": "28px",
+            "fontWeight": "600"
+          }
+        ],
+        "body-lg": [
+          "18px",
+          {
+            "lineHeight": "28px",
+            "fontWeight": "400"
+          }
+        ],
+        "body-md": [
+          "16px",
+          {
+            "lineHeight": "24px",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg-mobile": [
+          "26px",
+          {
+            "lineHeight": "34px",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg": [
+          "32px",
+          {
+            "lineHeight": "42px",
+            "fontWeight": "600"
+          }
+        ],
+        "label-md": [
+          "15px",
+          {
+            "lineHeight": "20px",
+            "fontWeight": "600"
+          }
+        ],
+        "body-sm": [
+          "14px",
+          {
+            "lineHeight": "20px",
+            "fontWeight": "400"
+          }
+        ],
+        "body-xl": [
+          "20px",
+          {
+            "lineHeight": "30px",
+            "fontWeight": "400"
+          }
+        ],
+        "display-lg": [
+          "44px",
+          {
+            "lineHeight": "54px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "display-lg-mobile": [
+          "32px",
+          {
+            "lineHeight": "40px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "700"
+          }
+        ],
+        "label-sm": [
+          "12px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.04em",
+            "fontWeight": "600"
+          }
+        ]
+      }
+    },
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-surface-container-high"><div class="max-w-7xl mx-auto px-gutter-tablet lg:px-gutter-desktop h-8 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span>Government of India • Ministry of Health &amp; Family Welfare</span><div class="flex items-center gap-space-lg"><span>National Health Portal</span><span>Screen Reader Access</span><span class="font-label-sm text-label-sm text-tertiary">English</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-gutter-tablet lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="aarogya_case_official_emblem.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">DIAGNOSTIC &amp; SCAN PORTAL</span></div></div><nav class="flex items-center bg-surface-container-low p-space-2xs rounded-full" data-active-classes="bg-tertiary text-on-tertiary font-label-md rounded-full shadow-sm"><a class="px-space-lg py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="dashboard" href="#">Dashboard</a><a class="px-space-lg py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="requests" href="#">Requests</a><a aria-current="page" class="px-space-lg py-space-xs transition-colors bg-tertiary text-on-tertiary font-label-md rounded-full shadow-sm" data-path="completed-reports" href="#">Completed Reports</a></nav><div class="flex items-center gap-space-md"><div class="flex flex-col items-end"><span class="inline-flex items-center px-space-sm py-space-2xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Diagnostic Lab #02</span><span class="font-body-sm text-body-sm text-on-surface-variant">AIIMS New Delhi Central Node</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-5xl mx-auto px-gutter-tablet lg:px-gutter-desktop py-space-xl md:py-space-2xl">
+<!-- Flow Status Top Marker -->
+<div class="flex items-center justify-between gap-space-md mb-space-xl">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">6</span>
+<span class="uppercase tracking-wider">Diagnostic Pipeline</span>
+<span class="text-outline-variant">/</span>
+<span class="text-tertiary font-medium">Transmission Ready</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Secure NDHM Node #AIIMS-DELHI-02</span>
+</div>
+</div>
+<!-- Success Feedback Hero Header -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-md p-space-xl md:p-space-2xl mb-space-xl">
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xl">
+<div class="flex flex-col items-start gap-space-sm">
+<!-- Green Success Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-lg py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="tracking-wide">✓ REPORT UPLOADED</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+            Report Completed
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Diagnostic scan report and findings have been successfully registered into AAROGYA CASE.
+          </p>
+</div>
+<!-- Quick Status Cardlet -->
+<div class="flex flex-col items-start md:items-end bg-surface-container-low p-space-lg rounded-DEFAULT min-w-[240px]">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Current Pipeline State</span>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-space-2xs flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+            Validated &amp; Signed
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">SHA-256 Checksum Verified</span>
+</div>
+</div>
+<!-- Subtle background flourish -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-tertiary-fixed-dim/20 pointer-events-none blur-3xl"></div>
+</div>
+<!-- Summary Confirmation Card & Clinical Route Details -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-xl">
+<!-- Primary Summary Card -->
+<div class="lg:col-span-8 flex flex-col bg-surface-container-low rounded-lg p-space-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container-lowest -mx-space-xl -mt-space-xl px-space-xl pt-space-xl rounded-t-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Confirmed Diagnostic Entry</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Rajesh Kumar Sharma</h2>
+</div>
+</div>
+<span class="px-space-md py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+            Ready to Transmit
+          </span>
+</div>
+<!-- Data Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg font-body-md text-body-md">
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Patient Health ID</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-2xs">AC-2025-884920</span>
+<span class="font-body-sm text-body-sm text-tertiary mt-space-2xs flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">check</span> ABHA Linked
+            </span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Request Number</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-2xs">REQ-2025-992014</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">OPD Referral • Dept. Pulmonology</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Test / Scan Ordered</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-space-2xs">Chest X-Ray (PA View)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Digital Radiography (Room #4)</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Upload Timestamp</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-space-2xs">Today, 12:15 PM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Technician: T. N. Rao (ID: LR-104)</span>
+</div>
+</div>
+<!-- Attached File Row -->
+<div class="mt-space-lg p-space-md bg-surface-container-lowest rounded-DEFAULT flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface break-all">chest_xray_pa_view_ac884920.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4.2 MB • Standard DICOM Render • 300 DPI Clear View</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Inspect File</span>
+</button>
+</div>
+<!-- Status Bar -->
+<div class="mt-space-md p-space-md bg-tertiary-fixed-dim/25 rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px] text-tertiary">task_alt</span>
+<span>Status: Completed • Ready for Doctor Transmission</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">100% Encrypted</span>
+</div>
+</div>
+<!-- Quick Route Side Panel / Context -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-space-lg">
+<!-- Clinical Node Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[22px]">stethoscope</span>
+<span class="font-label-md text-label-md text-on-surface">Target Clinical Recipient</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Attending Clinician</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-space-2xs">Dr. Arvind Mukherjee</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Senior Consultant, Respiratory Medicine</div>
+<div class="font-body-sm text-body-sm text-secondary mt-space-xs">OPD Room 214 • AIIMS Central</div>
+</div>
+<div class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Doctor Portal Status:</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Active Session</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Expected Latency:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">&lt; 1.5 seconds</span>
+</div>
+</div>
+</div>
+<!-- System Integrity Micro-card -->
+<div class="bg-surface-container-low p-space-lg rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-tertiary">cloud_done</span>
+<span class="font-label-md text-label-md">Audit Trail Timestamped</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Registered on National Digital Health Registry with unique token ID: <span class="font-label-sm text-label-sm text-on-surface font-mono">NDHM-TX-8849-09</span>.
+          </p>
+</div>
+</div>
+</div>
+<!-- Connection Notification Banner -->
+<div class="w-full bg-secondary-fixed text-on-secondary-fixed p-space-lg rounded-lg shadow-sm mb-space-2xl flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">sync_alt</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-secondary-fixed-variant">Clinical Synchronization Notice</span>
+<p class="font-body-md text-body-md text-on-secondary-fixed mt-space-2xs leading-relaxed">
+          This completed report will immediately appear in the Doctor Portal under 
+          <span class="font-label-md text-label-md underline underline-offset-2">Patient Reports (04.16)</span> and 
+          <span class="font-label-md text-label-md underline underline-offset-2">Diagnostic / Scan Report (04.24)</span>.
+        </p>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pt-space-md">
+<!-- Left: Utility Options (Print Slip & Return) -->
+<div class="flex flex-wrap items-center gap-space-md order-2 sm:order-1">
+<button class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md min-h-[3.5rem] rounded-full bg-surface-container-lowest text-secondary shadow-sm hover:bg-surface-container-high transition-all font-label-lg text-label-lg active:scale-95" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print Final Slip</span>
+</button>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md min-h-[3.5rem] rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all font-label-lg text-label-lg active:scale-95" data-path="dashboard" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span>Back to Dashboard</span>
+</a>
+</div>
+<!-- Right: Main Forward Call to Action -->
+<div class="order-1 sm:order-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<button class="inline-flex items-center justify-center gap-space-sm px-space-2xl py-space-md min-h-[3.5rem] md:min-h-[4.5rem] rounded-full bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-lg text-label-lg shadow-md hover:shadow-xl transition-all active:scale-95 tracking-wide" id="send-doctor-btn" type="button">
+<span id="send-btn-label">TRANSMIT TO DOCTOR CLINICAL FILE</span>
+<span class="material-symbols-outlined text-[24px]" id="send-btn-icon">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Toast Confirmation for Transmission -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-md px-space-xl py-space-md rounded-full bg-tertiary text-on-tertiary shadow-xl" id="transmission-toast">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span class="font-label-md text-label-md">Transmitted successfully to Dr. Arvind Mukherjee's console!</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const sendBtn = document.getElementById('send-doctor-btn');
+    const btnLabel = document.getElementById('send-btn-label');
+    const btnIcon = document.getElementById('send-btn-icon');
+    const toast = document.getElementById('transmission-toast');
+
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function() {
+        btnLabel.textContent = 'TRANSMITTING FILE...';
+        btnIcon.textContent = 'hourglass_top';
+        sendBtn.classList.add('opacity-90', 'cursor-not-allowed');
+        sendBtn.disabled = true;
+
+        setTimeout(function() {
+          btnLabel.textContent = 'TRANSMITTED TO DOCTOR ✓';
+          btnIcon.textContent = 'check';
+          sendBtn.classList.remove('bg-tertiary', 'hover:bg-tertiary-container');
+          sendBtn.classList.add('bg-tertiary-container');
+
+          if (toast) {
+            toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(function() {
+              toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+              toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 4000);
+          }
+        }, 1200);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low mt-space-3xl"><div class="max-w-7xl mx-auto px-gutter-tablet lg:px-gutter-desktop py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-2xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">AAROGYA CASE</span><span class="px-space-xs py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Module 06</span></div><p class="font-body-md text-body-md text-on-surface-variant">Unified Civic Health Architecture &amp; Diagnostic Services platform connecting civic laboratories, tertiary imaging stations, and verified clinicians under NDHM compliance.</p><p class="font-body-sm text-body-sm text-on-surface-variant">Operated under public digital health infrastructure protocols.</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Quick Operations</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="requests" href="#">Pending Requests</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="report-upload" href="#">Report Upload</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="completed-reports" href="#">Completed Scans</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Help &amp; Helplines</span><div class="flex flex-col gap-space-2xs font-body-md text-body-md text-on-surface-variant"><div class="flex items-center justify-between"><span>Diagnostic Support:</span><span class="font-label-md text-label-md text-on-surface">104</span></div><div class="flex items-center justify-between"><span>National Emergency:</span><span class="font-label-md text-label-md text-on-surface">108</span></div><div class="flex items-center justify-between"><span>Operating Window:</span><span class="font-label-md text-label-md text-tertiary">24x7 Core Diagnostics</span></div></div></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-md py-space-sm rounded-lg"><span>© 2024 Ministry of Health &amp; Family Welfare, Government of India. All rights reserved.</span><span>Prototype Demonstration • Authorized Hospital Diagnostic Node</span></div></div></footer></body></html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "secondary": "#455f8a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-secondary": "#ffffff",
+          "outline-variant": "#dfc0b5",
+          "secondary-container": "#b3cdfe",
+          "surface-container-high": "#e7e8eb",
+          "surface-container-highest": "#e1e2e5",
+          "inverse-on-surface": "#eff1f3",
+          "primary-fixed": "#ffdbcf",
+          "on-secondary-fixed": "#001b3d",
+          "surface-bright": "#f8f9fc",
+          "on-tertiary-fixed": "#002106",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-primary-fixed-variant": "#812900",
+          "tertiary": "#00501a",
+          "surface-dim": "#d8dadc",
+          "inverse-surface": "#2d3133",
+          "error-container": "#ffdad6",
+          "on-error-container": "#93000a",
+          "on-tertiary-container": "#8ee993",
+          "secondary-fixed": "#d6e3ff",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#adc7f8",
+          "on-surface": "#191c1e",
+          "on-surface-variant": "#58423a",
+          "tertiary-container": "#27853a",
+          "surface-variant": "#e1e2e5",
+          "surface": "#f7f9fb",
+          "on-tertiary-fixed-variant": "#00531b",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#8f7066",
+          "surface-tint": "#a83903",
+          "on-secondary-container": "#3c5781",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "tertiary-fixed-dim": "#7edb85",
+          "inverse-primary": "#ffb59a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#99f89e",
+          "background": "#f8f9fc",
+          "surface-container-low": "#f2f4f6",
+          "on-background": "#191c1e",
+          "primary": "#7c2800",
+          "surface-container": "#eceef0",
+          "primary-container": "#cd4700",
+          "on-primary-container": "#fffbff",
+          "civic-navy": "#071e33",
+          "civic-navy-dark": "#041220",
+          "civic-green": "#166534",
+          "civic-green-hover": "#14532d",
+          "civic-red": "#b91c1c",
+          "civic-red-hover": "#991b1b"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-sm": "0.75rem",
+          "kiosk-touch-min": "4.5rem",
+          "gutter-kiosk": "3rem",
+          "space-3xl": "4rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Lexend"],
+          "body-sm": ["Atkinson Hyperlegible Next"],
+          "body-xl": ["Atkinson Hyperlegible Next"],
+          "label-sm": ["Lexend"],
+          "body-md": ["Atkinson Hyperlegible Next"],
+          "headline-lg": ["Lexend"],
+          "display-lg": ["Lexend"],
+          "headline-lg-mobile": ["Lexend"],
+          "label-lg": ["Lexend"],
+          "label-md": ["Lexend"],
+          "display-lg-mobile": ["Lexend"],
+          "headline-sm": ["Lexend"],
+          "body-lg": ["Atkinson Hyperlegible Next"]
+        },
+        "fontSize": {
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-xl": ["20px", {"lineHeight": "30px", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["32px", {"lineHeight": "42px", "fontWeight": "600"}],
+          "display-lg": ["44px", {"lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+          "label-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="w-full fixed top-0 left-0 z-50 shadow-sm"><div class="w-full bg-civic-navy text-surface-bright py-space-xs px-gutter-desktop"><div class="max-w-7xl mx-auto flex justify-between items-center text-body-sm"><span class="font-label-sm tracking-wide text-surface-container-high flex items-center gap-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-tertiary-fixed"></span>AAROGYA CASE | Healthcare Digital Platform</span><div class="flex items-center gap-space-lg"><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#accessibility"><span class="material-symbols-outlined text-[16px]">accessibility_new</span>Accessibility</a><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#help"><span class="material-symbols-outlined text-[16px]">help_outline</span>Help</a></div></div></div><div class="h-24 bg-surface-container-lowest px-gutter-desktop shadow-[0_2px_8px_rgba(7,30,51,0.06)]"><div class="max-w-7xl h-full mx-auto flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex-shrink-0 w-16 h-16 rounded-xl bg-surface-container-low p-1.5 flex items-center justify-center overflow-hidden border border-outline-variant/30"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-civic-navy font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-civic-green font-semibold tracking-wide uppercase">Government Healthcare Digital Platform · Patient Portal</span></div></div><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-lg" data-active-classes="text-civic-green font-bold border-b-2 border-civic-green pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors text-civic-green font-bold border-b-2 border-civic-green pb-1" data-path="patient-services" href="#">Patient Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="help" href="#">Help</a></nav><a class="bg-civic-red hover:bg-civic-red-hover text-white font-label-md text-label-md px-space-lg py-2.5 rounded-full shadow-md hover:shadow-lg flex items-center gap-space-xs transition-all duration-150" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>Emergency (108)</span></a></div></div></div></header><main class="w-full bg-surface pt-[132px] flex-1"><div class="max-w-7xl mx-auto px-gutter-desktop py-space-xl"><div class="flex flex-col w-full">
+<div class="max-w-6xl mx-auto w-full flex flex-col gap-space-xl">
+<!-- Top Action & Context Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<a class="hover:text-tertiary transition-colors flex items-center gap-1 font-body-sm text-body-sm" data-path="03.01_HOME" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Home
+        </a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-tertiary transition-colors font-body-sm text-body-sm" data-path="03.06_PATIENT_HOME" href="#">Patient Portal</a>
+<span class="text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Medicines</span>
+</nav>
+<!-- Back Button -->
+<a class="self-start sm:self-auto inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-secondary font-label-md text-label-md transition-all duration-150" data-path="03.06_PATIENT_HOME" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Portal</span>
+</a>
+</div>
+<!-- Page Header & Prescription Verification Badge -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-xl md:p-space-2xl shadow-sm">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified_user</span> Verified E-Prescription Stream
+            </span>
+<span class="text-outline-variant font-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">3 Active Courses</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-civic-navy tracking-tight">Active Medicines &amp; Regimens</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs leading-relaxed">
+            Medicine schedules derived directly from verified doctor-issued outpatient prescriptions. Always verify timestamps before self-administration.
+          </p>
+</div>
+<!-- Quick Summary Mini Card -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-md rounded-DEFAULT min-w-[240px]">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/15 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">medication</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Next Dose Alert</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">08:30 PM Today</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Amoxicillin + Clavulanate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Statutory Notice Banner -->
+<div class="flex items-start sm:items-center gap-space-md p-space-md md:p-space-lg rounded-DEFAULT bg-primary-fixed text-on-primary-fixed shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md leading-snug">
+<strong>Mandatory Health Advisory:</strong> Medicines shown are strictly issued by certified government medical officers. Never alter your dosage, substitute brands, or stop therapy prematurely without consulting your prescribing doctor.
+        </p>
+</div>
+<span class="hidden md:inline-flex px-3 py-1 rounded-full bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">MoHFW Validated</span>
+</div>
+<!-- Section Split Layout: Active Regimens & Visual Intake Timeline -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left 8 Cols: Medicine Cards -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Filter Tabs / Mode Toggles -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs" id="medicineFilterContainer">
+<button class="px-space-md py-1.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-semibold shadow-sm transition-all" data-filter="all">All Active (3)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-all" data-filter="allopathy">Allopathy</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-all" data-filter="ayush">AYUSH Integrative</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Sync: 12 Mins Ago</span>
+</div>
+<!-- Medicine Card 1 -->
+<article class="relative flex flex-col bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl shadow-sm transition-all hover:shadow-md" data-category="allopathy">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md border-b-0">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/40 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">pill</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Tab. Paracetamol 500mg</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">[DEMO]</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Antipyretic / Analgesic</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">National Essential Medicines List (NLEM) Ref: PA-500-DCH</span>
+</div>
+</div>
+<div class="self-start sm:self-auto px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Active Day 1 of 3
+            </div>
+</div>
+<!-- Medicine Specs Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md my-space-md bg-surface-container-low/70 p-space-md rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dosage</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">1 tablet (500mg)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Frequency</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">As needed for fever / Q8H</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Duration</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">3 Days Max</span>
+</div>
+</div>
+<!-- Clinical Instruction & Doctor Details -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-tertiary flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm">
+<strong class="font-semibold text-on-surface">Instructions:</strong> Take after food with warm water. Space at least 6 hours apart.
+              </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">stethoscope</span>
+<span>Prescribed by: <strong class="text-on-surface font-medium">Dr. Ananya Sen, MD</strong> (District Civil Hospital)</span>
+</div>
+</div>
+</article>
+<!-- Medicine Card 2 -->
+<article class="relative flex flex-col bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl shadow-sm transition-all hover:shadow-md" data-category="allopathy">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md border-b-0">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/40 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">medication_liquid</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Tab. Amoxicillin / Clavulanate 625mg</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">[DEMO]</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">Antibiotic Course</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Broad-spectrum antibacterial therapy · ABDM Registered Order #RX-99218</span>
+</div>
+</div>
+<div class="self-start sm:self-auto px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Active Day 2 of 5
+            </div>
+</div>
+<!-- Medicine Specs Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md my-space-md bg-surface-container-low/70 p-space-md rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dosage</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">1 tablet (625mg)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Frequency</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Twice daily (Morning &amp; Night)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Duration</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">5 Days (Complete full course)</span>
+</div>
+</div>
+<!-- Clinical Instruction & Doctor Details -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-civic-red flex-shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm">
+<strong class="font-semibold text-on-surface">Instructions:</strong> Take after meals. Complete full 5-day course. Do not discontinue prematurely to prevent antimicrobial resistance.
+              </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">stethoscope</span>
+<span>Prescribed by: <strong class="text-on-surface font-medium">Dr. Ananya Sen, MD</strong></span>
+</div>
+</div>
+</article>
+<!-- Medicine Card 3 -->
+<article class="relative flex flex-col bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl shadow-sm transition-all hover:shadow-md" data-category="ayush">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md border-b-0">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed/30 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Tab. Brahmi Vati 250mg</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">[DEMO]</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">AYUSH Integrative Care</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ayurvedic Pharmacopoeia of India Standard Formulation</span>
+</div>
+</div>
+<div class="self-start sm:self-auto px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Active Day 4 of 15
+            </div>
+</div>
+<!-- Medicine Specs Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md my-space-md bg-surface-container-low/70 p-space-md rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dosage</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">1 tablet (250mg)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Frequency</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Twice daily</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Duration</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">15 Days</span>
+</div>
+</div>
+<!-- Clinical Instruction & Doctor Details -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-tertiary flex-shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm">
+<strong class="font-semibold text-on-surface">Instructions:</strong> With lukewarm water after food (AYUSH Integrative Care OPD).
+              </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+<span>Issued by: <strong class="text-on-surface font-medium">AYUSH Wellness Center, Sub-District</strong></span>
+</div>
+</div>
+</article>
+<!-- Dynamic Empty State Demonstration Container (Hidden toggleable demonstration) -->
+<div class="hidden flex-col items-center justify-center p-space-3xl bg-surface-container-lowest rounded-lg text-center shadow-sm" id="emptyStateDemo">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-[40px]">check_box</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">No active medicines recorded.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs">
+            All your prescribed courses have reached completion or no digital outpatient prescriptions are currently marked active.
+          </p>
+<a class="mt-space-lg inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-surface-container-high text-secondary hover:bg-secondary hover:text-white font-label-md text-label-md transition-all" data-path="03.26_PRESCRIPTIONS" href="#">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>View Archived Prescriptions</span>
+</a>
+</div>
+</div>
+<!-- Right 4 Cols: Daily Adherence Schedule & Auxiliary Directives -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Today's Intake Protocol Bento Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">schedule</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Daily Schedule</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container font-semibold text-on-surface-variant">Today</span>
+</div>
+<!-- Visual Progress Radial Bar -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-DEFAULT mb-space-md">
+<div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="66, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-md text-label-md font-bold text-on-surface">2/3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Course Adherence</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 doses taken on time. 1 evening dose pending.</span>
+</div>
+</div>
+<!-- Schedule Checkpoints -->
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<!-- Morning Item (Done) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Morning (08:30 AM)</span>
+<span class="text-tertiary font-label-sm text-label-sm font-medium">Taken</span>
+</div>
+<span class="text-on-surface-variant text-body-sm">Amoxicillin 625mg + Brahmi Vati 250mg</span>
+</div>
+</div>
+<!-- Afternoon Item (Done / PRN) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Afternoon (02:00 PM)</span>
+<span class="text-tertiary font-label-sm text-label-sm font-medium">Taken (PRN)</span>
+</div>
+<span class="text-on-surface-variant text-body-sm">Paracetamol 500mg (Fever temp 100.2°F)</span>
+</div>
+</div>
+<!-- Night Item (Upcoming) -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-high/60">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Night (08:30 PM)</span>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">Upcoming</span>
+</div>
+<span class="text-on-surface-variant text-body-sm">Amoxicillin 625mg + Brahmi Vati 250mg</span>
+</div>
+</div>
+</div>
+<!-- Micro interaction: Self-report button -->
+<button class="mt-space-md w-full py-2.5 px-space-md rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-all" id="markDoseBtn">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Set Reminder Ping (SMS / WhatsApp)</span>
+</button>
+</div>
+<!-- Dispensing Pharmacy Verification Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-space-lg shadow-sm">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">local_pharmacy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pradhan Mantri Jan Aushadhi</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            All listed generic salts are accessible at subsidized pricing at District Kendra Kendra #114.
+          </p>
+<div class="mt-space-md pt-space-md border-t-0 flex flex-col gap-2">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Batch Ref:</span>
+<span class="font-mono text-on-surface font-medium">GJ-2024-D991</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Dispensed At:</span>
+<span class="text-on-surface font-medium">Sub-District Jan Aushadhi Kendra</span>
+</div>
+</div>
+</div>
+<!-- Empty State Toggle Demonstration Helper for evaluators -->
+<div class="flex items-center justify-between p-space-md rounded-DEFAULT bg-surface-container text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Demo State Toggle:</span>
+<button class="font-label-sm text-label-sm text-secondary underline hover:text-civic-navy" id="toggleEmptyDemoBtn">
+            Simulate "No Active Meds"
+          </button>
+</div>
+</aside>
+</div>
+<!-- Primary Navigation Action Banner to Prescription History -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg">
+<div class="w-14 h-14 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[30px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Need official OPD slips or discharge summaries?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Access full digital doctor notes, signed diagnostic scripts, and past clinical consultations.
+          </p>
+</div>
+</div>
+<!-- Oval Pill Action Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-full bg-civic-green hover:bg-civic-green-hover text-white font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all duration-150 flex-shrink-0" data-path="03.26_PRESCRIPTIONS" href="#">
+<span>VIEW FULL PRESCRIPTIONS LIST</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Client-side Category Filter Handling
+    const filterContainer = document.getElementById('medicineFilterContainer');
+    const articles = document.querySelectorAll('article[data-category]');
+    
+    if (filterContainer) {
+      const buttons = filterContainer.querySelectorAll('button');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.className = 'px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-all';
+          });
+          btn.className = 'px-space-md py-1.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-semibold shadow-sm transition-all';
+          
+          const filter = btn.getAttribute('data-filter');
+          articles.forEach(art => {
+            if (filter === 'all' || art.getAttribute('data-category') === filter) {
+              art.style.display = 'flex';
+            } else {
+              art.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+
+    // Toggle Empty State Demonstration
+    const toggleBtn = document.getElementById('toggleEmptyDemoBtn');
+    const emptyDemo = document.getElementById('emptyStateDemo');
+    let isEmpty = false;
+
+    if (toggleBtn && emptyDemo) {
+      toggleBtn.addEventListener('click', () => {
+        isEmpty = !isEmpty;
+        articles.forEach(art => {
+          art.style.display = isEmpty ? 'none' : 'flex';
+        });
+        emptyDemo.classList.toggle('hidden', !isEmpty);
+        emptyDemo.classList.toggle('flex', isEmpty);
+        toggleBtn.textContent = isEmpty ? 'Restore Active Meds' : 'Simulate "No Active Meds"';
+      });
+    }
+
+    // Reminder ping button toast trigger
+    const markDoseBtn = document.getElementById('markDoseBtn');
+    if (markDoseBtn) {
+      markDoseBtn.addEventListener('click', () => {
+        const prevText = markDoseBtn.innerHTML;
+        markDoseBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-tertiary">done</span> <span>Reminder Configured!</span>';
+        setTimeout(() => {
+          markDoseBtn.innerHTML = prevText;
+        }, 2200);
+      });
+    }
+  })();
+</script></div></main><footer class="w-full bg-civic-navy text-surface-bright mt-auto pt-space-2xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-2xl pb-space-2xl border-b border-surface-dim/20"><div class="md:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest/10 p-1 flex items-center justify-center"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-white font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-tertiary-fixed">Government Healthcare Digital Platform</span></div></div><p class="font-body-md text-body-md text-surface-container-high/90 max-w-md leading-relaxed">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="md:col-span-3 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Patient Services</h4><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-surface-container-high/90"><li><a class="hover:text-white hover:underline transition-colors" href="#">Digital Clinical Intake</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Tele-Consultation Request</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Electronic Health Record Integration</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Emergency Protocol Information</a></li></ul></div><div class="md:col-span-4 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Help &amp; Accessibility</h4><ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-surface-container-high/90"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">call</span><span>National Health Helpline: <strong class="text-white font-semibold">104</strong></span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-civic-red">emergency</span><span>Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span></li><li><a class="hover:text-white hover:underline transition-colors" href="#accessibility-options">Accessibility Options &amp; Screen Reader Guide</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#terms-privacy">Privacy Policy &amp; Terms of Clinical Use</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row justify-between items-center gap-space-sm text-body-sm text-surface-container-high/70"><p>© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p><span class="font-label-sm text-label-sm text-surface-container-high/80 px-3 py-1 bg-surface-container-lowest/10 rounded-full">ABDM Standard Integrated • v2.4-Production</span></div></div></footer></body></html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "secondary": "#455f8a",
+          "primary-fixed-dim": "#ffb59a",
+          "on-secondary": "#ffffff",
+          "outline-variant": "#dfc0b5",
+          "secondary-container": "#b3cdfe",
+          "surface-container-high": "#e7e8eb",
+          "surface-container-highest": "#e1e2e5",
+          "inverse-on-surface": "#eff1f3",
+          "primary-fixed": "#ffdbcf",
+          "on-secondary-fixed": "#001b3d",
+          "surface-bright": "#f8f9fc",
+          "on-tertiary-fixed": "#002106",
+          "on-secondary-fixed-variant": "#2c4770",
+          "on-primary-fixed-variant": "#812900",
+          "tertiary": "#00501a",
+          "surface-dim": "#d8dadc",
+          "inverse-surface": "#2d3133",
+          "error-container": "#ffdad6",
+          "on-error-container": "#93000a",
+          "on-tertiary-container": "#8ee993",
+          "secondary-fixed": "#d6e3ff",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#adc7f8",
+          "on-surface": "#191c1e",
+          "on-surface-variant": "#58423a",
+          "tertiary-container": "#27853a",
+          "surface-variant": "#e1e2e5",
+          "surface": "#f7f9fb",
+          "on-tertiary-fixed-variant": "#00531b",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#8f7066",
+          "surface-tint": "#a83903",
+          "on-secondary-container": "#3c5781",
+          "on-primary": "#ffffff",
+          "on-primary-fixed": "#380d00",
+          "tertiary-fixed-dim": "#7edb85",
+          "inverse-primary": "#ffb59a",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#99f89e",
+          "background": "#f8f9fc",
+          "surface-container-low": "#f2f4f6",
+          "on-background": "#191c1e",
+          "primary": "#7c2800",
+          "surface-container": "#eceef0",
+          "primary-container": "#cd4700",
+          "on-primary-container": "#fffbff",
+          "civic-navy": "#071e33",
+          "civic-navy-dark": "#041220",
+          "civic-green": "#166534",
+          "civic-green-hover": "#14532d",
+          "civic-red": "#b91c1c",
+          "civic-red-hover": "#991b1b"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "space-2xl": "3rem",
+          "touch-min": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-2xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2.5rem",
+          "gutter-tablet": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-sm": "0.75rem",
+          "kiosk-touch-min": "4.5rem",
+          "gutter-kiosk": "3rem",
+          "space-3xl": "4rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Lexend"],
+          "body-sm": ["Atkinson Hyperlegible Next"],
+          "body-xl": ["Atkinson Hyperlegible Next"],
+          "label-sm": ["Lexend"],
+          "body-md": ["Atkinson Hyperlegible Next"],
+          "headline-lg": ["Lexend"],
+          "display-lg": ["Lexend"],
+          "headline-lg-mobile": ["Lexend"],
+          "label-lg": ["Lexend"],
+          "label-md": ["Lexend"],
+          "display-lg-mobile": ["Lexend"],
+          "headline-sm": ["Lexend"],
+          "body-lg": ["Atkinson Hyperlegible Next"]
+        },
+        "fontSize": {
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-xl": ["20px", {"lineHeight": "30px", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["32px", {"lineHeight": "42px", "fontWeight": "600"}],
+          "display-lg": ["44px", {"lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+          "label-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+          "label-md": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col"><header class="w-full fixed top-0 left-0 z-50 shadow-sm"><div class="w-full bg-civic-navy text-surface-bright py-space-xs px-gutter-desktop"><div class="max-w-7xl mx-auto flex justify-between items-center text-body-sm"><span class="font-label-sm tracking-wide text-surface-container-high flex items-center gap-space-xs"><span class="inline-block w-2 h-2 rounded-full bg-tertiary-fixed"></span>AAROGYA CASE | Healthcare Digital Platform</span><div class="flex items-center gap-space-lg"><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#accessibility"><span class="material-symbols-outlined text-[16px]">accessibility_new</span>Accessibility</a><a class="text-surface-container-high hover:text-white transition-colors duration-150 flex items-center gap-1" href="#help"><span class="material-symbols-outlined text-[16px]">help_outline</span>Help</a></div></div></div><div class="h-24 bg-surface-container-lowest px-gutter-desktop shadow-[0_2px_8px_rgba(7,30,51,0.06)]"><div class="max-w-7xl h-full mx-auto flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex-shrink-0 w-16 h-16 rounded-xl bg-surface-container-low p-1.5 flex items-center justify-center overflow-hidden border border-outline-variant/30"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-civic-navy font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-civic-green font-semibold tracking-wide uppercase">Government Healthcare Digital Platform · Patient Portal</span></div></div><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-lg" data-active-classes="text-civic-green font-bold border-b-2 border-civic-green pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors text-civic-green font-bold border-b-2 border-civic-green pb-1" data-path="patient-services" href="#">Patient Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-civic-green transition-colors" data-path="help" href="#">Help</a></nav><a class="bg-civic-red hover:bg-civic-red-hover text-white font-label-md text-label-md px-space-lg py-2.5 rounded-full shadow-md hover:shadow-lg flex items-center gap-space-xs transition-all duration-150" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>Emergency (108)</span></a></div></div></div></header><main class="w-full bg-surface pt-[132px] flex-1"><div class="max-w-7xl mx-auto px-gutter-desktop py-space-xl"><div class="flex flex-col w-full">
+<div class="max-w-6xl mx-auto w-full flex flex-col gap-space-lg">
+<!-- Top Action & Navigation Row -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant flex-wrap">
+<a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" data-path="patient-portal" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" data-path="03.23_reports" href="#">Reports</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-label-sm text-label-sm text-civic-navy font-semibold">Report Details</span>
+</nav>
+<!-- Back Link -->
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-civic-navy transition-colors self-start sm:self-auto py-1 px-3 rounded-full bg-surface-container hover:bg-surface-container-high" data-path="03.23_reports" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Reports</span>
+</a>
+</div>
+<!-- Title & Metadata Strip -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-tertiary/10 text-tertiary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Record
+            </span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium">
+              Diagnostic Pathology
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-civic-navy tracking-tight mt-1">
+            Report Details: Complete Blood Count &amp; Electrolytes (CBC) <span class="text-on-surface-variant font-normal text-headline-sm">[DEMO]</span>
+</h1>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center">
+<button class="h-11 px-4 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 hover:bg-surface-container-high transition-colors" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Quick Print</span>
+</button>
+<button class="h-11 px-5 rounded-full bg-civic-green hover:bg-civic-green-hover text-white font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm transition-all" id="download-top-btn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Save PDF</span>
+</button>
+</div>
+</div>
+<!-- Metadata Key-Value Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-md border-t border-surface-container-high/60">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Date of Issue</span>
+<span class="font-body-lg text-body-lg font-semibold text-civic-navy flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span> 14 Oct 2025
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Diagnostic Source</span>
+<span class="font-body-md text-body-md font-semibold text-civic-navy leading-snug mt-0.5 truncate" title="District Civil Hospital Central Pathology Lab">
+            District Civil Hospital Central Lab
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Patient Identification</span>
+<span class="font-body-md text-body-md font-semibold text-civic-navy leading-snug mt-0.5">
+            AC-2025-884920
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rajesh Kumar Sharma (M, 48Y)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verification Authority</span>
+<span class="font-body-md text-body-md font-semibold text-tertiary flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">check_circle</span> ABDM Compliant
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Signatory: Dr. S. K. Mukherjee</span>
+</div>
+</div>
+</div>
+<!-- Official Simulated Diagnostic Document Viewer Sheet -->
+<div class="bg-surface-container-lowest rounded-lg shadow-md p-space-xl md:p-space-2xl relative overflow-hidden flex flex-col gap-space-xl" id="diagnostic-sheet">
+<!-- Subtle Watermark Embellishment -->
+<div class="absolute right-6 top-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none">
+<svg class="w-96 h-96" fill="currentColor" viewbox="0 0 100 100">
+<path d="M45 10 H55 V45 H90 V55 H55 V90 H45 V55 H10 V45 H45 Z"></path>
+</svg>
+</div>
+<!-- Institutional Letterhead Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg pb-space-lg border-b-2 border-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-xl bg-surface-container-low p-2 flex items-center justify-center flex-shrink-0 border border-outline-variant/30 shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official high-resolution emblem of the State Health Directorate and District Civil Hospital pathology department in deep civic navy and gold tones, crisp governmental crest on neutral studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLOgJF2Ryol5kh2qF2fpaSziCGCRbpaeoGGmnsf17Dnf5GD0Y-fNeWjzO5oYg8QkpUunKGhS1qRMZtnVHSL7KQVRjWr_JtKY2BKPpYI4_6JokYVakqqJxWzyGoh7LidoMAmO_T3LzqfXwpPiODT1l1Rqi08xUuc8BLnnEfPwGHYZT09CvLAezUy_DpHwlikPZ-NE71LtUyIzAjrfRaFSq-mC0Pm8TCD1-II6F4Tmgr6Awehrql344TqQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Government of India · Department of Health &amp; Family Welfare</span>
+<h2 class="font-headline-md text-headline-md text-civic-navy font-bold tracking-tight">DISTRICT CIVIL HOSPITAL</h2>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Central Pathology Diagnostic Wing &amp; Research Unit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80">Civil Hospital Complex, MG Road, Ward 4 · Tele: 011-23984400</span>
+</div>
+</div>
+<div class="flex flex-col md:items-end bg-surface-container-low p-space-md rounded-DEFAULT min-w-[240px]">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Specimen Reference</span>
+<span class="font-headline-sm text-headline-sm font-bold text-civic-navy">SPEC-2025-99824</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Collected: 14 Oct 2025, 08:45 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reported: 14 Oct 2025, 11:30 AM</span>
+</div>
+</div>
+<!-- Patient & Referring Consultant Details Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md bg-surface-container-low/60 p-space-md rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Patient Name</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">Shri Rajesh Kumar Sharma</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Age / Gender</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">48 Yrs / Male</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Ref. Doctor / Unit</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">Dr. Anita Varma (Gen. Med - OPD 3)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sample Matrix</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">Venous Blood (EDTA / Fluoride)</span>
+</div>
+</div>
+<!-- Test Results Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-civic-navy font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">biotech</span>
+<span>Hematology &amp; Clinical Biochemistry Profile</span>
+</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard ABDM LOINC Unified Coding</span>
+</div>
+<!-- Analytical Table -->
+<div class="w-full overflow-x-auto rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/70 text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Investigation Test Parameter</th>
+<th class="py-3 px-4 font-semibold">Observed Result</th>
+<th class="py-3 px-4 font-semibold">Measurement Unit</th>
+<th class="py-3 px-4 font-semibold">Biological Reference Interval</th>
+<th class="py-3 px-4 font-semibold text-center">Status / Flag</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container">
+<!-- Row 1: Hemoglobin -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-civic-navy">Hemoglobin (Hb)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Photometric Cyanmethemoglobin method</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-headline-sm text-headline-sm text-civic-navy font-bold">14.2</td>
+<td class="py-3.5 px-4 text-on-surface-variant">g/dL</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">13.0 – 17.0</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-civic-green bg-tertiary-fixed/40 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-civic-green"></span> Normal
+                  </span>
+</td>
+</tr>
+<!-- Row 2: WBC -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-civic-navy">Total Leukocyte Count (WBC)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated Impedance Flow Cytometry</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-headline-sm text-headline-sm text-civic-navy font-bold">8,400</td>
+<td class="py-3.5 px-4 text-on-surface-variant">/cu.mm</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">4,000 – 11,000</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-civic-green bg-tertiary-fixed/40 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-civic-green"></span> Normal
+                  </span>
+</td>
+</tr>
+<!-- Row 3: Platelets -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-civic-navy">Platelet Count</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Electrical Impedance analysis</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-headline-sm text-headline-sm text-civic-navy font-bold">240,000</td>
+<td class="py-3.5 px-4 text-on-surface-variant">/cu.mm</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">150,000 – 450,000</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-civic-green bg-tertiary-fixed/40 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-civic-green"></span> Normal
+                  </span>
+</td>
+</tr>
+<!-- Row 4: Serum Sodium -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-civic-navy">Serum Sodium (Na+)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ion Selective Electrode (ISE)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-headline-sm text-headline-sm text-civic-navy font-bold">139</td>
+<td class="py-3.5 px-4 text-on-surface-variant">mEq/L</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">135 – 145</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-civic-green bg-tertiary-fixed/40 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-civic-green"></span> Normal
+                  </span>
+</td>
+</tr>
+<!-- Row 5: Serum Potassium -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-civic-navy">Serum Potassium (K+)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ion Selective Electrode (ISE)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-headline-sm text-headline-sm text-civic-navy font-bold">4.1</td>
+<td class="py-3.5 px-4 text-on-surface-variant">mEq/L</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">3.5 – 5.0</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-civic-green bg-tertiary-fixed/40 px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-civic-green"></span> Normal
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Laboratory Visual Distribution Indicator -->
+<div class="bg-surface-container-low/50 p-space-md rounded-DEFAULT flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm font-bold text-civic-navy uppercase tracking-wide">Observed Values Relative Reference Bands</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Indicator 1 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT flex flex-col gap-1 shadow-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-semibold text-civic-navy">Hemoglobin (14.2 g/dL)</span>
+<span class="text-tertiary font-bold text-label-sm">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden relative">
+<div class="bg-civic-green h-full rounded-full" style="width: 62%;"></div>
+</div>
+<div class="flex justify-between text-label-sm text-on-surface-variant text-[11px]">
+<span>13.0 Min</span>
+<span>Ref: 13.0 - 17.0</span>
+<span>17.0 Max</span>
+</div>
+</div>
+<!-- Indicator 2 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT flex flex-col gap-1 shadow-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-semibold text-civic-navy">WBC Count (8,400 /cu.mm)</span>
+<span class="text-tertiary font-bold text-label-sm">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden relative">
+<div class="bg-civic-green h-full rounded-full" style="width: 58%;"></div>
+</div>
+<div class="flex justify-between text-label-sm text-on-surface-variant text-[11px]">
+<span>4,000 Min</span>
+<span>Ref: 4k - 11k</span>
+<span>11,000 Max</span>
+</div>
+</div>
+<!-- Indicator 3 -->
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT flex flex-col gap-1 shadow-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-semibold text-civic-navy">Platelet (240k /cu.mm)</span>
+<span class="text-tertiary font-bold text-label-sm">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden relative">
+<div class="bg-civic-green h-full rounded-full" style="width: 53%;"></div>
+</div>
+<div class="flex justify-between text-label-sm text-on-surface-variant text-[11px]">
+<span>150k Min</span>
+<span>Ref: 150k - 450k</span>
+<span>450k Max</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Regulatory Stamp, Verification & Signatures -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg pt-space-lg border-t-2 border-surface-container items-center">
+<!-- Left: Official Security Stamp & QR Verification Box -->
+<div class="md:col-span-8 flex items-start gap-space-md">
+<!-- Official Circular Stamp Graphic -->
+<div class="w-24 h-24 rounded-full border-2 border-dashed border-tertiary-container flex-shrink-0 flex flex-col items-center justify-center p-1 text-center text-tertiary bg-surface-container-low/40">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+<span class="font-label-sm text-[9px] leading-tight font-bold uppercase tracking-wider mt-0.5">Govt of India<br/>Validated<br/>NDHM</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-civic-green font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Official Digital Signature &amp; ABDM Registry Confirmation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Digitally verified under National Digital Health Stack standards. This certified electronic laboratory record is authenticated directly from the Laboratory Information Management System (LIMS) of District Civil Hospital.
+            </p>
+<div class="flex items-center gap-space-md text-body-sm text-on-surface-variant mt-1 font-mono text-[12px]">
+<span>Digital Key ID: 0x88F2A9...31B</span>
+<span>•</span>
+<span>Timestamp: 14-OCT-2025 11:34:02 IST</span>
+</div>
+</div>
+</div>
+<!-- Right: Pathologist Signature Block -->
+<div class="md:col-span-4 flex flex-col md:items-end text-left md:text-right">
+<div class="w-40 h-12 flex items-center justify-center mb-1">
+<!-- Simulated Stylized Signature -->
+<svg class="w-36 h-10 text-civic-navy" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 150 40">
+<path d="M 10 30 Q 30 5 45 22 T 80 18 Q 100 8 110 28 T 140 25"></path>
+<path d="M 40 28 L 70 32"></path>
+</svg>
+</div>
+<span class="font-label-md text-label-md font-bold text-civic-navy">Dr. S. K. Mukherjee, MD Path.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Chief Consultant Pathologist</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reg No. MCI-DL-1994-48291</span>
+</div>
+</div>
+</div>
+<!-- Clinical Protocol & Information Note (No Automated AI Summary/Diagnosis) -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[24px] flex-shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold text-civic-navy">Patient Advisory &amp; Clinical Follow-up</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Diagnostic findings must be interpreted in direct conjunction with physical evaluation and clinical history by your treating physician. Please present this authenticated report during your scheduled consultation at District Civil Hospital or your nearest Primary Health Centre.
+        </p>
+</div>
+</div>
+<!-- Primary Actions Bar -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md mt-space-xs">
+<!-- Back Link Button -->
+<a class="h-14 px-space-lg rounded-full border border-outline/40 hover:bg-surface-container text-civic-navy font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors order-3 sm:order-1" data-path="03.23_reports" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>BACK TO REPORTS</span>
+</a>
+<!-- Action Buttons Group -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md order-1 sm:order-2">
+<!-- Print Button -->
+<button class="h-14 px-space-xl rounded-full border border-secondary text-secondary hover:bg-secondary/5 font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[22px]">print</span>
+<span>PRINT REPORT</span>
+</button>
+<!-- Download Button -->
+<button class="h-14 px-space-2xl rounded-full bg-civic-green hover:bg-civic-green-hover text-white font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md hover:shadow-lg transition-all" id="download-main-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+<span>DOWNLOAD PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Modal for Simulated PDF Generation -->
+<div class="fixed bottom-6 right-6 z-50 bg-civic-navy text-white px-5 py-4 rounded-xl shadow-xl flex items-center gap-space-md translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="download-toast">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-white">Downloading Certified PDF</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">CBC_SPEC-2025-99824_RajeshSharma.pdf</span>
+</div>
+</div>
+<!-- Inline Script for Interactive Feedback -->
+<script>
+    (function() {
+      const toast = document.getElementById('download-toast');
+      const triggerToast = () => {
+        if (!toast) return;
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      };
+
+      const btn1 = document.getElementById('download-main-btn');
+      const btn2 = document.getElementById('download-top-btn');
+      if (btn1) btn1.addEventListener('click', triggerToast);
+      if (btn2) btn2.addEventListener('click', triggerToast);
+    })();
+  </script>
+</div></div></main><footer class="w-full bg-civic-navy text-surface-bright mt-auto pt-space-2xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-2xl pb-space-2xl border-b border-surface-dim/20"><div class="md:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest/10 p-1 flex items-center justify-center"><img alt="AAROGYA CASE Emblem" class="w-full h-full object-contain" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/aida/AEtjO1Vhm0WstM9CwyrM09TruN6aqu5lTRdkQzThtXECiXxiqpDc_HCOcefxEbQnEirM1jlqS2OGl-Qpc_nhQIj80v0I0qDriXXACgVTnSX-9yP_QoMA7Q3B0yYJ-kREHhs_iNHzOIHCTKixM0lXrfbFDYPGjiEB6LdJjpuNXPXxClOrd159IASvNL0wKGs3s_gPn5UpmMGrWFNyV-_cU8yGbDbJTyVTfKuRVEBVQwOWZthjSf_E1qxT1KD_T14adeTB7HU-T24i3xeASg';" src="https://lh3.googleusercontent.com/aida/AEtjO1U8Ban01JOQxnu_iN-8fb27cz2glo7CCK49a-OzxPGB0yplhNBMyXHo3s__N9s9Pmk4tbkA-05w_xUM6gDIo_YSMIPip8ZHvQL3-TL7u--RfWjLaYMsxLMGp-rqpcAnWymE1_LtPDqvU2dOwbw73yCUU6U0CSI1u2k57rp7n4F8AlPH6OsCSNqOhvNi1ZSOPU8VMwq3cFw3ImxXqMLBJb10-J56dtEQh3Wz0uHewzAiTBQnGkYsXN3VzW2_Mb4YBx0CdAt08-ff8Q"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-white font-bold leading-tight">AAROGYA CASE</span><span class="font-label-sm text-label-sm text-tertiary-fixed">Government Healthcare Digital Platform</span></div></div><p class="font-body-md text-body-md text-surface-container-high/90 max-w-md leading-relaxed">An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.</p></div><div class="md:col-span-3 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Patient Services</h4><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-surface-container-high/90"><li><a class="hover:text-white hover:underline transition-colors" href="#">Digital Clinical Intake</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Tele-Consultation Request</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Electronic Health Record Integration</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#">Emergency Protocol Information</a></li></ul></div><div class="md:col-span-4 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-surface-container-lowest font-bold uppercase tracking-wider mb-space-xs border-l-2 border-tertiary-fixed pl-2">Help &amp; Accessibility</h4><ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-surface-container-high/90"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">call</span><span>National Health Helpline: <strong class="text-white font-semibold">104</strong></span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-civic-red">emergency</span><span>Ambulance Emergency: <strong class="text-white font-semibold">108</strong></span></li><li><a class="hover:text-white hover:underline transition-colors" href="#accessibility-options">Accessibility Options &amp; Screen Reader Guide</a></li><li><a class="hover:text-white hover:underline transition-colors" href="#terms-privacy">Privacy Policy &amp; Terms of Clinical Use</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row justify-between items-center gap-space-sm text-body-sm text-surface-container-high/70"><p>© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p><span class="font-label-sm text-label-sm text-surface-container-high/80 px-3 py-1 bg-surface-container-lowest/10 rounded-full">ABDM Standard Integrated • v2.4-Production</span></div></div></footer></body></html>

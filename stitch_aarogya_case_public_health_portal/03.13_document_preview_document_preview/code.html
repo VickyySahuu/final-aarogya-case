@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Document Preview - Patient Portal | AAROGYA CASE</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Atkinson+Hyperlegible+Next:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "gov-green": {
+              DEFAULT: "#166534",
+              light: "#22c55e",
+              soft: "#f0fdf4",
+              surface: "#dcfce7",
+              dark: "#14532d"
+            },
+            "primary": "#166534",
+            "on-primary": "#ffffff",
+            "background": "#f8f9fc",
+            "surface": "#ffffff",
+            "surface-container-low": "#f1f5f9",
+            "surface-container": "#e2e8f0",
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#475569",
+            "outline-variant": "#cbd5e1"
+          },
+          fontFamily: {
+            headline: ["Lexend", "sans-serif"],
+            body: ["Atkinson Hyperlegible Next", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f8f9fc] font-body text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+<!-- TOP INSTITUTIONAL HEADER & UTILITY BAR -->
+<header class="w-full bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+<!-- Institutional Utility Ribbon -->
+<div class="bg-slate-100/90 border-b border-slate-200 px-6 lg:px-12 py-1 flex items-center justify-between text-xs text-slate-600 font-headline">
+<div class="flex items-center gap-3">
+<span class="font-semibold text-[#166534] tracking-wide">GOVERNMENT OF INDIA HEALTHCARE INITIATIVE</span>
+<span class="text-slate-300">|</span>
+<span class="hidden md:inline">Ministry of AYUSH &amp; National Digital Health Mission</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-1.5 hover:text-[#166534] transition-colors" title="Change Language" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">translate</span>
+<span class="">English / हिन्दी</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-[#166534] transition-colors" title="Screen Reader &amp; Accessibility Settings" type="button">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+<span class="">Accessibility</span>
+</button>
+<a class="flex items-center gap-1 hover:text-[#166534] transition-colors" href="#help">
+<span class="material-symbols-outlined text-[16px]">help_center</span>
+<span class="">Help Desk</span>
+</a>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Portal Branding -->
+<a class="flex items-center gap-4 group" href="#">
+<img alt="Aarogya Case Official Emblem" class="h-12 w-12 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABJusmj2AuKrUxBGxtrtCzNfuQC0QnljR9NSbBIc5qmapDlZ_oG8iecfPFwwXPctcxeLd-9oOFeXbML75eB7wDbQDZ3NBCfU3LjXGEFMcdwJgobqwXLmusdHpppl1r4Ba_9-5JS9k4ItdvPVECFjHzsBIC-SZHXIAN1PK1frpfTBWNy2jJbUxFz3dFmak9g7XK9bVNIgr7JSd3sFTRZXXffYRnZMVx4xyhNGRjQTNStCIyufwT-ROyOjxYnmFDO70XIcw">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-2xl tracking-tight text-slate-900 group-hover:text-[#166534] transition-colors">AAROGYA CASE</span>
+<span class="bg-emerald-100 text-[#166534] text-[11px] font-headline font-semibold px-2 py-0.5 rounded border border-emerald-300">PATIENT PORTAL</span>
+</div>
+<span class="text-xs text-slate-500 font-medium">Citizen Health Records &amp; Clinical Management Portal</span>
+</div>
+</a>
+<!-- Institutional Navigation Links -->
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-1 font-headline text-sm font-medium text-slate-700">
+<a class="px-3.5 py-2 rounded-lg hover:text-[#166534] hover:bg-slate-50 transition-colors" href="#">Home</a>
+<a class="px-3.5 py-2 rounded-lg text-[#166534] bg-emerald-50 font-semibold transition-colors" href="#">Services</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-[#166534] hover:bg-slate-50 transition-colors" href="#help">Help</a>
+<a class="ml-2 px-4 py-2 rounded-full border border-red-200 text-red-700 bg-red-50 hover:bg-red-100 text-xs font-semibold flex items-center gap-1.5 transition-colors" href="tel:108">
+<span class="material-symbols-outlined text-[16px] text-red-600">emergency</span>
+<span class="">Emergency 108</span>
+</a>
+</nav>
+<!-- Citizen Profile Avatar -->
+<div class="flex items-center gap-3 pl-4 border-l border-slate-200">
+<div class="w-10 h-10 rounded-full bg-[#166534] text-white flex items-center justify-center font-headline font-semibold text-sm shadow-sm">
+            RK
+          </div>
+<div class="hidden lg:flex flex-col text-left">
+<span class="text-xs font-semibold font-headline text-slate-900 leading-tight">Rajesh K. Sharma</span>
+<span class="text-[11px] text-slate-500">ABHA: rajesh@abdm</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- MAIN VIEWPORT CONTAINER -->
+<main class="w-full flex-grow py-8 bg-[#f8f9fc]">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6">
+<!-- BREADCRUMB & CONTEXTUAL BACK -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200">
+<div class="flex items-center gap-2 text-sm text-slate-500 font-headline">
+<a class="hover:text-[#166534] flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span class="">Home</span>
+</a>
+<span class="text-slate-400">/</span>
+<a class="hover:text-[#166534]" href="#">Patient Portal</a>
+<span class="text-slate-400">/</span>
+<span class="text-slate-900 font-semibold">Document Preview</span>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-sm font-headline font-medium shadow-sm transition-colors w-fit" href="03.12_UPLOAD_DOCUMENTS">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back to Uploads</span>
+</a>
+</div>
+<!-- MAIN DOCUMENT INSPECTION PANEL -->
+<section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 md:p-10 flex flex-col gap-6">
+<!-- TITLE & SUBTITLE SECTION -->
+<div class="flex flex-col gap-1 border-b border-slate-100 pb-5">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#166534] text-xs font-headline font-semibold uppercase tracking-wide">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+              Verification Step 3 of 4
+            </span>
+</div>
+<h1 class="font-headline font-bold text-3xl text-slate-900 tracking-tight">
+            Document Preview
+          </h1>
+<p class="text-slate-600 text-base leading-relaxed max-w-3xl">
+            Please check the document below before continuing. Ensure all doctor notes, dates, and prescription details are clearly legible.
+          </p>
+</div>
+<!-- FILE INFO BAR -->
+<div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-100/70 border border-emerald-200 text-[#166534] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">description</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-base text-slate-900 break-all">Previous_Lab_Prescription_2024.pdf</span>
+</div>
+<p class="text-xs text-slate-500 font-medium mt-0.5">File size: 1.8 MB • Clinical Record PDF • Uploaded Today</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-100 text-[#166534] font-headline font-semibold text-xs border border-emerald-300">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">check_circle</span>
+              Ready for Review
+            </span>
+</div>
+</div>
+<!-- DOCUMENT INSPECTION PREVIEW CANVAS -->
+<div class="w-full bg-slate-100 border border-slate-300 rounded-xl overflow-hidden shadow-inner flex flex-col">
+<!-- Document Viewer Toolbar -->
+<div class="bg-slate-200/90 px-4 py-2.5 border-b border-slate-300 flex items-center justify-between text-xs font-headline font-medium text-slate-700">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-slate-600">picture_as_pdf</span>
+<span class="">Page 1 of 1</span>
+<span class="text-slate-400 mx-1">|</span>
+<span class="text-slate-500">Scale: 100% (Fit Width)</span>
+</div>
+<div class="flex items-center gap-1 bg-white px-2 py-1 rounded-lg border border-slate-300 shadow-sm">
+<button aria-label="Zoom in" class="p-1 rounded hover:bg-slate-100 text-slate-700 transition-colors" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button aria-label="Zoom out" class="p-1 rounded hover:bg-slate-100 text-slate-700 transition-colors" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<span class="h-4 w-px bg-slate-200 mx-1"></span>
+<button aria-label="Rotate clockwise" class="p-1 rounded hover:bg-slate-100 text-slate-700 transition-colors" title="Rotate Clockwise" type="button">
+<span class="material-symbols-outlined text-[18px]">rotate_right</span>
+</button>
+<button aria-label="Fit to Screen" class="p-1 rounded hover:bg-slate-100 text-slate-700 transition-colors" title="Fit to Screen" type="button">
+<span class="material-symbols-outlined text-[18px]">fit_screen</span>
+</button>
+</div>
+</div>
+<!-- Document Sheet Render Body -->
+<div class="p-4 sm:p-8 bg-slate-200/50 overflow-x-auto flex justify-center">
+<div class="w-full max-w-4xl bg-white border border-slate-300 shadow-md rounded-lg p-6 sm:p-10 flex flex-col gap-6 text-slate-800">
+<!-- Document Physical Header -->
+<div class="border-b-2 border-slate-800 pb-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-[#166534] flex items-center justify-center text-[#166534]">
+<span class="material-symbols-outlined text-[28px]">local_hospital</span>
+</div>
+<div>
+<h2 class="font-headline font-bold text-lg text-slate-900 tracking-tight leading-tight">DISTRICT CIVIL HOSPITAL</h2>
+<p class="text-xs text-slate-600 font-medium">Department of General Medicine &amp; AYUSH Integrative Care</p>
+<p class="text-[11px] text-slate-500">Government Healthcare Network • Civil Lines, Sector 4</p>
+</div>
+</div>
+<div class="text-left sm:text-right font-headline text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+<div class="">Ref ID: <strong class="text-slate-900 font-bold">MED-2024-8841A</strong></div>
+<div class="">Consultation Date: <strong class="text-slate-900 font-semibold">14 Oct 2024</strong></div>
+</div>
+</div>
+<!-- Patient Demographics Section -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-50 border border-slate-200 p-4 rounded-lg text-sm">
+<div>
+<span class="block text-xs uppercase tracking-wider text-slate-500 font-headline font-semibold">Patient Name</span>
+<span class="font-headline font-bold text-slate-900 text-sm">Rajesh Kumar Sharma</span>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-wider text-slate-500 font-headline font-semibold">Age / Gender</span>
+<span class="font-headline font-medium text-slate-800 text-sm">48 Yrs / Male</span>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-wider text-slate-500 font-headline font-semibold">ABHA Address</span>
+<span class="font-headline font-medium text-slate-800 text-sm">rajesh.sharma@abdm</span>
+</div>
+<div>
+<span class="block text-xs uppercase tracking-wider text-slate-500 font-headline font-semibold">Recorded Vitals</span>
+<span class="font-headline font-medium text-slate-800 text-sm">BP 124/82 • SpO2 98%</span>
+</div>
+</div>
+<!-- Clinical Summary Block -->
+<div class="flex flex-col gap-2">
+<span class="text-xs font-headline font-bold text-[#166534] uppercase tracking-wider">Clinical Observations &amp; Diagnosis</span>
+<div class="bg-emerald-50/40 border border-emerald-100 rounded-lg p-3.5 text-sm text-slate-700 leading-relaxed font-body">
+                  Patient presented with mild recurrent hypertension with secondary tension-type headaches. Previous blood panel evaluated: lipid markers within target therapeutic threshold. Continued standard maintenance therapy advised alongside routine dietary modulation and daily salt restriction.
+                </div>
+</div>
+<!-- Prescription List Block -->
+<div class="flex flex-col gap-2">
+<span class="text-xs font-headline font-bold text-[#166534] uppercase tracking-wider">Prescribed Medication Regimen (Rx)</span>
+<div class="border border-slate-200 rounded-lg overflow-hidden divide-y divide-slate-100 text-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-white gap-1 hover:bg-slate-50/80">
+<span class="font-headline font-semibold text-slate-900">1. Tab. Telmisartan 40mg</span>
+<span class="text-slate-600 font-medium">1 tablet daily (Morning after breakfast) • 30 Days</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-white gap-1 hover:bg-slate-50/80">
+<span class="font-headline font-semibold text-slate-900">2. Tab. Brahmi Vati 250mg</span>
+<span class="text-slate-600 font-medium">1 tablet twice daily with lukewarm water • 15 Days</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-white gap-1 hover:bg-slate-50/80">
+<span class="font-headline font-semibold text-slate-900">3. Lifestyle Regimen</span>
+<span class="text-slate-600 font-medium">30 mins brisk walking • Sodium intake &lt; 2.3g/day</span>
+</div>
+</div>
+</div>
+<!-- Sign-off & Hospital Stamp -->
+<div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-xs font-headline text-slate-500">
+<span class="material-symbols-outlined text-[18px] text-[#166534]">verified</span>
+<span class="">Digitally certified through National Health Stack Provider Key</span>
+</div>
+<div class="text-left sm:text-right">
+<span class="block font-headline font-bold text-sm text-slate-900">Dr. Ananya Sen, MD</span>
+<span class="block text-xs text-slate-500">Reg. No: 58492-NMC • Senior Resident Medical Officer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Verification Notice Ribbon -->
+<div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 text-sm">
+<span class="material-symbols-outlined text-[22px] text-[#166534] shrink-0">info</span>
+<p class="leading-relaxed">
+            By clicking <strong>CONTINUE</strong>, you verify that this uploaded medical certificate or prescription is valid and complete. This document will be securely attached to your official consultation record.
+          </p>
+</div>
+<!-- INTERACTIVE ACTION BUTTONS -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-300 text-slate-700 bg-white hover:bg-slate-50 font-headline font-semibold text-sm transition-colors shadow-sm order-2 sm:order-1" href="03.12_UPLOAD_DOCUMENTS">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Back</span>
+</a>
+<div class="flex items-center gap-3 order-1 sm:order-2 justify-end">
+<button class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-red-200 text-red-700 bg-red-50 hover:bg-red-100 font-headline font-semibold text-sm transition-colors" id="btn-remove" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span class="">REMOVE</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-[#166534] hover:bg-[#14532d] text-white font-headline font-semibold text-base shadow-md transition-all" id="btn-continue" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">CONTINUE</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CITIZEN HELPLINE ASSISTANCE BANNER -->
+<div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm" id="help">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-emerald-50 text-[#166534] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">contact_support</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-sm text-slate-900">Encountering issues with document verification?</h4>
+<p class="text-xs text-slate-500">Citizen Support Line is accessible 24/7 for tele-consultation and EMR assistance.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-headline font-semibold transition-colors" href="tel:1075">
+<span class="material-symbols-outlined text-[16px] text-[#166534]">call</span>
+<span class="">Toll Free 1075</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#166534]/10 hover:bg-[#166534]/20 text-[#166534] text-xs font-headline font-semibold transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span class="">Live Help Desk</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- FULL INSTITUTIONAL 3-COLUMN FOOTER -->
+<footer class="w-full bg-[#071e33] text-slate-300 pt-12 pb-8 border-t border-slate-800 mt-12 font-headline">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-slate-800">
+<!-- Column 1: Institutional Authority -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="Aarogya Case Official Emblem" class="h-12 w-12 object-contain bg-white rounded-full p-0.5 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG-jHtuaCpazj3nCB3GsSyY-1lPVPVW8vl7IzESYcxpP_8JXpOfM0mCj5zqOUSjYx_R39s8xXRCVUbQRQF053RfSusF_jXe9gUSQpf03tE9Sc-7T35xi-V-5WZF0REtN5cjwoQMFxtupORAEIUSVL4JwbAmk_e6hsFkBdxiPlsm0sPRi45UU948FSjKcMu7SrBubCVgGPT_Zs_Azie6rdxLfcEHoACTlc6hQJ7PlOKqtxwXjld60IerTjOHYbKVrtWhoo">
+<div>
+<span class="font-bold text-white tracking-tight text-lg block">AAROGYA CASE</span>
+<span class="text-xs text-emerald-400 font-medium">Government Healthcare Digital Platform</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed font-body">
+An open digital health infrastructure standardizing clinical triage, patient care journeys, and accessible emergency response coordination for citizens.
+</p>
+</div>
+<!-- Column 2: Patient Services -->
+<div class="flex flex-col gap-3 font-body text-sm">
+<h5 class="font-headline font-semibold text-white uppercase tracking-wider text-xs">PATIENT SERVICES</h5>
+<ul class="flex flex-col gap-2 text-xs text-slate-400">
+<li class=""><a class="hover:text-white transition-colors" href="#">Digital Clinical Intake</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Tele-Consultation Request</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Electronic Health Record Integration</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Emergency Protocol Information</a></li>
+</ul>
+</div>
+<!-- Column 3: Help & Accessibility -->
+<div class="flex flex-col gap-3 font-body text-sm">
+<h5 class="font-headline font-semibold text-white uppercase tracking-wider text-xs">HELP &amp; ACCESSIBILITY</h5>
+<ul class="flex flex-col gap-2.5 text-xs text-slate-400">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">call</span>
+<a class="hover:text-white transition-colors" href="tel:104">National Health Helpline: <strong class="text-white">104</strong></a>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-red-400">emergency</span>
+<a class="hover:text-white transition-colors" href="tel:108">Ambulance Emergency: <strong class="text-white">108</strong></a>
+</li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Accessibility Options &amp; Screen Reader Guide</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Privacy Policy &amp; Terms of Clinical Use</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Copyright Bar -->
+<div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-body">
+<p class="">© AAROGYA CASE — Government Healthcare Digital Platform. Project Prototype. For demonstration purposes only.</p>
+<div class="flex items-center gap-4 text-slate-400">
+<span class="flex items-center gap-1 text-emerald-400">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="">ABDM Standard Integrated</span>
+</span>
+<span class="text-slate-500">v2.4-Production</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactivity Script -->
+<script>
+    (function() {
+      const continueBtn = document.getElementById('btn-continue');
+      const removeBtn = document.getElementById('btn-remove');
+
+      if (continueBtn) {
+        continueBtn.addEventListener('click', function() {
+          const originalText = continueBtn.innerHTML;
+          continueBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Validating...</span>';
+          continueBtn.setAttribute('disabled', 'true');
+          setTimeout(function() {
+            alert('Document confirmed. Proceeding to final submission.');
+            continueBtn.innerHTML = originalText;
+            continueBtn.removeAttribute('disabled');
+          }, 1000);
+        });
+      }
+
+      if (removeBtn) {
+        removeBtn.addEventListener('click', function() {
+          if (confirm('Are you sure you want to remove this document and return to the upload screen?')) {
+            window.location.href = '03.12_UPLOAD_DOCUMENTS';
+          }
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

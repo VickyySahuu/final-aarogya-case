@@ -1,0 +1,5 @@
+.env
+.env.local
+.sessions.json
+.db_state.json
+node_modules/
